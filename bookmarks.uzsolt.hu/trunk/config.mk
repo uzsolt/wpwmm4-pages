@@ -5,6 +5,7 @@ INCLUDE_DIR=include/
 VIRT_DIR=virtual/
 
 TARGETS=index.html
+index.html_REQ=include/header.m4 scripts/generate_main_list.sh scripts/get_title.sh
 TARGETS_MANUAL=bookmarks.css
 
 VIRTUALS=	links
