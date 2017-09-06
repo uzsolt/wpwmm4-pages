@@ -1,4 +1,5 @@
-DEST_DIR=/home/zsolt/public_html/bookmarks/
+DEST_DIR=/usr/local/www/bookmarks/
+COMMON_DIR=../wpwmm4/
 SRC_DIR=src/
 
 INCLUDE_DIR=include/
