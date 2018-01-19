@@ -11,7 +11,7 @@ print_div() {
   printf '\t<a href="%s"><div class="%s">\n' "$3" "container"
   printf '\t\t<div class="descr">%s</div>\n' "$1"
   printf '\t\t<div class="%s">\n' "pictdiv"
-  printf '\t\t<img src="icons/%s" alt="%s" class="%s"/>\n' "$2" "$1" "pict"
+  printf '\t\t<span class="helper"></span><img src="icons/%s" alt="%s" class="%s"/>\n' "$2" "$1" "pict"
   printf '\t\t</div>\n'
   printf '\t</div></a>\n'
 }

@@ -4,16 +4,24 @@ body {
 
 .pictdiv {
   width:100px;
-  height:100px;
+  height:96px;
   text-align:center;
   vertical-align:middle;
   margin:0 auto;
   background-color:#ededed;
+  white-space:nowrap;
 }
 
 .pict {
   max-width:96px;
   max-height:96px;
+  vertical-align:middle;
+}
+
+.helper {
+  display:inline-block;
+  height:100%;
+  vertical-align:middle;
 }
 
 .container {
