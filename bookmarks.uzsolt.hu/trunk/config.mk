@@ -17,7 +17,7 @@ VIRTUALOUT_links!=sed 's,$$,/index.html,' data/main.psv
 
 VIRTUALREQ_links=include/header.m4 scripts/get_title.sh scripts/list_links.sh gen/navbar.html data/title.psv
 VIRTUALREQRULE_links=C,(.*)/index.html,data/\1.psv,
-.for f in bethlen hivatalos szorakozas torvenyek
+.for f in bethlen hivatalos szorakozas torvenyek web
 ${f}/index.html_REQ!=ls data/${f}_*.psv
 .endfor
 
