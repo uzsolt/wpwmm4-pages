@@ -23,8 +23,7 @@ print_table_header() {
   cat << EOF
 <table>
 <caption>
-r$(svnlite info --show-item revision)
-$(date +'(%Y-%m-%d %H:%M:%S)')
+r$(svnlite info --show-item revision) $(date +'(%Y-%m-%d %H:%M:%S)')
 </caption>
 <thead>
   <tr>
@@ -60,7 +59,7 @@ print_films_sort_hun() {
 
 convert_csv_tr() {
   while IFS=';' read titlehu titleor portnr mafabnr erta ertb; do
-    printf "<tr><td>%s</td><td>%s</td><td><a href=\"%s\">Port.hu</a></td><td><a href=\"%s\">Mafab.hu</a></td><td>%d</td><td>%d</td></tr>\n" \
+    printf "<tr><td>%s</td><td>%s</td>\n\t<td><a href=\"%s\">Port.hu</a></td>\n\t<td><a href=\"%s\">Mafab.hu</a></td>\n\t<td>%d</td><td>%d</td></tr>\n" \
       "${titlehu}" \
       "${titleor}" \
       "`generate_port_link "${titlehu}" "${titleor}" "${portnr}"`" \
