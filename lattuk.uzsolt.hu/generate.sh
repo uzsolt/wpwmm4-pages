@@ -29,8 +29,8 @@ r$(svnlite info --show-item revision) $(date +'(%Y-%m-%d %H:%M:%S)')
   <tr>
    <th>Magyar cím</th>
    <th>Eredeti cím</th>
-   <th>Port.hu link</th>
-   <th>Mafab.hu link</th>
+   <th>Port</th>
+   <th>Mafab</th>
    <th>ÉrtA</th>
    <th>ÉrtB</th>
   </tr>
@@ -59,7 +59,10 @@ print_films_sort_hun() {
 
 convert_csv_tr() {
   while IFS=';' read titlehu titleor portnr mafabnr erta ertb; do
-    printf "<tr><td>%s</td><td>%s</td>\n\t<td><a href=\"%s\">Port.hu</a></td>\n\t<td><a href=\"%s\">Mafab.hu</a></td>\n\t<td>%d</td><td>%d</td></tr>\n" \
+    printf "<tr><td>%s</td><td>%s</td>\n\t<td>\
+<a href=\"%s\"><img src=port.png></img></a></td>\n\
+\t<td class=\"tdimg\"><a href=\"%s\"><img src=\"mafab_logo_2017.svg\"></img></a></td>\n\
+\t<td class=\"tdimg\">%d</td><td>%d</td></tr>\n" \
       "${titlehu}" \
       "${titleor}" \
       "`generate_port_link "${titlehu}" "${titleor}" "${portnr}"`" \

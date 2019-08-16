@@ -26,3 +26,11 @@ body {
 caption {
   caption-side:bottom;
 }
+
+img {
+  width:32px;
+}
+
+.tdimg {
+  text-align:center;
+}
