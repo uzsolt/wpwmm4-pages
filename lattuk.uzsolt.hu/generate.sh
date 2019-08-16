@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# $Id$
+
 PORTBEGIN=https://port.hu/adatlap/film/tv/
 MAFABBEGIN=https://www.mafab.hu/movies/
 
@@ -59,10 +61,10 @@ print_films_sort_hun() {
 
 convert_csv_tr() {
   while IFS=';' read titlehu titleor portnr mafabnr erta ertb; do
-    printf "<tr><td>%s</td><td>%s</td>\n\t<td>\
-<a href=\"%s\"><img src=port.png></img></a></td>\n\
-\t<td class=\"tdimg\"><a href=\"%s\"><img src=\"mafab_logo_2017.svg\"></img></a></td>\n\
-\t<td class=\"tdimg\">%d</td><td>%d</td></tr>\n" \
+    printf "<tr><td>%s</td><td>%s</td>\n\
+\t<td class=\"tdimg\"><a href=\"%s\"><img src=\"port.png\" alt=\"Port.hu\"></a></td>\n\
+\t<td class=\"tdimg\"><a href=\"%s\"><img src=\"mafab_logo_2017.svg\" alt=\"Mafab\"></a></td>\n\
+\t<td>%d</td><td>%d</td></tr>\n" \
       "${titlehu}" \
       "${titleor}" \
       "`generate_port_link "${titlehu}" "${titleor}" "${portnr}"`" \
