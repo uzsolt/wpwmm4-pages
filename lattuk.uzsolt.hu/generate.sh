@@ -22,6 +22,10 @@ EOF
 print_table_header() {
   cat << EOF
 <table>
+<caption>
+r$(svnlite info --show-item revision)
+$(date +'(%Y-%m-%d %H:%M:%S)')
+</caption>
 <thead>
   <tr>
    <th>Magyar cím</th>
