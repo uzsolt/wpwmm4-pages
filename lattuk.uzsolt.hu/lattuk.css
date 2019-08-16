@@ -1,0 +1,24 @@
+table, th, td {
+  border: 1px solid black;
+}
+
+tbody tr:nth-child(odd) {
+  background-color:#adad85;
+}
+
+tbody tr:nth-child(even) {
+  background-color:#ccccb3;
+}
+
+tbody tr:hover {
+  background-color:#999966;
+}
+
+th {
+  background-color:#6b6b47;
+  text-shadow:1px 1px #242424;
+}
+
+body {
+  background-color:#ebebe0;
+}
