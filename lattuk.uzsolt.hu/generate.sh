@@ -60,15 +60,17 @@ print_films_sort_hun() {
 }
 
 convert_csv_tr() {
-  while IFS=';' read titlehu titleor portnr mafabnr erta ertb; do
+  while IFS=';' read titlehu titleor portnr mafabnr erta ertb titlealthu; do
+    local title="${titlehu}"
+    [ -n "${titlealthu}" ] && title="${title} / ${titlealthu}"
     printf "<tr><td>%s</td><td>%s</td>\n\
 \t<td class=\"tdimg\"><a href=\"%s\"><img src=\"port.png\" alt=\"Port.hu\"></a></td>\n\
 \t<td class=\"tdimg\"><a href=\"%s\"><img src=\"mafab_logo_2017.svg\" alt=\"Mafab\"></a></td>\n\
 \t<td>%d</td><td>%d</td></tr>\n" \
-      "${titlehu}" \
+      "${title}" \
       "${titleor}" \
       "`generate_port_link "${titlehu}" "${titleor}" "${portnr}"`" \
-      "`generate_mafab_link "${titlehu}" "${mafabnr}"`" \
+      "`generate_mafab_link "${mafabnr}"`" \
       "${erta}" "${ertb}"
   done
 }
@@ -85,7 +87,7 @@ generate_port_link() {
 }
 
 generate_mafab_link() {
-  printf "%s%s-%d.html" "${MAFABBEGIN}" `echo "$1" | detox` "$2"
+  printf "%s%d" "${MAFABBEGIN}" "$1"
 }
 
 print_html_header
