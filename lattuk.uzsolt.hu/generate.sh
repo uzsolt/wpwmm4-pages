@@ -56,7 +56,7 @@ EOF
 }
 
 print_films_sort_hun() {
-  sort -k1 -t ';' lista.csv | convert_csv_tr
+  grep -v '^#.*' lista.csv | sort -k1 -t ';' | convert_csv_tr
 }
 
 convert_csv_tr() {
