@@ -1,6 +1,6 @@
 WWWDIR=		/usr/local/www/lattuk
 INDEXHTML=	${WWWDIR}/index.html
-ICONS=	mafab_logo_2017.svg port.png
+ICONS=		mafab.jpg port.png
 
 all:	${INDEXHTML} ${ICONS:@ico@${WWWDIR}/${ico}@}
 

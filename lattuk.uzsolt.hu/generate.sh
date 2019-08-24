@@ -65,7 +65,7 @@ convert_csv_tr() {
     [ -n "${titlealthu}" ] && title="${title} / ${titlealthu}"
     printf "<tr><td>%s</td><td>%s</td>\n\
 \t<td class=\"tdimg\"><a href=\"%s\"><img src=\"port.png\" alt=\"Port.hu\"></a></td>\n\
-\t<td class=\"tdimg\"><a href=\"%s\"><img src=\"mafab_logo_2017.svg\" alt=\"Mafab\"></a></td>\n\
+\t<td class=\"tdimg\"><a href=\"%s\"><img src=\"mafab.jpg\" alt=\"Mafab\"></a></td>\n\
 \t<td>%d</td><td>%d</td></tr>\n" \
       "${title}" \
       "${titleor}" \
