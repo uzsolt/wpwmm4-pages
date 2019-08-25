@@ -63,10 +63,10 @@ convert_csv_tr() {
   while IFS=';' read titlehu titleor portnr mafabnr erta ertb titlealthu; do
     local title="${titlehu}"
     [ -n "${titlealthu}" ] && title="${title} / ${titlealthu}"
-    printf "<tr><td>%s</td><td>%s</td>\n\
+    LC_ALL=C printf "<tr><td>%s</td><td>%s</td>\n\
 \t<td class=\"tdimg\"><a href=\"%s\"><img src=\"port.png\" alt=\"Port.hu\"></a></td>\n\
 \t<td class=\"tdimg\"><a href=\"%s\"><img src=\"mafab.jpg\" alt=\"Mafab\"></a></td>\n\
-\t<td>%d</td><td>%d</td></tr>\n" \
+\t<td>%.1f</td><td>%.1f</td></tr>\n" \
       "${title}" \
       "${titleor}" \
       "`generate_port_link "${titlehu}" "${titleor}" "${portnr}"`" \
