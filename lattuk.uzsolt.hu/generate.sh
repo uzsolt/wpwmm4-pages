@@ -76,7 +76,7 @@ convert_csv_tr() {
 }
 
 detox() {
-  tr '[:upper:]öüóőúéáí ' '[:lower:]ouooueai-' | tr -d '()'
+  tr '[:upper:]öüóőúéáí ' '[:lower:]ouooueai-' | tr -d '()/'
 }
 
 # $1 - magyar cím
