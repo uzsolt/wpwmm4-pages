@@ -1,0 +1,74 @@
+// ************
+// Menürendszer
+// https://www.w3schools.com/howto/howto_css_fixed_menu.asp
+// ************
+$menuBG:#ccc;
+$menuNormalC:black;
+$menuNormalHBG:white;
+$menuSelectedBG:#aaa;
+$menuHeight:40px;
+
+#menu {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 99%;
+  height: $menuHeight;
+
+  background-color: $menuBG;
+}
+%normal_menu {
+  float:  left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  height: 100%;
+}
+%normal_menu_href {
+  color:  $menuNormalC;
+  text-decoration: none;
+}
+.normal_menu {
+  @extend %normal_menu;
+  @extend %normal_menu_href;
+}
+.normal_menu:hover {
+  background-color:  $menuNormalHBG;
+}
+.selected_menu {
+  @extend %normal_menu;
+  @extend %normal_menu_href;
+  background-color: $menuSelectedBG;
+}
+#main {
+  margin-top: $menuHeight+5px;
+}
+
+// **************
+// Bemutatkozások
+// **************
+.tag {
+  float: left;
+  display:table-row;
+
+  border-color:#444;
+  border-bottom-style:solid;
+  border-left-style: dotted;
+
+  padding-left:6px;
+  padding-top:10px;
+  padding-bottom:4px;
+}
+.tag .tagnev {
+  font-weight: bold;
+}
+.tag .tagleiras {
+  padding: 12px;
+  float: none;
+  display:table-cell;
+}
+.tag .tagimg {
+  float: left;
+  width: 200px;
+  display:table-cell;
+}
