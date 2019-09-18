@@ -16,6 +16,7 @@ $menuHeight:40px;
   height: $menuHeight;
 
   background-color: $menuBG;
+  font-weight: bold;
 }
 %normal_menu {
   float:  left;
@@ -42,6 +43,7 @@ $menuHeight:40px;
 }
 #main {
   margin-top: $menuHeight+5px;
+  padding-top: 5px;
 }
 
 // **************
