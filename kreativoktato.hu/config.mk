@@ -11,6 +11,7 @@ TARGETS+=	index.html \
 		tagok.html \
 		projektek.html \
 		kapcsolat.html
+tagok.html_REQ!=	sed "s,.*|\(.*\),data/tagok/\1.txt," data/tagok/tagok.lst
 
 TAGKEPEK!=	sed "s,.*|\(.*\),\1.jpg," data/tagok/tagok.lst
 TARGETS_MANUAL+=	${TAGKEPEK:@kep@${PICTDIR}/${kep}@}
