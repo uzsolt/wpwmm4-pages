@@ -1,17 +1,23 @@
-Közgazdász, bölcsész, szakfordító. Képzettségeit a Szegedi
-Tudományegyetemen szerezte: Anglisztika szakon 2012-ben, Marketing
-mesterképzésen 2015-ben, Jogi szakfordító képzésen 2016-ban végzett.
-Jelenleg doktorjelöltként és tanársegédként tevékenykedik a Szegedi
-Tudományegyetem Gazdaságtudományi Karán, Marketinget és Piackutatást
-oktat magyar és külföldi hallgatók számára, valamint Non-business
-marketinget tanít magyar hallgatóknak. Kutatási területe a külföldi
-hallgatók elégedettségének és lojalitásának feltárása. Az Új Nemzeti
-Kiválóság Program keretében a co-creation jelenséget és annak
+<p>Közgazdász, bölcsész, szakfordító. Képzettségeit a Szegedi
+Tudományegyetemen szerezte:</p>
+<ul>
+<li>anglisztika szakon 2012-ben,</li>
+<li>marketing mesterképzésen 2015-ben,</li>
+<li>jogi szakfordító képzésen 2016-ban</li>
+</ul> végzett.
+<p>Jelenleg doktorjelöltként és tanársegédként tevékenykedik a Szegedi
+Tudományegyetem Gazdaságtudományi Karán, <em>Marketinget</em> és <em>Piackutatást</em>
+oktat magyar és külföldi hallgatók számára, valamint
+<em>Non-business marketing</em>et tanít magyar hallgatóknak.</p>
+<p>Kutatási területe a külföldi
+hallgatók elégedettségének és lojalitásának feltárása.</p>
+<p>Az Új Nemzeti Kiválóság Program keretében a co-creation jelenséget és annak
 oktatásmódszertani alkalmazhatóságát vizsgálja a felsőoktatásban és a
-közgazdászképzésben. Oktatóként fontosnak tartja a folyamatos
+közgazdászképzésben.</p>
+<p>Oktatóként fontosnak tartja a folyamatos
 fejlődést és kurzusfejlesztést, így egyik ötletgazdája az egyetemen
-szervezett „Villámélmények - kreatív oktatásmódszertani eszközök
-börzéjének”, valamint tagja az Egyesület a Marketing Oktatásáért és
-Kutatásáért (EMOK) országos szervezetnek, részt vesz a karon történő
+szervezett <em>„Villámélmények - kreatív oktatásmódszertani eszközök
+börzéjének”</em>, valamint tagja az <em>Egyesület a Marketing Oktatásáért és
+Kutatásáért</em> (EMOK) országos szervezetnek, részt vesz a karon történő
 gamifikációs törekvésekben az ISGEE (Implementing Serious Games in
-Entrepreneurship Education) nemzetközi Erasmus+ program keretében.
+Entrepreneurship Education) nemzetközi Erasmus+ program keretében.</p>
