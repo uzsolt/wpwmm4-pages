@@ -8,9 +8,13 @@ PICTDIR=	pict
 
 TARGETS+=	index.html \
 		bemutatkozas.html \
-		tagok.html \
+		blog.html \
+		globalis.html \
+		kapcsolat.html \
+		munkatarsak.html \
+		partnerek.html \
 		projektek.html \
-		kapcsolat.html
+		publikaciok.html
 tagok.html_REQ!=	sed "s,.*|\(.*\),data/tagok/\1.txt," data/tagok/tagok.lst
 GREQ=	scripts/menu.sh
 
