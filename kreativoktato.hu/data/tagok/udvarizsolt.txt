@@ -1,4 +1,5 @@
-<p>Matematikus, fizika-matematika szakos tanár.</p>
+matematikus, fizika-matematika szakos tanár
+EKO alapító tagja
 <p>Tanári diplomáját
 2006-ban szerezte meg, szakdolgozatának témája a kenuzás modellezése,
 számítógépes szimulációja, amellyel az Országos Tudományos Diákkör
