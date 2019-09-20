@@ -1,25 +1,30 @@
 // ************
 // Menürendszer
-// https://www.w3schools.com/howto/howto_css_fixed_menu.asp
+// https://www.w3schools.com/Css/css_navbar.asp
 // ************
 $menuBG:#ccc;
 $menuNormalC:black;
 $menuNormalHBG:white;
 $menuSelectedBG:#aaa;
-$menuHeight:40px;
+$menuWidth:200px;
 
 #menu {
   overflow: hidden;
   position: fixed;
   top: 0;
-  width: 99%;
-  height: $menuHeight;
+  left: 0;
+  width: $menuWidth;
+  height: 100%;
 
   background-color: $menuBG;
   font-weight: bold;
 }
+#menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 %normal_menu {
-  float:  left;
   display: block;
   text-align: center;
   padding: 14px 16px;
@@ -42,7 +47,7 @@ $menuHeight:40px;
   background-color: $menuSelectedBG;
 }
 #main {
-  margin-top: $menuHeight+5px;
+  margin-left: $menuWidth+5px;
   padding-top: 5px;
 }
 
