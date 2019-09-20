@@ -15,7 +15,8 @@ TARGETS+=	index.html \
 		partnerek.html \
 		projektek.html \
 		publikaciok.html
-tagok.html_REQ!=	sed "s,.*|\(.*\),data/tagok/\1.txt," data/tagok/tagok.lst
+munkatarsak.html_REQ!=	sed "s,.*|\(.*\),data/tagok/\1.txt," data/tagok/tagok.lst
+munkatarsak.html_REQ+=	scripts/tagok.sh
 GREQ=	scripts/menu.sh
 
 TAGKEPEK!=	sed "s,.*|\(.*\),\1.jpg," data/tagok/tagok.lst
