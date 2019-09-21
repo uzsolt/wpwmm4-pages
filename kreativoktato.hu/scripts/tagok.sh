@@ -4,22 +4,28 @@ TAGOKDIR=data/tagok/
 TAGOKLISTA=${TAGOKDIR}/tagok.lst
 
 MT_PREFIX="mt_"
+ID_NEVJEGYEK="${MT_PREFIX}nevjegyek"
 
 IFS="|"
-printf "<table id='%s'>\n" "${MT_PREFIX}table"
-printf "<thead><tr><td>Név</td><td>Végzettség</td><td>Szerep</td></tr></thead>\n"
-printf "<tbody>\n"
+printf "<div id='%s'><h2>Névjegyek</h2>\n" "${ID_NEVJEGYEK}"
 while read nev file; do
   tagfile="${TAGOKDIR}/${file}.txt"
   titulus="`head -n1 ${tagfile}`"
   ekorole="`sed -n "2p" ${tagfile}`"
-  printf "  <tr><td><a href='%s'>%s</a></td><td>%s</td><td>%s</td></tr>\n" \
-    "#${MT_PREFIX}${file}" "${nev}" "${titulus}" "${ekorole}"
+  printf "  <a href='%s'><div class='tagnevjegy'>\n\
+    <img src='pict/%s' alt='kép'>\n\
+    <span class='tagnevjegy_nev'>%s</span><br>\n\
+    <span class='tagnevjegy_vegz'>%s</span><br>\n\
+    <span class='tagnevjegy_eko'>%s</span><br>\n\
+  </div></a>\n" \
+    "#${MT_PREFIX}${file}" \
+    "${file}.jpg" \
+    "${nev}" "${titulus}" "${ekorole}"
 done < ${TAGOKLISTA}
-printf "</tbody></table><hr>\n"
+printf "</div>\n"
 
-printf "<div id='tagok'>\n"
-hrefvissza="`printf "    <a href='#%s'><div class='hrefvissza'>fel</div></a>\n" "${MT_PREFIX}table"`"
+printf "<div id='tagok'><h2>Bemutatkozások</h2>\n"
+hrefvissza="`printf "    <a href='#%s'><div class='hrefvissza'>fel</div></a>\n" "${ID_NEVJEGYEK}"`"
 while read nev file; do
   tagfile="${TAGOKDIR}/${file}.txt"
   printf "  <div id='%s%s' class='tag'>\n" "${MT_PREFIX}" "${file}"

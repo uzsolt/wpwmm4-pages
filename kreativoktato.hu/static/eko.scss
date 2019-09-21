@@ -54,24 +54,46 @@ $menuWidth:200px;
 // **************
 // Bemutatkozások
 // **************
-thead td {
-  font-weight: bold;
-}
-table tbody tr:nth-child(odd) td {
+#mt_nevjegyek {
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 5px;
   background-color: #ddd;
+  overflow: hidden;
 }
-table tbody tr:nth-child(even) td {
-  background-color: #fff;
-}
-table tbody tr td a {
+#mt_nevjegyek a {
   text-decoration: none;
   color: black;
-  width: 100%;
-  display: block;
-  font-weight: bolder;
 }
-table tbody tr td:nth-child(1):hover {
-  background-color: #aaa;
+.tagnevjegy {
+  border: 1px solid black;
+  border-radius: 15px 20px 30px 5px;
+  box-shadow: 3px 5px #555;
+
+  float: left;
+
+  width: 300px;
+  height: 100px;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+
+  background-color: #eee;
+}
+.tagnevjegy img {
+  max-width: 64px;
+  max-height: 90px;
+  padding-right: 10px;
+  float: left;
+}
+.tagnevjegy_nev {
+  font-weight: bold;
+}
+.tagnevjegy_vegz {
+  font-style: italic;
+}
+.tagnevjegy_eko {
+  font-style: normal;
 }
 .tag {
   float: left;
