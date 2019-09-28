@@ -19,11 +19,15 @@ munkatarsak.html_REQ!=	sed "s,.*|\(.*\),data/tagok/\1.txt," data/tagok/tagok.lst
 munkatarsak.html_REQ+=	scripts/tagok.sh
 publikaciok.html_REQ!=	sed "s,.*|\(.*\),data/publikaciok/\1.csv," data/publikaciok/lista.csv
 publikaciok.html_REQ+=	scripts/publikaciok.sh data/publikaciok/lista.csv
+.for t in ${TARGETS}
+${t}_REQ+=	layouts/main.m4
+.endfor
 GREQ=	scripts/menu.sh
 
 TAGKEPEK!=	sed "s,.*|\(.*\),\1.jpg," data/tagok/tagok.lst
 TARGETS_MANUAL+=	${TAGKEPEK:@kep@${PICTDIR}/${kep}@}
 TARGETS_MANUAL+=	css/eko.css
+TARGETS_MANUAL+=	${PICTDIR}/favicon.ico
 
 ${DEST_DIR}css/eko.css:	static/eko.scss
 	@mkdir -p ${DEST_DIR}css
@@ -34,6 +38,9 @@ ${DEST_DIR}${PICTDIR}/${kep}:	static/tagok/${kep}
 	@mkdir -p ${DEST_DIR}${PICTDIR}
 	@convert -resize 200 -strip $> $@
 .endfor
+
+${DEST_DIR}${PICTDIR}/favicon.ico:	static/logo.png
+	@convert -resize 64 $> $@
 
 upload:
 	cat upload.lftp | lftp
