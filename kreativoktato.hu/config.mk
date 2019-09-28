@@ -40,7 +40,7 @@ ${DEST_DIR}${PICTDIR}/${kep}:	static/tagok/${kep}
 .endfor
 
 ${DEST_DIR}${PICTDIR}/favicon.ico:	static/logo.png
-	@convert -resize 64 $> $@
+	convert -resize 64 $> $@
 
 upload:
 	cat upload.lftp | lftp
