@@ -7,6 +7,8 @@ $menuNormalC:black;
 $menuNormalHBG:white;
 $menuSelectedBG:#aaa;
 $menuWidth:200px;
+$mainMinWidth:500px;
+$mainMaxWidth:1000px;
 
 #menu {
   overflow: hidden;
@@ -54,6 +56,14 @@ $menuWidth:200px;
 #main {
   margin-left: $menuWidth+5px;
   padding-top: 5px;
+  width: $mainMaxWidth;
+}
+#banner {
+  overflow: hidden;
+  width: 30px;
+  font-size: xx-large;
+
+  float: right;
 }
 
 // **************
