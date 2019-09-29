@@ -67,6 +67,7 @@ $bannerMinWidth:200px;
   font-size: 16px;
   line-height: 1.4;
   float: left;
+  background-image: url("/pict/logo-tr.png");
 }
 #banner {
   width: $bannerMinWidth;
@@ -85,7 +86,7 @@ $bannerMinWidth:200px;
   padding-left: 10px;
   padding-top: 10px;
   padding-bottom: 5px;
-  background-color: #f2f2f2;
+  background-color: rgba(242,242,242,0.6);
   overflow: hidden;
 }
 #mt_nevjegyek a {
