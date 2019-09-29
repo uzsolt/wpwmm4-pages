@@ -7,4 +7,4 @@ _2_HEAD(
 )
 _2_BODY(_SCRIPT(`menu.sh' _FILE))
 _LAYOUT_PRE(`<div id="main">')
-_LAYOUT_POST(`</div><div id="banner">Egyesület a Kreatív Oktatásért</div>')
+_LAYOUT_POST(`</div><div id="banner"></div>')

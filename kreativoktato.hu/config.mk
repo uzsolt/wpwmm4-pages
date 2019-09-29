@@ -27,7 +27,7 @@ GREQ=	scripts/menu.sh
 TAGKEPEK!=	sed "s,.*|\(.*\),\1.jpg," data/tagok/tagok.lst
 TARGETS_MANUAL+=	${TAGKEPEK:@kep@${PICTDIR}/${kep}@}
 TARGETS_MANUAL+=	css/eko.css
-TARGETS_MANUAL+=	${PICTDIR}/favicon.ico
+TARGETS_MANUAL+=	${PICTDIR}/favicon.ico ${PICTDIR}/logo.png
 
 ${DEST_DIR}css/eko.css:	static/eko.scss
 	@mkdir -p ${DEST_DIR}css
@@ -41,6 +41,9 @@ ${DEST_DIR}${PICTDIR}/${kep}:	static/tagok/${kep}
 
 ${DEST_DIR}${PICTDIR}/favicon.ico:	static/logo.png
 	convert -resize 64 $> $@
+
+${DEST_DIR}${PICTDIR}/logo.png:	static/logo.png
+	@cp $> $@
 
 upload:
 	cat upload.lftp | lftp

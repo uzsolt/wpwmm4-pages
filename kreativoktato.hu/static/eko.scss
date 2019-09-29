@@ -12,6 +12,7 @@ $menuSelectedBG:#aaa;
 $menuWidth:200px;
 $mainMinWidth:500px;
 $mainMaxWidth:1000px;
+$bannerMinWidth:200px;
 
 #menu {
   overflow: hidden;
@@ -23,6 +24,8 @@ $mainMaxWidth:1000px;
 
   background-color: $menuBG;
   font-weight: bold;
+
+  float: left;
 
   padding-left:5px;
   padding-right:5px;
@@ -63,13 +66,16 @@ $mainMaxWidth:1000px;
   color: #444;
   font-size: 16px;
   line-height: 1.4;
+  float: left;
 }
 #banner {
-  overflow: hidden;
-  width: 30px;
-  font-size: xx-large;
+  width: $bannerMinWidth;
+  height: 100%;
 
-  float: right;
+  float: left;
+
+  background-image: url("/pict/logo.png");
+  background-color: red;
 }
 
 // **************
