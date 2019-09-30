@@ -11,7 +11,7 @@ $menuNormalHBG:white;
 $menuSelectedBG:#aaa;
 $menuWidth:200px;
 $mainMinWidth:500px;
-$mainMaxWidth:1000px;
+$mainMaxWidth:850px;
 $bannerMinWidth:200px;
 
 #menu {
@@ -62,7 +62,7 @@ $bannerMinWidth:200px;
 #main {
   margin-left: $menuWidth+5px;
   padding-top: 5px;
-  width: $mainMaxWidth;
+  max-width: $mainMaxWidth;
   color: #444;
   font-size: 16px;
   line-height: 1.4;
@@ -83,10 +83,10 @@ $bannerMinWidth:200px;
 // Bemutatkozások
 // **************
 #mt_nevjegyek {
+  margin-left: $menuWidth+5px;
   padding-left: 10px;
   padding-top: 10px;
   padding-bottom: 5px;
-  background-color: rgba(242,242,242,0.6);
   overflow: hidden;
 }
 #mt_nevjegyek a {
