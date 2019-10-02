@@ -6,6 +6,7 @@ MENUFILE=data/menus.lst
 genfile=${1}.html
 
 printf "<div id='menu'><ul>\n"
+printf "<li><img src='%s' alt='%s'></li>" "pict/logo-menu.png" "EKO"
 IFS="|"
 while read menu file; do
   printf "  "

@@ -28,7 +28,8 @@ TAGKEPEK!=	sed "s,.*|\(.*\),\1.jpg," data/tagok/tagok.lst
 TARGETS_MANUAL+=	${TAGKEPEK:@kep@${PICTDIR}/${kep}@}
 TARGETS_MANUAL+=	css/eko.css
 TARGETS_MANUAL+=	${PICTDIR}/favicon.ico ${PICTDIR}/logo.png \
-			${PICTDIR}/logo-tr.png
+			${PICTDIR}/logo-tr.png \
+			${PICTDIR}/logo-menu.png
 
 ${DEST_DIR}css/eko.css:	static/eko.scss
 	@mkdir -p ${DEST_DIR}css
@@ -48,6 +49,9 @@ ${DEST_DIR}${PICTDIR}/logo.png:	static/logo.png
 
 ${DEST_DIR}${PICTDIR}/logo-tr.png:	static/logo/logo-small-200px-01.png
 	@convert -alpha on -channel a -evaluate set 5% $> $@
+
+${DEST_DIR}${PICTDIR}/logo-menu.png:	static/logo/eko-logo-ff-01.png
+	@convert -resize 150 $> $@
 
 upload:
 	cat upload.lftp | lftp
