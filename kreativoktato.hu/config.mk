@@ -46,7 +46,7 @@ ${DEST_DIR}${PICTDIR}/favicon.ico:	static/logo.png
 ${DEST_DIR}${PICTDIR}/logo.png:	static/logo.png
 	@cp $> $@
 
-${DEST_DIR}${PICTDIR}/logo-tr.png:	static/logo.png
+${DEST_DIR}${PICTDIR}/logo-tr.png:	static/logo/logo-small-200px-01.png
 	@convert -alpha on -channel a -evaluate set 5% $> $@
 
 upload:
