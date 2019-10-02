@@ -96,7 +96,7 @@ body {
   color: black;
 }
 .tagnevjegy {
-  border: 1px solid black;
+  border: 2px solid black;
   border-radius: 15px 20px 30px 5px;
   box-shadow: 3px 5px #555;
 
@@ -110,7 +110,7 @@ body {
 
   font-size: 14px;
 
-  background-color: #cfcfcf;
+  background-color: rgba(20,20,20,0.25);
 }
 .tagnevjegy img {
   max-width: 64px;
