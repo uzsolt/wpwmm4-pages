@@ -1,14 +1,16 @@
 h1,h2 {
   line-height: 1.2;
+  color: #eb0144;
 }
 // ************
 // Menürendszer
 // https://www.w3schools.com/Css/css_navbar.asp
 // ************
-$menuBG:#ccc;
-$menuNormalC:black;
-$menuNormalHBG:white;
-$menuSelectedBG:#aaa;
+$menuBG:rgba(255,255,255,0.5);
+$menuNormalC:#eb0144;
+$menuNormalHBG:#c4cbed;
+$menuSelectedBG:#fde19b;
+$menuSelectedC:$menuNormalC;
 $menuWidth:200px;
 $mainMinWidth:500px;
 $mainMaxWidth:850px;
@@ -28,6 +30,10 @@ $mainMaxWidth:850px;
 
   padding-left:5px;
   padding-right:5px;
+
+  border-color:black;
+  border-right-style:inset;
+  border-top-style:outset;
 }
 #menu ul {
   list-style-type: none;
@@ -57,6 +63,7 @@ $mainMaxWidth:850px;
   border: 1px solid black;
   border-radius: 5px;
   background-color: $menuSelectedBG;
+  color: $menuSelectedC;
 }
 body {
   background-image: url("/pict/logo-tr.png");
@@ -64,6 +71,7 @@ body {
 #main {
   margin-left: $menuWidth+5px;
   padding-top: 5px;
+  padding-left: 5px;
   max-width: $mainMaxWidth;
   color: #444;
   font-size: 16px;
@@ -100,7 +108,7 @@ body {
 
   font-size: 14px;
 
-  background-color: rgba(20,20,20,0.25);
+  background-color: rgba(157, 169, 226,0.5);
 }
 .tagnevjegy img {
   max-width: 64px;
