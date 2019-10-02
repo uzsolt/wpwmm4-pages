@@ -8,4 +8,4 @@ _2_HEAD(
 _2_BODY(_SCRIPT(`menu.sh' _FILE))m4_dnl
 _2_BODY(m4_ifdef(`_outside_maindiv',`_outside_maindiv'))m4_dnl
 _LAYOUT_PRE(`<div id="main">')
-_LAYOUT_POST(`</div><div id="banner"></div>')
+_LAYOUT_POST(`</div>')

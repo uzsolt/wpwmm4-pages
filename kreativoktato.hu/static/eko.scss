@@ -12,7 +12,6 @@ $menuSelectedBG:#aaa;
 $menuWidth:200px;
 $mainMinWidth:500px;
 $mainMaxWidth:850px;
-$bannerMinWidth:200px;
 
 #menu {
   overflow: hidden;
@@ -70,15 +69,6 @@ body {
   font-size: 16px;
   line-height: 1.4;
   float: left;
-}
-#banner {
-  width: $bannerMinWidth;
-  height: 100%;
-
-  float: left;
-
-  background-image: url("/pict/logo.png");
-  background-color: red;
 }
 
 // **************
