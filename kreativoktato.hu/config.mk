@@ -50,7 +50,7 @@ ${DEST_DIR}${PICTDIR}/logo.png:	static/logo.png
 ${DEST_DIR}${PICTDIR}/logo-tr.png:	static/logo/logo-small-200px-01.png
 	@convert -alpha on -channel a -evaluate set 5% $> $@
 
-${DEST_DIR}${PICTDIR}/logo-menu.png:	static/logo/eko-logo-ff-01.png
+${DEST_DIR}${PICTDIR}/logo-menu.png:	static/logo/logo-small-200px-01.png
 	@convert -resize 150 $> $@
 
 upload:
