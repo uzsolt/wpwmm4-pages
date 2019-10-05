@@ -4,6 +4,9 @@ SRC_DIR=	src/
 DEST_DIR=	generated/
 LAYOUT_DIR=	layouts/
 
+ASSETS_DIR=	assets/
+ASSETS_CP=	rsync
+
 PICTDIR=	pict
 
 TARGETS+=	index.html \
@@ -15,6 +18,7 @@ TARGETS+=	index.html \
 		partnerek.html \
 		projektek.html \
 		publikaciok.html
+blog.html_REQ+=	scripts/blog.sh
 munkatarsak.html_REQ!=	sed "s,.*|\(.*\),data/tagok/\1.txt," data/tagok/tagok.lst
 munkatarsak.html_REQ+=	scripts/tagok.sh
 publikaciok.html_REQ!=	sed "s,.*|\(.*\),data/publikaciok/\1.csv," data/publikaciok/lista.csv
@@ -30,6 +34,14 @@ TARGETS_MANUAL+=	css/eko.css
 TARGETS_MANUAL+=	${PICTDIR}/favicon.ico ${PICTDIR}/logo.png \
 			${PICTDIR}/logo-tr.png \
 			${PICTDIR}/logo-menu.png
+
+VIRT_DIR=	virtuals/
+VIRTUALS+=	blog
+VIRTUALTEMPLATE_blog=	blog
+VIRTUALDIR_blog=	blog/
+VIRTUALOUT_blog!=	ls data/blogs/ | sed 's,\.txt$$,.html,'
+VIRTUALREQ_blog=	scripts/blogentry.sh layouts/main.m4
+VIRTUALREQRULE_blog=	C,.html,.txt,:C,^,data/blogs/,
 
 ${DEST_DIR}css/eko.css:	static/eko.scss
 	@mkdir -p ${DEST_DIR}css

@@ -154,3 +154,27 @@ body {
   width: 200px;
   display:table-cell;
 }
+
+// ***************
+// Blogbejegyzések
+// ***************
+#blogcontent {
+  text-decoration: none;
+}
+.blogtext a {
+  color: $menuNormalC;
+}
+.blogentry {
+  border: 1px black solid;
+}
+.blogtitle {
+  font-weight: bold;
+}
+.blogsubtitle {
+  font-style: italic;
+}
+.blogheadline {
+  padding: 8px;
+}
+.blogdate .blogtitle .blogsubtitle .blogheadline .blogauthor {
+}
