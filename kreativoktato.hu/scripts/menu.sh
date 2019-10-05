@@ -6,7 +6,7 @@ MENUFILE=data/menus.lst
 genfile=${1}.html
 
 printf "<div id='menu'><ul>\n"
-printf "<li><img src='%s' alt='%s'></li>" "pict/logo-menu.png" "EKO"
+printf "<li><img src='/%s' alt='%s'></li>" "pict/logo-menu.png" "EKO"
 IFS="|"
 while read menu file; do
   printf "  "
@@ -15,7 +15,7 @@ while read menu file; do
   else
     class="normal_menu"
   fi
-  printf "<li><a href='%s' class='%s'>%s</a></li>\n" \
+  printf "<li><a href='/%s' class='%s'>%s</a></li>\n" \
     "${file}" "${class}" "${menu}"
 done < ${MENUFILE}
 printf "</ul></div>\n"
