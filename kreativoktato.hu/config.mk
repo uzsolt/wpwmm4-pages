@@ -10,7 +10,6 @@ ASSETS_CP=	rsync
 PICTDIR=	pict
 
 TARGETS+=	index.html \
-		bemutatkozas.html \
 		blog.html \
 		globalis.html \
 		kapcsolat.html \
