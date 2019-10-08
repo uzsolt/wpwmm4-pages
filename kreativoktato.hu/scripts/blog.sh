@@ -17,21 +17,20 @@ tartalomjegyzek() {
   echo '<div id="blogcontent">'
   for blog in ${BLOGDIR}/*.txt; do
     bl=$(echo ${blog} | sed "s,.*/,, ; s,\.txt$,,")
-    DATUM=$(date -j -f "%y%m%d" $(echo ${bl} | cut -b 1-6) +"%Y.%m.%d.")
+    DATUM=$(date -j -f "%y%m%d" $(echo ${bl} | cut -b 1-6) +"%Y. %B %d.")
     TITLE=$(sed -n 1p ${blog})
     SUBTITLE=$(sed -n 2p ${blog})
     AUTHOR=$(sed -n 3p ${blog})
     TAGS=$(sed -n "s@;@, @g ; 4p" ${blog})
     HEADLINE=$(sed -n 5p ${blog})
     printf "  <a href='%s'><div class='blogentry'>
+    <div class='blogauthor'>%s (%s)</div>
     <div class='blogtitle'>%s</div>
     <div class='blogsubtitle'>%s</div>
     <div class='blogheadline'>%s</div>
-    <div class='blogdate'>%s</div>
-    <div class='blogauthor'>%s</div>
     <div class='blogtags'>%s</div>
   </div></a>\n" \
-       "/blog/${bl}.html" "${TITLE}" "${SUBTITLE}" "${HEADLINE}" "${DATUM}" "${AUTHOR}" "${TAGS}"
+       "/blog/${bl}.html" "${AUTHOR}" "${DATUM}" "${TITLE}" "${SUBTITLE}" "${HEADLINE}" "${TAGS}"
   done
   echo '</div>'
 }
