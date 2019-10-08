@@ -19,6 +19,28 @@ h1,h2 {
   color: $menuNormalC;
 }
 
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding-left: 5px;
+  height: 20px;
+  width: 100%;
+
+  background-color: $menuSelectedBG;
+  color: $menuNormalC;
+
+  font-weight: bold;
+  text-align: center;
+
+  border-color: black;
+  border-top-style: outset;
+}
+#footer a {
+  color: $menuNormalC;
+  text-decoration: none;
+}
+
 // ************
 // Menürendszer
 // https://www.w3schools.com/Css/css_navbar.asp

@@ -8,4 +8,4 @@ _2_HEAD(
 _2_BODY(_SCRIPT(`menu.sh' m4_ifdef(`CATEGORY',CATEGORY,_FILE)))m4_dnl
 _2_BODY(m4_ifdef(`_outside_maindiv',`_outside_maindiv'))m4_dnl
 _LAYOUT_PRE(`<div id="main">')
-_LAYOUT_POST(`</div>')
+_LAYOUT_POST(`</div><div id="footer">: &#169; Egyesület a Kreatív Oktatásért : <a href="mailto:info@kreativoktato.hu">info@kreativoktato.hu</a> :</div>')
