@@ -103,6 +103,7 @@ body {
   margin-left: $menuWidth+5px;
   padding-top: 5px;
   padding-left: 5px;
+  padding-bottom: 20px;
   max-width: $mainMaxWidth;
   color: $mainTextColor;
   font-size: 16px;
@@ -208,6 +209,7 @@ body {
 }
 .blogsubtitle {
   font-style: italic;
+  color: $menuNormalC;
 }
 .blogheadline {
   padding: 8px;
