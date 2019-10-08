@@ -1,3 +1,4 @@
+$footerHeight: 20px;
 $mainTextColor: #444;
 $menuBG:rgba(255,255,255,0.5);
 $menuNormalC:#eb0144;
@@ -25,7 +26,7 @@ h1,h2 {
   left: 0;
   bottom: 0;
   padding-left: 5px;
-  height: 20px;
+  height: $footerHeight;
   width: 100%;
 
   background-color: $menuSelectedBG;
@@ -103,7 +104,7 @@ body {
   margin-left: $menuWidth+5px;
   padding-top: 5px;
   padding-left: 5px;
-  padding-bottom: 20px;
+  padding-bottom: $footerHeight;
   max-width: $mainMaxWidth;
   color: $mainTextColor;
   font-size: 16px;
