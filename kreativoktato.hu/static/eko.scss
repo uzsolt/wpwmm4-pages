@@ -7,6 +7,7 @@ $menuSelectedC:$menuNormalC;
 $menuWidth:200px;
 $mainMinWidth:500px;
 $mainMaxWidth:850px;
+$nevjegyBG:rgba(157, 169, 226,0.5);
 
 // ***************
 // Alapbeállítások
@@ -123,22 +124,24 @@ body {
   text-decoration: none;
   color: black;
 }
-.tagnevjegy {
+%tagnevjegy {
   border: 2px solid black;
   border-radius: 15px 20px 30px 5px;
   box-shadow: 3px 5px #555;
+  padding: 10px;
 
   float: left;
 
-  width: 300px;
-  height: 100px;
-  padding: 10px;
-  margin-bottom: 10px;
-  margin-right: 10px;
-
   font-size: 14px;
 
-  background-color: rgba(157, 169, 226,0.5);
+  background-color: $nevjegyBG;
+}
+.tagnevjegy {
+  @extend %tagnevjegy;
+  width: 300px;
+  height: 100px;
+  margin-bottom: 10px;
+  margin-right: 10px;
 }
 .tagnevjegy img {
   max-width: 64px;
@@ -196,16 +199,17 @@ body {
   max-height: 25em;
 }
 .blogentry {
-  border: 1px black solid;
+  @extend %tagnevjegy;
+  width: 100%;
 }
 .blogtitle {
   font-weight: bold;
+  color: $menuNormalC;
 }
 .blogsubtitle {
   font-style: italic;
 }
 .blogheadline {
   padding: 8px;
-}
-.blogdate .blogtitle .blogsubtitle .blogheadline .blogauthor {
+  font-weight: bold;
 }
