@@ -1,4 +1,4 @@
-m4_define(`eko_footer',`<div id="footer">: &#169; Egyesület a Kreatív Oktatásért : <a href="mailto:info@kreativoktato.hu">info@kreativoktato.hu</a> :</div>')m4_dnl
+m4_define(`eko_footer',`<div id="footer">:: &#169; Egyesület a Kreatív Oktatásért :: <a href="mailto:info@kreativoktato.hu">info@kreativoktato.hu</a> ::</div>')m4_dnl
 m4_define(`LANG',`hu')m4_dnl
 _2_HEAD(
   _CHARSET(`utf-8')
