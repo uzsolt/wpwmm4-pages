@@ -193,29 +193,49 @@ body {
 // ***************
 // Blogbejegyzések
 // ***************
-#blogcontent a {
+#blogcontent {
+  padding-left: $menuWidth+10px;
+  padding-right: 10px;
+  overflow-x: auto;
+}
+#blogtoc {
+  width:100%;
+  border-collapse: collapse;
+}
+#blogtoc th {
+  height: 2em;
+  background-color: $menuSelectedBG;
+}
+#blogtoc, td {
+  border-bottom: 1px solid black;
+}
+#blogtoc td {
+  padding-left: 5px;
+}
+#blogtoc tr:nth-child(even) {
+  background-color:$nevjegyBG;
+}
+#blogtoc tr:hover {
+  background-color:$menuNormalHBG;
+}
+.bcdate {
+  width:10%;
+  text-align: center;
+}
+.bctitle {
+  width:20%;
+}
+.bcauthor {
+  width:15%;
+  text-align: center;
+}
+.bctags {
+  width:10%;
+}
+.bctitle a {
   text-decoration: none;
-  color: $mainTextColor;
+  color: $menuNormalC;
 }
 .blogtext img {
   max-height: 25em;
-}
-.blogentry {
-  @extend %tagnevjegy;
-  width: 100%;
-}
-.blogtitle {
-  font-weight: bold;
-  color: $menuNormalC;
-}
-.blogsubtitle {
-  font-style: italic;
-  color: $menuNormalC;
-}
-.blogheadline {
-  padding: 8px;
-  font-weight: bold;
-}
-.blogauthor {
-  font-weight: bold;
 }

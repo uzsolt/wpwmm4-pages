@@ -14,25 +14,38 @@ taglist() {
 }
 
 tartalomjegyzek() {
-  echo '<div id="blogcontent">'
+  cat << EOF
+<table id="blogtoc">
+<thead>
+  <tr>
+    <th>Közzététel</th>
+    <th>Cím</th>
+    <th>Szerző</th>
+    <th>Cimkék</th>
+  </tr>
+</thead>
+<tbody>
+EOF
   for blog in ${BLOGDIR}/*.txt; do
     bl=$(echo ${blog} | sed "s,.*/,, ; s,\.txt$,,")
-    DATUM=$(date -j -f "%y%m%d" $(echo ${bl} | cut -b 1-6) +"%Y. %B %d.")
+    DATUM=$(date -j -f "%y%m%d" $(echo ${bl} | cut -b 1-6) +"%Y.%m.%d.")
     TITLE=$(sed -n 1p ${blog})
     SUBTITLE=$(sed -n 2p ${blog})
     AUTHOR=$(sed -n 3p ${blog})
     TAGS=$(sed -n "s@;@, @g ; 4p" ${blog})
     HEADLINE=$(sed -n 5p ${blog})
-    printf "  <a href='%s'><div class='blogentry'>
-    <div class='blogauthor'>%s (%s)</div>
-    <div class='blogtitle'>%s</div>
-    <div class='blogsubtitle'>%s</div>
-    <div class='blogheadline'>%s</div>
-    <div class='blogtags'>%s</div>
-  </div></a>\n" \
-       "/blog/${bl}.html" "${AUTHOR}" "${DATUM}" "${TITLE}" "${SUBTITLE}" "${HEADLINE}" "${TAGS}"
+    printf "  <tr>
+    <td class='bcdate'>%s</td>
+    <td class='bctitle'><a href='%s'>%s</a></td>
+    <td class='bcauthor'>%s</td>
+    <td class='bctags'>%s</td>
+  </tr>\n" \
+      "${DATUM}" "/blog/${bl}.html" "${TITLE}" "${AUTHOR}" "${TAGS}"
   done
-  echo '</div>'
+  cat << EOF
+</tbody>
+</table>
+EOF
 }
 
 tartalomjegyzek
