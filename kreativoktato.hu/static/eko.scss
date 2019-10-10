@@ -225,16 +225,21 @@ body {
 .bctitle {
   width:20%;
 }
+.bctitle a {
+  text-decoration: none;
+  color: $menuNormalC;
+  font-weight: bold;
+}
+.bctitle .bcheadline {
+  color: black;
+  font-weight: normal;
+}
 .bcauthor {
   width:15%;
   text-align: center;
 }
 .bctags {
   width:10%;
-}
-.bctitle a {
-  text-decoration: none;
-  color: $menuNormalC;
 }
 .blogtext img {
   max-height: 25em;

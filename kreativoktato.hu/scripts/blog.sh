@@ -18,9 +18,9 @@ tartalomjegyzek() {
 <table id="blogtoc">
 <thead>
   <tr>
-    <th>Közzététel</th>
     <th>Cím</th>
     <th>Szerző</th>
+    <th>Közzététel</th>
     <th>Cimkék</th>
   </tr>
 </thead>
@@ -35,12 +35,16 @@ EOF
     TAGS=$(sed -n "s@;@, @g ; 4p" ${blog})
     HEADLINE=$(sed -n 5p ${blog})
     printf "  <tr>
-    <td class='bcdate'>%s</td>
-    <td class='bctitle'><a href='%s'>%s</a></td>
+    <td class='bctitle'><a href='%s'><div class='bctitlediv'>%s<br><span class='bcheadline'>%s</span></div></a></td>
     <td class='bcauthor'>%s</td>
+    <td class='bcdate'>%s</td>
     <td class='bctags'>%s</td>
   </tr>\n" \
-      "${DATUM}" "/blog/${bl}.html" "${TITLE}" "${AUTHOR}" "${TAGS}"
+      "/blog/${bl}.html" "${TITLE}" \
+      "${HEADLINE}" \
+      "${AUTHOR}" \
+      "${DATUM}" \
+      "${TAGS}"
   done
   cat << EOF
 </tbody>
