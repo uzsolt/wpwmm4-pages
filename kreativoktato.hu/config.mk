@@ -25,7 +25,7 @@ publikaciok.html_REQ+=	scripts/publikaciok.sh data/publikaciok/lista.csv
 .for t in ${TARGETS}
 ${t}_REQ+=	layouts/main.m4
 .endfor
-GREQ=	scripts/menu.sh
+GREQ=	scripts/menu.sh include/base.m4
 
 TAGKEPEK!=	sed "s,.*|\(.*\),\1.jpg," data/tagok/tagok.lst
 TARGETS_MANUAL+=	${TAGKEPEK:@kep@${PICTDIR}/${kep}@}
