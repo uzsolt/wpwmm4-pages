@@ -104,24 +104,24 @@ dt {
 body {
   background-image: url("/pict/logo-tr.png");
 }
-#main {
+%base {
   margin-left: $menuWidth+$menuDelta;
   padding-bottom: $footerHeight;
-  max-width: $mainMaxWidth;
   color: $mainTextColor;
   font-size: 1.1em;
   line-height: 1.4;
   float: left;
+}
+#main {
+  @extend %base;
+  max-width: $mainMaxWidth;
 }
 
 // **************
 // Bemutatkozások
 // **************
 #mt_nevjegyek {
-  margin-left: $menuWidth+$menuDelta;
-  padding-left: 10px;
-  padding-top: 10px;
-  padding-bottom: 5px;
+  @extend %base;
   overflow: hidden;
 }
 #mt_nevjegyek a {
