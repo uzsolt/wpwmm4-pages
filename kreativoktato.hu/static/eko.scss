@@ -5,7 +5,8 @@ $menuNormalC:#eb0144;
 $menuNormalHBG:#c4cbed;
 $menuSelectedBG:#fde19b;
 $menuSelectedC:$menuNormalC;
-$menuWidth:200px;
+$menuWidth:15em;
+$menuDelta: 1em;
 $mainMinWidth:500px;
 $mainMaxWidth:850px;
 $nevjegyBG:rgba(157, 169, 226,0.5);
@@ -78,12 +79,12 @@ dt {
 %normal_menu {
   display: block;
   text-align: center;
-  padding: 14px 16px;
-  height: 100%;
+  padding: 1em;
 }
 %normal_menu_href {
   color:  $menuNormalC;
   text-decoration: none;
+  font-size: 1em;
 }
 .normal_menu {
   @extend %normal_menu;
@@ -95,8 +96,8 @@ dt {
 .selected_menu {
   @extend %normal_menu;
   @extend %normal_menu_href;
-  border: 1px solid black;
-  border-radius: 5px;
+  border: 0.1em solid black;
+  border-radius: 0.5em;
   background-color: $menuSelectedBG;
   color: $menuSelectedC;
 }
@@ -104,7 +105,7 @@ body {
   background-image: url("/pict/logo-tr.png");
 }
 #main {
-  margin-left: $menuWidth+5px;
+  margin-left: $menuWidth+$menuDelta;
   padding-top: 5px;
   padding-left: 5px;
   padding-bottom: $footerHeight;
@@ -119,7 +120,7 @@ body {
 // Bemutatkozások
 // **************
 #mt_nevjegyek {
-  margin-left: $menuWidth+5px;
+  margin-left: $menuWidth+$menuDelta;
   padding-left: 10px;
   padding-top: 10px;
   padding-bottom: 5px;
@@ -197,7 +198,7 @@ body {
 // Blogbejegyzések
 // ***************
 #blogcontent {
-  padding-left: $menuWidth+10px;
+  padding-left: $menuWidth+$menuDelta;
   padding-right: 10px;
   overflow-x: auto;
 }
