@@ -20,6 +20,9 @@ h1,h2 {
 #main a {
   color: $menuNormalC;
 }
+dt {
+  font-weight: bold;
+}
 
 #footer {
   position: fixed;
@@ -107,7 +110,7 @@ body {
   padding-bottom: $footerHeight;
   max-width: $mainMaxWidth;
   color: $mainTextColor;
-  font-size: 16px;
+  font-size: 1.1em;
   line-height: 1.4;
   float: left;
 }
@@ -134,7 +137,7 @@ body {
 
   float: left;
 
-  font-size: 14px;
+  font-size: 1em;
 
   background-color: $nevjegyBG;
 }
@@ -176,7 +179,7 @@ body {
 }
 .tag .tagnev {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.2em;
   line-height: 1.2;
 }
 .tag .tagleiras {
