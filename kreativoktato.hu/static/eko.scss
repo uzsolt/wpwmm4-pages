@@ -1,4 +1,4 @@
-$footerHeight: 20px;
+$footerHeight: 3ex;
 $mainTextColor: #444;
 $menuBG:rgba(255,255,255,0.5);
 $menuNormalC:#eb0144;
@@ -28,8 +28,8 @@ dt {
   position: fixed;
   left: 0;
   bottom: 0;
-  padding-left: 5px;
   height: $footerHeight;
+  line-height: $footerHeight;
   width: 100%;
 
   background-color: $menuSelectedBG;
