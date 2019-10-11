@@ -76,6 +76,11 @@ dt {
   margin: 0;
   padding: 0;
 }
+@media only screen and (max-height:600px) {
+  #menu img {
+    height: 0;
+  }
+}
 %normal_menu {
   display: block;
   text-align: center;
