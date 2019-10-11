@@ -21,9 +21,10 @@ blog.html_REQ+=	scripts/blog.sh
 munkatarsak.html_REQ!=	sed "s,.*|\(.*\),data/tagok/\1.txt," data/tagok/tagok.lst
 munkatarsak.html_REQ+=	scripts/tagok.sh
 publikaciok.html_REQ!=	sed "s,.*|\(.*\),data/publikaciok/\1.csv," data/publikaciok/lista.csv
-publikaciok.html_REQ+=	scripts/publikaciok.sh data/publikaciok/lista.csv
+publikaciok.html_REQ+=	layouts/munkatarsak.m4 scripts/publikaciok.sh data/publikaciok/lista.csv
 .for t in ${TARGETS}
-${t}_REQ+=	layouts/main.m4
+req!=	sed -n '/_LAYOUT/ s,_LAYOUT(.\(.*\).).*,\1,p' src/${t:R}.m4
+${t}_REQ+=	${LAYOUT_DIR}${req}
 .endfor
 GREQ=	scripts/menu.sh include/base.m4
 
