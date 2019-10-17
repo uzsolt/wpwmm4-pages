@@ -28,7 +28,7 @@ publikaciok.html_REQ+=	layouts/munkatarsak.m4 scripts/publikaciok.sh data/publik
 req!=	sed -n '/_LAYOUT/ s,_LAYOUT(.\(.*\).).*,\1,p' src/${t:R}.m4
 ${t}_REQ+=	${LAYOUT_DIR}${req}
 .endfor
-GREQ=	scripts/menu.sh include/base.m4
+GREQ=	scripts/menu.sh include/base.m4 data/menus.lst
 
 TAGKEPEK!=	sed "s,.*|\(.*\),\1.jpg," data/tagok/tagok.lst
 TARGETS_MANUAL+=	${TAGKEPEK:@kep@${PICTDIR}/${kep}@}
