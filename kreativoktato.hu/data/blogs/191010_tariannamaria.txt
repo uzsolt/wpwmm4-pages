@@ -13,6 +13,7 @@ az <em>X</em>, <em>Y</em> és <em>Z</em> (és néha az <em>alfa</em>) generáci�
 az internettel és okoseszközökkel való kapcsolatukról.
 Számomra az alábbi 4 tény volt különösen meglepő, elgondolkodtató.</p>
 <img src="/pict/blog/191010_01.jpg" alt="fotó"/>
+<p><em>Kép forrása: <a href=https://unsplash.com/>unsplash.com</a></em></p>
 <h3>#1 Okoseszközök használói</h3>
 <p>Hihetetlen számomra az, hogy milyen ütemben fejlődik az okostelefonok és
 okoseszközök világa és hogy ezek bárki számára elérhetők. A statisztikai adatok
