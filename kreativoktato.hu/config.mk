@@ -5,7 +5,7 @@ DEST_DIR=	generated/
 LAYOUT_DIR=	layouts/
 
 ASSETS_DIR=	assets/
-ASSETS_CP=	rsync
+ASSETS_CP=	rsync -a
 
 PICTDIR=	pict
 
@@ -18,6 +18,8 @@ TARGETS+=	index.html \
 		projektek.html \
 		publikaciok.html
 blog.html_REQ+=	scripts/blog.sh
+blogbejegyzesek!=	echo data/blogs/*
+blog.html_REQ+=	${blogbejegyzesek}
 munkatarsak.html_REQ!=	sed "s,.*|\(.*\),data/tagok/\1.txt," data/tagok/tagok.lst
 munkatarsak.html_REQ+=	scripts/tagok.sh
 publikaciok.html_REQ!=	sed "s,.*|\(.*\),data/publikaciok/\1.csv," data/publikaciok/lista.csv

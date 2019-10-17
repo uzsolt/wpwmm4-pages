@@ -14,7 +14,7 @@ $nevjegyBG:rgba(157, 169, 226,0.5);
 // ***************
 // Alapbeállítások
 // ***************
-h1,h2 {
+h1,h2,h3 {
   line-height: 1.2;
   color: $menuNormalC;
 }
@@ -77,8 +77,8 @@ dt {
   padding: 0;
 }
 @media only screen and (max-height:600px) {
-  #menu img {
-    height: 0;
+  #menu {
+    display: none;
   }
 }
 %normal_menu {
