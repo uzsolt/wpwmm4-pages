@@ -12,6 +12,7 @@ PICTDIR=	pict
 TARGETS+=	index.html \
 		blog.html \
 		globalis.html \
+		jogyakorlat.html \
 		kapcsolat.html \
 		munkatarsak.html \
 		partnerek.html \
