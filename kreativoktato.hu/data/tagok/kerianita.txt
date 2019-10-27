@@ -1,15 +1,10 @@
 közgazdász, bölcsész, szakfordító
 az EKO alapító tagja, alelnöke
-<p>Képzettségeit a Szegedi Tudományegyetemen szerezte:</p>
-<ul>
-<li>anglisztika szakon 2012-ben,</li>
-<li>marketing mesterképzésen 2015-ben,</li>
-<li>jogi szakfordító képzésen 2016-ban</li>
-</ul> végzett.
-<p>Jelenleg doktorjelöltként és tanársegédként tevékenykedik a Szegedi
-Tudományegyetem Gazdaságtudományi Karán, <em>Marketinget</em> és <em>Piackutatást</em>
-oktat magyar és külföldi hallgatók számára, valamint
-<em>Non-business marketing</em>et tanít magyar hallgatóknak.</p>
+<p>elenleg doktorjelöltként és tanársegédként dolgozik a
+Szegedi Tudományegyetem Gazdaságtudományi Karán,
+ahol <em>Marketing</em>et és <em>Piackutatás</em>t oktat
+magyar és külföldi hallgatók számára,
+valamint <em>Non-business marketing</em>et tanít magyar hallgatóknak.</p>
 <p>Kutatási területe a külföldi
 hallgatók elégedettségének és lojalitásának feltárása.</p>
 <p>Az Új Nemzeti Kiválóság Program keretében a co-creation jelenséget és annak
