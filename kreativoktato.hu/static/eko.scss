@@ -10,6 +10,7 @@ $menuDelta: 0.5em;
 $mainMinWidth:500px;
 $mainMaxWidth:850px;
 $nevjegyBG:rgba(157, 169, 226,0.5);
+$tableCol1: #ededed;
 
 // ***************
 // Alapbeállítások
@@ -220,7 +221,7 @@ body {
   padding-left: 5px;
 }
 #blogtoc tr:nth-child(even) {
-  background-color:$nevjegyBG;
+  background-color:$tableCol1;
 }
 #blogtoc tr:hover {
   background-color:$menuNormalHBG;
