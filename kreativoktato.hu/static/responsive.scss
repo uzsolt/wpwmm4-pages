@@ -37,3 +37,12 @@
 
 }
 
+@media only screen and (max-height:25em) {
+  #menu img {
+    display:none;
+  }
+  .normal_menu, .selected_menu {
+    font-size: 0.7em;
+    padding: 0.5em;
+  }
+}
