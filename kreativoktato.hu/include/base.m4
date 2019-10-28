@@ -4,5 +4,6 @@ _2_HEAD(
   _CHARSET(`utf-8')
   _CSS(`/css/eko.css')
   <link rel='shortcut icon' type="image/ico" href="/pict/favicon.ico"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 )m4_dnl
 _2_BODY(_SCRIPT(`menu.sh' m4_ifdef(`CATEGORY',CATEGORY,_FILE)))m4_dnl

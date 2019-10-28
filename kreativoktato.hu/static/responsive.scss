@@ -3,59 +3,32 @@
   display: none;
 }
 
-@media only screen and (max-height:1em) {
+// https://www.w3schools.com/Css/css_dropdowns.asp
+@media only screen and (max-width:($mainWidthMult)*$menuWidth) {
 
-  // https://www.w3schools.com/Css/css_dropdowns.asp
-  #menubtn {
-    // .dropbtn
-    display: inline-block;
-    cursor: pointer;
-    color: $menuSelectedC;
-    background-color: $menuSelectedBG;
-    min-width: 120px;
-    padding: 8px;
-    border: none;
-    text-align: center;
-    font-weight: bold;
-  }
   #menu {
-    // .dropdown
-    position: relative;
-    display: inline-block;
-    background-color: white;
-    border: none;
-    width: 500px;
+    width:100%;
+    position:relative;
+    background-color:$tableCol1;
+    border:none;
+    font-size:1em;
   }
-  #menucontent {
-    // .dropdown-content
-    display: none;
-    position: absolute;
-    min-width: 160px;
-    z-index: 1;
-    border: none;
-  }
-  #menucontent a {
-    // .dropdown-content a
-    display: flex;
-    background-color: $menuBG;
-  }
-  #menu:hover #menucontent {
-    display: inline;
-    z-index: 1;
-  }
-  #menu:hover #menubtn {
-  }
+
   #menu img {
     display: none;
   }
 
-  #main {
-    margin-left: 0;
-    z-index:0;
+  #menu a {
+    border: 0.1em solid black;
+    border-radius: 0.3em;
+    padding-top:0.5em;
   }
-  #mt_nevjegyek {
+
+  #main, #mt_nevjegyek, #blogcontent {
     margin-left: 0;
-    z-index: 0;
+    float: left;
+    width:100%;
+    position:relative;
   }
 
 }

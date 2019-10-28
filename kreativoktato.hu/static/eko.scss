@@ -6,9 +6,9 @@ $menuNormalHBG:#c4cbed;
 $menuSelectedBG:#fde19b;
 $menuSelectedC:$menuNormalC;
 $menuWidth:15em;
-$menuDelta: 0.5em;
-$mainMinWidth:500px;
-$mainMaxWidth:850px;
+$menuDelta:0.5em; 
+$mainWidthMult:3;
+$mainMaxWidth:$mainWidthMult*$menuWidth;
 $nevjegyBG:rgba(157, 169, 226,0.5);
 $tableCol1: #ededed;
 
@@ -146,8 +146,8 @@ body {
 }
 .tagnevjegy {
   @extend %tagnevjegy;
-  width: 300px;
-  height: 100px;
+  width: 20em;
+  height: 7em;
   margin-bottom: 10px;
   margin-right: 10px;
 }
@@ -203,7 +203,7 @@ body {
 // Blogbejegyzések
 // ***************
 #blogcontent {
-  padding-left: $menuWidth+$menuDelta;
+  margin-left: $menuWidth+$menuDelta;
   padding-right: 10px;
   overflow-x: auto;
 }
@@ -251,7 +251,7 @@ body {
   width:10%;
 }
 .blogtext img {
-  max-height: 25em;
+  max-width: 100%;
 }
 
 @import "responsive.scss";
