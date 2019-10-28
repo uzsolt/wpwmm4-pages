@@ -26,7 +26,7 @@ tartalomjegyzek() {
 </thead>
 <tbody>
 EOF
-  for blog in ${BLOGDIR}/*.txt; do
+  for blog in $(ls ${BLOGDIR}/*.txt | sort -r); do
     bl=$(echo ${blog} | sed "s,.*/,, ; s,\.txt$,,")
     DATUM=$(date -j -f "%y%m%d" $(echo ${bl} | cut -b 1-6) +"%Y.%m.%d.")
     TITLE=$(sed -n 1p ${blog})
