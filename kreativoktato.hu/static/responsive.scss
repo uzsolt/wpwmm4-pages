@@ -1,0 +1,62 @@
+// Reszponzív kiegészítések
+#menubtn {
+  display: none;
+}
+
+@media only screen and (max-height:1em) {
+
+  // https://www.w3schools.com/Css/css_dropdowns.asp
+  #menubtn {
+    // .dropbtn
+    display: inline-block;
+    cursor: pointer;
+    color: $menuSelectedC;
+    background-color: $menuSelectedBG;
+    min-width: 120px;
+    padding: 8px;
+    border: none;
+    text-align: center;
+    font-weight: bold;
+  }
+  #menu {
+    // .dropdown
+    position: relative;
+    display: inline-block;
+    background-color: white;
+    border: none;
+    width: 500px;
+  }
+  #menucontent {
+    // .dropdown-content
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+    border: none;
+  }
+  #menucontent a {
+    // .dropdown-content a
+    display: flex;
+    background-color: $menuBG;
+  }
+  #menu:hover #menucontent {
+    display: inline;
+    z-index: 1;
+  }
+  #menu:hover #menubtn {
+  }
+  #menu img {
+    display: none;
+  }
+
+  #main {
+    margin-left: 0;
+    z-index:0;
+  }
+  #mt_nevjegyek {
+    margin-left: 0;
+    z-index: 0;
+  }
+
+}
+

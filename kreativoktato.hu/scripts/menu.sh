@@ -5,17 +5,18 @@
 MENUFILE=data/menus.lst
 genfile=${1}.html
 
-printf "<div id='menu'><ul>\n"
-printf "<li><img src='/%s' alt='%s'></li>" "pict/logo-menu.png" "EKO"
+printf "<div id='menu'>\n"
+printf "  <div id='menubtn'>MENÜ</div>\n"
+printf "  <div id='menucontent'>\n"
+printf "    <img src='/%s' alt='%s'>\n" "pict/logo-menu.png" "EKO"
 IFS="|"
 while read menu file; do
-  printf "  "
   if [ "${genfile}" = "${file}" ]; then
     class="selected_menu"
   else
     class="normal_menu"
   fi
-  printf "<li><a href='/%s' class='%s'>%s</a></li>\n" \
+  printf "    <a href='/%s' class='%s'>%s</a>\n" \
     "${file}" "${class}" "${menu}"
 done < ${MENUFILE}
-printf "</ul></div>\n"
+printf "  </div>\n</div>\n"

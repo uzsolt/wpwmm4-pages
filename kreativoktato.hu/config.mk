@@ -46,9 +46,9 @@ VIRTUALOUT_blog!=	ls data/blogs/ | sed 's,\.txt$$,.html,'
 VIRTUALREQ_blog=	scripts/blogentry.sh layouts/main.m4
 VIRTUALREQRULE_blog=	C,.html,.txt,:C,^,data/blogs/,
 
-${DEST_DIR}css/eko.css:	static/eko.scss
+${DEST_DIR}css/eko.css:	static/eko.scss static/responsive.scss
 	@mkdir -p ${DEST_DIR}css
-	sassc -t compressed $> $@
+	sassc -t compressed ${>:[1]} $@
 
 .for kep in ${TAGKEPEK}
 ${DEST_DIR}${PICTDIR}/${kep}:	static/tagok/${kep}
