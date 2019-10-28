@@ -3,6 +3,6 @@ _2_HEAD(_TITLE(`EKO - Munkatársaink'))
 _2_BODY(
   m4_esyscmd(`scripts/tagok.sh nevjegy')
   <div id="main">
-  m4_esyscmd(`scripts/tagok.sh bemutatkozas')
+  `m4_esyscmd(`scripts/tagok.sh bemutatkozas')'
   </div>
 )
