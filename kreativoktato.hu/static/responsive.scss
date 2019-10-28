@@ -6,16 +6,16 @@
 // https://www.w3schools.com/Css/css_dropdowns.asp
 @media only screen and (max-width:($mainWidthMult)*$menuWidth) {
 
-  body {
-    background-image: url("/pict/logo-tr0.png");
-  }
-
   #menu {
     width:100%;
     position:relative;
-    background-color:$tableCol1;
     border:none;
     font-size:1em;
+
+    background-image: url("/pict/logo-tr0.png");
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-position: 2% 15%;
   }
 
   #menu img {
