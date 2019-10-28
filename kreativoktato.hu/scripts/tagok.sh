@@ -10,7 +10,7 @@ IFS="|"
 print_nevjegyek() {
   printf "<div id='%s'><h1>Munkatársaink</h1>
   <h2>Névjegyek</h2>\n" "${ID_NEVJEGYEK}"
-  while read nev file; do
+  while read nev file email; do
     tagfile="${TAGOKDIR}/${file}.txt"
     titulus="`head -n1 ${tagfile}`"
     ekorole="`sed -n "2p" ${tagfile}`"
@@ -19,10 +19,11 @@ print_nevjegyek() {
       <span class='tagnevjegy_nev'>\`%s\'</span><br>\n\
       <span class='tagnevjegy_vegz'>\`%s\'</span><br>\n\
       <span class='tagnevjegy_eko'>\`%s\'</span><br>\n\
+      <span class='tagnevjegy_email'>%s</span><br>\n\
     </div></a>\n" \
       "#${MT_PREFIX}${file}" \
       "${file}.jpg" \
-      "${nev}" "${titulus}" "${ekorole}"
+      "${nev}" "${titulus}" "${ekorole}" "${email}"
   done < ${TAGOKLISTA}
   printf "</div>\n"
 }
@@ -30,12 +31,13 @@ print_nevjegyek() {
 print_bemutatkozasok() {
   printf "<div id='tagok'><h2>Bemutatkozások</h2>\n"
   hrefvissza="`printf "    <a href='#%s'><div class='hrefvissza'>fel</div></a>\n" "${ID_NEVJEGYEK}"`"
-  while read nev file; do
+  while read nev file email; do
     tagfile="${TAGOKDIR}/${file}.txt"
     printf "  <div id='%s%s' class='tag'>\n" "${MT_PREFIX}" "${file}"
     printf "    <div class='tagimg'><img src='pict/%s' alt='%s'/></div>\n" "${file}.jpg" "${nev} fényképe"
     printf "    <div class='tagleiras'>\n"
     printf "    <span class='tagnev'>%s (%s)</span><br>\n" "${nev}" "`head -n1 ${tagfile}`"
+    printf "    <span class='tagnev_email'><a href=\"mailto:%s\">%s</a></span>" "${email}" "${email}"
     printf "    <p><em>%s</em></p>\n" "`sed -n '2p' ${tagfile}`"
     sed '1,2d ; s,^,    ,' ${tagfile}
     printf "    </div>\n"

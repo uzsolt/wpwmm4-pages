@@ -21,7 +21,7 @@ TARGETS+=	index.html \
 blog.html_REQ+=	scripts/blog.sh
 blogbejegyzesek!=	echo data/blogs/*
 blog.html_REQ+=	${blogbejegyzesek}
-munkatarsak.html_REQ!=	sed "s,.*|\(.*\),data/tagok/\1.txt," data/tagok/tagok.lst
+munkatarsak.html_REQ!=	sed "s,.*|\(.*\)|.*,data/tagok/\1.txt," data/tagok/tagok.lst
 munkatarsak.html_REQ+=	scripts/tagok.sh
 publikaciok.html_REQ!=	sed "s,.*|\(.*\),data/publikaciok/\1.csv," data/publikaciok/lista.csv
 publikaciok.html_REQ+=	layouts/munkatarsak.m4 scripts/publikaciok.sh data/publikaciok/lista.csv
@@ -31,7 +31,7 @@ ${t}_REQ+=	${LAYOUT_DIR}${req}
 .endfor
 GREQ=	scripts/menu.sh include/base.m4 data/menus.lst
 
-TAGKEPEK!=	sed "s,.*|\(.*\),\1.jpg," data/tagok/tagok.lst
+TAGKEPEK!=	sed "s,.*|\(.*\)|.*,\1.jpg," data/tagok/tagok.lst
 TARGETS_MANUAL+=	${TAGKEPEK:@kep@${PICTDIR}/${kep}@}
 TARGETS_MANUAL+=	css/eko.css
 TARGETS_MANUAL+=	${PICTDIR}/favicon.ico ${PICTDIR}/logo.png \
