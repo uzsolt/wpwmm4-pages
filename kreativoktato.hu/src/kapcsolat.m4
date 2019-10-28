@@ -6,5 +6,9 @@ _2_HEAD(_TITLE(`EKO - Kapcsolat'))
   <dt>Nyilvántartási szám:</dt><dd>06-02-0003407</dd>
   <dt>Adószám:</dt><dd>19165468-1-06</dd>
   <dt>E-mail:</dt><dd><a href="mailto:info@kreativoktato.hu">info@kreativoktato.hu</a></dd>
-  <dt>Facebook:</dt><dd><a href="https://www.facebook.com/kreativ.oktato">https://www.facebook.com/kreativ.oktato</a></dd>
+  <dt>Közösségi oldalak:</dt>
+    <dd>
+      <a href="https://www.facebook.com/kreativ.oktato"><img src="pict/facebook.png" alt="Facebook"/></a>
+      <a href="https://www.linkedin.com/"><img src="pict/linkedin.svg" alt="LinkedIn"/></a>
+    </dd>
 </dl>
