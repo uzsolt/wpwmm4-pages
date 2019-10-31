@@ -9,6 +9,6 @@ _2_HEAD(_TITLE(`EKO - Kapcsolat'))
   <dt>Közösségi oldalak:</dt>
     <dd>
       <a href="https://www.facebook.com/kreativ.oktato"><img src="pict/facebook.png" alt="Facebook"/></a>
-      <a href="https://www.linkedin.com/"><img src="pict/linkedin.svg" alt="LinkedIn"/></a>
+      <a href="https://www.linkedin.com/company/association-for-creative-education"><img src="pict/linkedin.svg" alt="LinkedIn"/></a>
     </dd>
 </dl>
