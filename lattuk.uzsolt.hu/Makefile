@@ -6,6 +6,7 @@ all:	${HTMLRULES:H:@x@${WWWDIR}/${x}@} ${ICONS:@ico@${WWWDIR}/${ico}@}
 
 .for htmlr in ${HTMLRULES}
 ${WWWDIR}/${htmlr:H}:	generate.sh lattuk.css lista.csv
+	@echo Generating $@
 	@./generate.sh ${htmlr:T} > $@
 .endfor
 
