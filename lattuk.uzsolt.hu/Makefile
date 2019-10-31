@@ -1,11 +1,13 @@
 WWWDIR=		/usr/local/www/lattuk
-INDEXHTML=	${WWWDIR}/index.html
+HTMLRULES!=	awk -F ':' '{print $$1 "/" $$2}' orders.csv
 ICONS=		favicon.ico mafab.jpg port.png
 
-all:	${INDEXHTML} ${ICONS:@ico@${WWWDIR}/${ico}@}
+all:	${HTMLRULES:H:@x@${WWWDIR}/${x}@} ${ICONS:@ico@${WWWDIR}/${ico}@}
 
-${INDEXHTML}:	generate.sh lattuk.css lista.csv
-	./generate.sh > $@
+.for htmlr in ${HTMLRULES}
+${WWWDIR}/${htmlr:H}:	generate.sh lattuk.css lista.csv
+	@./generate.sh ${htmlr:T} > $@
+.endfor
 
 .for ico in ${ICONS}
 ${WWWDIR}/${ico}:	${ico}

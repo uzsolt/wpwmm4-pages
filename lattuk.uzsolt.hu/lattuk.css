@@ -37,3 +37,19 @@ img {
 .tdimg {
   text-align:center;
 }
+
+#ordernav a {
+  display: inline-block;
+  padding: 5px;
+  text-decoration: none;
+  font-size:1.2em;
+}
+
+.normal {
+  color: grey;
+}
+
+.current {
+  color: #6b6b47;
+  font-weight: bold;
+}

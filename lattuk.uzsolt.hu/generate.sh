@@ -2,8 +2,12 @@
 
 # $Id$
 
+# $1 - melyik rendező algoritmus kell
+
 PORTBEGIN=https://port.hu/adatlap/film/tv/
 MAFABBEGIN=https://www.mafab.hu/movies/
+
+sortalgorithm=$(awk -F ':' '{print $2}' orders.csv | tr '\n' ' ')
 
 print_html_header() {
   cat << EOF
@@ -19,6 +23,15 @@ $(cat lattuk.css)
 <body>
 <h1>Filmek, amiket már láttunk</h1>
 EOF
+}
+
+print_navbar() {
+  echo '<div id="ordernav">'
+  awk -F ':' -v "curralg=$curralg" '{
+    class=$2==curralg?"current":"normal"
+    printf "<a href=\"/%s\" class=\"%s\">%s</a>\n", $1, class, $3
+  }' orders.csv
+  echo '</div>'
 }
 
 print_table_header() {
@@ -55,8 +68,17 @@ print_html_tail() {
 EOF
 }
 
+filter_list() {
+  grep -v '^#.*' lista.csv
+}
+
 print_films_sort_hun() {
-  grep -v '^#.*' lista.csv | sort -k1 -t ';' | convert_csv_tr
+  filter_list | sort -k1 -t ';' | convert_csv_tr
+}
+
+print_films_sort_revdate() {
+  # 'tail -r' FreeBSD-specifikus
+  filter_list | tail -r | convert_csv_tr
 }
 
 convert_csv_tr() {
@@ -90,8 +112,24 @@ generate_mafab_link() {
   printf "%s%d" "${MAFABBEGIN}" "$1"
 }
 
-print_html_header
-print_table_header
-print_films_sort_hun
-print_table_tail
-print_html_tail
+generate_html_sort() {
+  print_html_header
+  print_navbar
+  print_table_header
+  $curralg
+  print_table_tail
+  print_html_tail
+}
+
+if [ $# -ne 1 ]; then
+  cat << EOF
+Usage: $0 sort-algorithm
+Available algorithms:
+  ${sortalgorithm}
+EOF
+  exit 1
+else
+  curralg=$1
+fi
+
+generate_html_sort
