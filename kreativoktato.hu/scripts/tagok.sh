@@ -15,7 +15,7 @@ print_nevjegyek() {
     titulus="`head -n1 ${tagfile}`"
     ekorole="`sed -n "2p" ${tagfile}`"
     printf "  <a href='%s'><div class='tagnevjegy'>\n\
-      <img src='pict/%s' alt='kép'>\n\
+      <img src='https://static.kreativoktato.hu/pict/%s' alt='kép'>\n\
       <span class='tagnevjegy_nev'>\`%s\'</span><br>\n\
       <span class='tagnevjegy_vegz'>\`%s\'</span><br>\n\
       <span class='tagnevjegy_eko'>\`%s\'</span><br>\n\
@@ -34,7 +34,7 @@ print_bemutatkozasok() {
   while read nev file email; do
     tagfile="${TAGOKDIR}/${file}.txt"
     printf "  <div id='%s%s' class='tag'>\n" "${MT_PREFIX}" "${file}"
-    printf "    <div class='tagimg'><img src='pict/%s' alt='%s'/></div>\n" "${file}.jpg" "${nev} fényképe"
+    printf "    <div class='tagimg'><img src='https://static.kreativoktato.hu/pict/%s' alt='%s'/></div>\n" "${file}.jpg" "${nev} fényképe"
     printf "    <div class='tagleiras'>\n"
     printf "    <span class='tagnev'>%s (%s)</span><br>\n" "${nev}" "`head -n1 ${tagfile}`"
     printf "    <span class='tagnev_email'><a href=\"mailto:%s\">%s</a></span>" "${email}" "${email}"

@@ -5,9 +5,10 @@ DEST_DIR=	generated/
 LAYOUT_DIR=	layouts/
 
 ASSETS_DIR=	assets/
+ASSETS_DEST_DIR=	${DEST_DIR}www_static/
 ASSETS_CP=	rsync -a
 
-PICTDIR=	pict
+PICTDIR=	www_static/pict
 
 TARGETS+=	index.html \
 		blog.html \
@@ -18,6 +19,7 @@ TARGETS+=	index.html \
 		partnerek.html \
 		projektek.html \
 		publikaciok.html
+TARGETS:=	${TARGETS:@t@public_html/$t@}
 blog.html_REQ+=	scripts/blog.sh
 blogbejegyzesek!=	echo data/blogs/*
 blog.html_REQ+=	${blogbejegyzesek}
@@ -33,7 +35,7 @@ GREQ=	scripts/menu.sh include/base.m4 data/menus.lst
 
 TAGKEPEK!=	sed "s,.*|\(.*\)|.*,\1.jpg," data/tagok/tagok.lst
 TARGETS_MANUAL+=	${TAGKEPEK:@kep@${PICTDIR}/${kep}@}
-TARGETS_MANUAL+=	css/eko.css
+TARGETS_MANUAL+=	www_static/css/eko.css
 TARGETS_MANUAL+=	${PICTDIR}/favicon.ico ${PICTDIR}/logo.png \
 			${PICTDIR}/logo-tr.png \
 			${PICTDIR}/logo-tr0.png \
@@ -42,13 +44,13 @@ TARGETS_MANUAL+=	${PICTDIR}/favicon.ico ${PICTDIR}/logo.png \
 VIRT_DIR=	virtuals/
 VIRTUALS+=	blog
 VIRTUALTEMPLATE_blog=	blog
-VIRTUALDIR_blog=	blog/
+VIRTUALDIR_blog=	public_html/blog/
 VIRTUALOUT_blog!=	ls data/blogs/ | sed 's,\.txt$$,.html,'
 VIRTUALREQ_blog=	scripts/blogentry.sh layouts/main.m4
 VIRTUALREQRULE_blog=	C,.html,.txt,:C,^,data/blogs/,
 
-${DEST_DIR}css/eko.css:	static/eko.scss static/responsive.scss
-	@mkdir -p ${DEST_DIR}css
+${ASSETS_DEST_DIR}css/eko.css:	static/eko.scss static/responsive.scss
+	@mkdir -p ${ASSETS_DEST_DIR}css
 	sassc -t compressed ${>:[1]} $@
 
 .for kep in ${TAGKEPEK}

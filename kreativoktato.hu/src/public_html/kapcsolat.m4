@@ -10,5 +10,6 @@ _2_HEAD(_TITLE(`EKO - Kapcsolat'))
     <dd>
       <a href="https://www.facebook.com/kreativ.oktato"><img src="pict/facebook.png" alt="Facebook"/></a>
       <a href="https://www.linkedin.com/company/association-for-creative-education"><img src="pict/linkedin.svg" alt="LinkedIn"/></a>
+      <a href="https://www.youtube.com/watch?v=RJOHNNeI84M"><img src="pict/youtube.png" alt="Youtube"/></a>
     </dd>
 </dl>
