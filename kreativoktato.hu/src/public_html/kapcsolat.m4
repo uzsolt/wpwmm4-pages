@@ -8,8 +8,8 @@ _2_HEAD(_TITLE(`EKO - Kapcsolat'))
   <dt>E-mail:</dt><dd><a href="mailto:info@kreativoktato.hu">info@kreativoktato.hu</a></dd>
   <dt>Közösségi oldalak:</dt>
     <dd>
-      <a href="https://www.facebook.com/kreativ.oktato"><img src="pict/facebook.png" alt="Facebook"/></a>
-      <a href="https://www.linkedin.com/company/association-for-creative-education"><img src="pict/linkedin.svg" alt="LinkedIn"/></a>
-      <a href="https://www.youtube.com/watch?v=RJOHNNeI84M"><img src="pict/youtube.png" alt="Youtube"/></a>
+      <a href="https://www.facebook.com/kreativ.oktato"><img src="STATIC/pict/facebook.png" alt="Facebook"/></a>
+      <a href="https://www.linkedin.com/company/association-for-creative-education"><img src="STATIC/pict/linkedin.svg" alt="LinkedIn"/></a>
+      <a href="https://www.youtube.com/watch?v=RJOHNNeI84M"><img src="STATIC/pict/youtube.png" alt="Youtube"/></a>
     </dd>
 </dl>
