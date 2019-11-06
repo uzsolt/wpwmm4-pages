@@ -9,6 +9,7 @@ globális és lokális felelősségvállalás ösztönzése.</p>
 <p>Számunkra fontos, hogy a fiatalok és idősebb generációk
 is érzékenyebben, felelősségteljesebben tekintsenek a globális
 problémákra, azok elől ne elmeneküljenek, hanem nézzenek szembe velük.</p>
+<div class="video"><video controls poster="STATIC/pict/logo-menu.png"><source src="STATIC/video/bemutatkozas.mp4"></video></div>
 <p>Így munkánk során a globális nevelés témaköreinek feldolgozásával,
 kreatív oktatási módszerek kialakításával a
 globális problémák iránti érzékenység növelésével (a globális nevelés),

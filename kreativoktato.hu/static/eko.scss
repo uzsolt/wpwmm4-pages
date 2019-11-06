@@ -29,6 +29,11 @@ dd img {
   width: 2em;
 }
 
+video {
+  max-width: $mainMaxWidth;
+  height: auto;
+}
+
 #footer {
   position: fixed;
   left: 0;
