@@ -10,28 +10,44 @@ ASSETS_CP=	rsync -a
 
 PICTDIR=	www_static/pict
 
-TARGETS+=	index.html \
-		blog.html \
-		globalis.html \
-		jogyakorlat.html \
-		kapcsolat.html \
-		munkatarsak.html \
-		partnerek.html \
-		projektek.html \
-		publikaciok.html
-TARGETS:=	${TARGETS:@t@public_html/$t@}
-blog.html_REQ+=	scripts/blog.sh
+LANG_HU_DIR=	public_html
+LANG_EN_DIR=	www_english
+LANG_DIRS=	${LANG_HU_DIR} \
+		${LANG_EN_DIR}
+
+PAGES+=	index.html \
+	blog.html \
+	globalis.html \
+	jogyakorlat.html \
+	kapcsolat.html \
+	munkatarsak.html \
+	partnerek.html \
+	projektek.html \
+	publikaciok.html
+.for l in ${LANG_DIRS}
+TARGETS+=	${PAGES:@t@${l}/$t@}
+.endfor
+
 blogbejegyzesek!=	echo data/blogs/*
+publikaciocsoportok!=	sed "s,.*|\(.*\),data/publikaciok/\1.csv," data/publikaciok/lista.csv
+${LANG_HU_DIR}/munkatarsak.html_REQ!=	sed "s,.*|\(.*\)|.*,data/tagok/\1.txt," data/tagok/tagok.lst
+${LANG_EN_DIR}/munkatarsak.html_REQ!=	sed "s,.*|\(.*\)|.*,data/tagok/\1_en.txt," data/tagok/tagok.lst
+.for l in ${LANG_DIRS}
+${l}/blog.html_REQ+=	scripts/blog.sh
+${l}/munkatarsak.html_REQ+=	scripts/tagok.sh
+${l}/publikaciok.html_REQ+=	${publikaciocsoportok} \
+				scripts/publikaciok.sh \
+				data/publikaciok/lista.csv
+.endfor
 blog.html_REQ+=	${blogbejegyzesek}
-munkatarsak.html_REQ!=	sed "s,.*|\(.*\)|.*,data/tagok/\1.txt," data/tagok/tagok.lst
-munkatarsak.html_REQ+=	scripts/tagok.sh
-publikaciok.html_REQ!=	sed "s,.*|\(.*\),data/publikaciok/\1.csv," data/publikaciok/lista.csv
-publikaciok.html_REQ+=	layouts/munkatarsak.m4 scripts/publikaciok.sh data/publikaciok/lista.csv
+
 .for t in ${TARGETS}
 req!=	sed -n '/_LAYOUT/ s,_LAYOUT(.\(.*\).).*,\1,p' src/${t:R}.m4
 ${t}_REQ+=	${LAYOUT_DIR}${req}
 .endfor
-GREQ=	scripts/menu.sh include/base.m4 data/menus.lst
+GREQ=	scripts/menu.sh \
+	include/base.m4 include/base_en.m4 include/base_hu.m4 \
+	data/menus.lst
 
 TAGKEPEK!=	sed "s,.*|\(.*\)|.*,\1.jpg," data/tagok/tagok.lst
 TARGETS_MANUAL+=	${TAGKEPEK:@kep@${PICTDIR}/${kep}@}
