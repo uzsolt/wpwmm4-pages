@@ -34,7 +34,8 @@ ${LANG_HU_DIR}/munkatarsak.html_REQ!=	sed "s,.*|\(.*\)|.*,data/tagok/\1.txt," da
 ${LANG_EN_DIR}/munkatarsak.html_REQ!=	sed "s,.*|\(.*\)|.*,data/tagok/\1_en.txt," data/tagok/tagok.lst
 .for l in ${LANG_DIRS}
 ${l}/blog.html_REQ+=	scripts/blog.sh
-${l}/munkatarsak.html_REQ+=	scripts/tagok.sh
+${l}/munkatarsak.html_REQ+=	scripts/tagok.sh \
+				data/tagok/tagok.lst
 ${l}/publikaciok.html_REQ+=	${publikaciocsoportok} \
 				scripts/publikaciok.sh \
 				data/publikaciok/lista.csv

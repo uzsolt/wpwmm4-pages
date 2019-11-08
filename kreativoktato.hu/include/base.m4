@@ -7,4 +7,3 @@ _2_HEAD(
   <link rel='shortcut icon' type="image/ico" href="STATIC/pict/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 )m4_dnl
-_2_BODY(_SCRIPT(`menu.sh' m4_ifdef(`CATEGORY',CATEGORY,_FILE)))m4_dnl

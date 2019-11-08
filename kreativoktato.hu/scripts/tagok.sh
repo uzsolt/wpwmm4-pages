@@ -6,14 +6,35 @@ TAGOKLISTA=${TAGOKDIR}/tagok.lst
 MT_PREFIX="mt_"
 ID_NEVJEGYEK="${MT_PREFIX}nevjegyek"
 
+if [ -n "${2}" ]; then
+  WWWLANG="_${2}"
+  STR_MUNKATARSAINK="Our colleagues"
+  STR_NEVJEGYEK="Cards"
+  STR_FEL="up"
+  STR_BEMUTATKOZAS="Introductions"
+else
+  WWWLANG=""
+  STR_MUNKATARSAINK="Munkatársaink"
+  STR_NEVJEGYEK="Névjegyek"
+  STR_FEL="fel"
+  STR_BEMUTATKOZAS="Bemutatkozások"
+fi
+
+is_english() {
+  [ -n "${WWWLANG}" ]
+}
+
 IFS="|"
 print_nevjegyek() {
-  printf "<div id='%s'><h1>Munkatársaink</h1>
-  <h2>Névjegyek</h2>\n" "${ID_NEVJEGYEK}"
-  while read nev file email; do
-    tagfile="${TAGOKDIR}/${file}.txt"
+  printf "<div id='%s'><h1>${STR_MUNKATARSAINK}</h1>
+  <h2>${STR_NEVJEGYEK}</h2>\n" "${ID_NEVJEGYEK}"
+  while read nev neveng file email; do
+    tagfile="${TAGOKDIR}/${file}${WWWLANG}.txt"
     titulus="`head -n1 ${tagfile}`"
     ekorole="`sed -n "2p" ${tagfile}`"
+    if is_english; then
+      nev="${neveng}"
+    fi
     printf "  <a href='%s'><div class='tagnevjegy'>\n\
       <img src='https://static.kreativoktato.hu/pict/%s' alt='kép'>\n\
       <span class='tagnevjegy_nev'>\`%s\'</span><br>\n\
@@ -29,10 +50,13 @@ print_nevjegyek() {
 }
 
 print_bemutatkozasok() {
-  printf "<div id='tagok'><h2>Bemutatkozások</h2>\n"
-  hrefvissza="`printf "    <a href='#%s'><div class='hrefvissza'>fel</div></a>\n" "${ID_NEVJEGYEK}"`"
-  while read nev file email; do
-    tagfile="${TAGOKDIR}/${file}.txt"
+  printf "<div id='tagok'><h2>${STR_BEMUTATKOZAS}</h2>\n"
+  hrefvissza="`printf "    <a href='#%s'><div class='hrefvissza'>${STR_FEL}</div></a>\n" "${ID_NEVJEGYEK}"`"
+  while read nev neveng file email; do
+    tagfile="${TAGOKDIR}/${file}${WWWLANG}.txt"
+    if is_english; then
+      nev="${neveng}"
+    fi
     printf "  <div id='%s%s' class='tag'>\n" "${MT_PREFIX}" "${file}"
     printf "    <div class='tagimg'><img src='https://static.kreativoktato.hu/pict/%s' alt='%s'/></div>\n" "${file}.jpg" "${nev} fényképe"
     printf "    <div class='tagleiras'>\n"

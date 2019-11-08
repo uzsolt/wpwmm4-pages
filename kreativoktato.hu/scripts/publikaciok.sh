@@ -1,7 +1,10 @@
 #!/bin/sh
 
 IFS="|"
-while read title file; do
+while read title titleen file; do
+  if [ "${1}" == "en" ]; then
+    title=${titleen}
+  fi
   printf "<h2>%s</h2>\n" "${title}"
   printf "<ul>\n"
   while read author year title where; do
