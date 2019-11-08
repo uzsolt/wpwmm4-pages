@@ -1,6 +1,6 @@
 _LAYOUT(`main_en.m4')
 _2_HEAD(_TITLE(`EKO - Contact'))
-<h1>Contact</h1>
+_H1(`Contact')
 <dl>
   <dt>Name:</dt><dd>Association for Creative Education</dd>
   <dt>Registration number:</dt><dd>06-02-0003407</dd>

@@ -26,7 +26,7 @@ is_english() {
 
 IFS="|"
 print_nevjegyek() {
-  printf "<div id='%s'><h1>${STR_MUNKATARSAINK}</h1>
+  printf "<div id='%s'>_H1(${STR_MUNKATARSAINK})
   <h2>${STR_NEVJEGYEK}</h2>\n" "${ID_NEVJEGYEK}"
   while read nev neveng file email; do
     tagfile="${TAGOKDIR}/${file}${WWWLANG}.txt"

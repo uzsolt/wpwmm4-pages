@@ -1,6 +1,6 @@
 _LAYOUT(`main_en.m4')
 _2_HEAD(_TITLE(`EKO - About us'))
-<h1>About Us</h1>
+_H1(`About us')
 <p>The <em>Association for Creative Education</em> has been established
 with the aim to support the attempts of the European Union
 in the field of global (citizenship) education

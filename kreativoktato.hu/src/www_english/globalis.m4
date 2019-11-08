@@ -1,6 +1,6 @@
 _LAYOUT(`main_en.m4')
 _2_HEAD(_TITLE(`EKO - Global education'))
-<h1>Global education</h1>
+_H1(`Global education')
 <p>Poverty. Aid. Environmental pollution. Epidemics. These are
 social, economic and environmental problems and we both
 experience their consequences. But how much do we know about

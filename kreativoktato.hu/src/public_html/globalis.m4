@@ -1,6 +1,6 @@
 _LAYOUT(`main.m4')
 _2_HEAD(_TITLE(`EKO - Globális nevelés'))
-<h1>Globális nevelés</h1>
+_H1(`Globális nevelés')
 <p>Szegénység.
 Segélyezés.
 Környezetszennyezés.

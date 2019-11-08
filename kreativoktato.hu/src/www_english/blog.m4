@@ -1,6 +1,6 @@
 _LAYOUT(`bloglist.m4')
 _2_HEAD(_TITLE(`EKO - Blog'))
 <div id="blogcontent">
-<h1>Blogbejegyzések</h1>
+_H1(`Blogbejegyzések')
 m4_esyscmd(`scripts/blog.sh')
 </div>

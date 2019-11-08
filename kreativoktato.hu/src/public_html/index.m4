@@ -1,6 +1,6 @@
 _LAYOUT(`main.m4')
 _2_HEAD(_TITLE(`EKO - Bemutatkozás'))
-<h1>Rólunk</h1>
+_H1(`Rólunk')
 <p>Az <em>Egyesület a Kreatív Oktatásért</em> azzal a céllal alakult meg, hogy kreatív és innovatív oktatási eszközökkel
 támogassa az Európai Unió <a href="globalis.html">globális nevelés</a>
 területén folytatott törekvéseit.

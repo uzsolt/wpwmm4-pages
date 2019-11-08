@@ -1,6 +1,6 @@
 _LAYOUT(`main.m4')
 _2_HEAD(_TITLE(`EKO - Kapcsolat'))
-<h1>Kapcsolat</h1>
+_H1(`Kapcsolat')
 <dl>
   <dt>Egyesület neve:</dt><dd>Egyesület a Kreatív Oktatásért</dd>
   <dt>Nyilvántartási szám:</dt><dd>06-02-0003407</dd>
