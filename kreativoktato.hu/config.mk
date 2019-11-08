@@ -28,7 +28,6 @@ PAGES+=	index.html \
 TARGETS+=	${PAGES:@t@${l}/$t@}
 .endfor
 
-blogbejegyzesek!=	echo data/blogs/*
 publikaciocsoportok!=	sed "s,.*|\(.*\),data/publikaciok/\1.csv," data/publikaciok/lista.csv
 ${LANG_HU_DIR}/munkatarsak.html_REQ!=	sed "s,.*|\(.*\)|.*,data/tagok/\1.txt," data/tagok/tagok.lst
 ${LANG_EN_DIR}/munkatarsak.html_REQ!=	sed "s,.*|\(.*\)|.*,data/tagok/\1_en.txt," data/tagok/tagok.lst
@@ -40,7 +39,10 @@ ${l}/publikaciok.html_REQ+=	${publikaciocsoportok} \
 				scripts/publikaciok.sh \
 				data/publikaciok/lista.csv
 .endfor
-blog.html_REQ+=	${blogbejegyzesek}
+blogbejegyzesek!=	echo data/blogs/*
+${LANG_HU_DIR}/blog.html_REQ+=	${blogbejegyzesek}
+blogbejegyzesek_en!=	echo data/blogs_en/*
+${LANG_EN_DIR}/blog.html_REQ+=	${blogbejegyzesek_en}
 
 .for t in ${TARGETS}
 req!=	sed -n '/_LAYOUT/ s,_LAYOUT(.\(.*\).).*,\1,p' src/${t:R}.m4
@@ -59,12 +61,19 @@ TARGETS_MANUAL+=	${PICTDIR}/favicon.ico ${PICTDIR}/logo.png \
 			${PICTDIR}/logo-menu.png
 
 VIRT_DIR=	virtuals/
-VIRTUALS+=	blog
+VIRTUALS+=	blog blog_en
+
 VIRTUALTEMPLATE_blog=	blog
-VIRTUALDIR_blog=	public_html/blog/
+VIRTUALDIR_blog=	${LANG_HU_DIR}/blog/
 VIRTUALOUT_blog!=	ls data/blogs/ | sed 's,\.txt$$,.html,'
 VIRTUALREQ_blog=	scripts/blogentry.sh layouts/main.m4
 VIRTUALREQRULE_blog=	C,.html,.txt,:C,^,data/blogs/,
+
+VIRTUALTEMPLATE_blog_en=	blog_en
+VIRTUALDIR_blog_en=	${LANG_EN_DIR}/blog/
+VIRTUALOUT_blog_en!=	ls data/blogs_en/ | sed 's,\.txt$$,.html,'
+VIRTUALREQ_blog_en=	scripts/blogentry.sh layouts/main_en.m4
+VIRTUALREQRULE_blog_en=	C,.html,.txt,:C,^,data/blogs_en/,
 
 ${ASSETS_DEST_DIR}css/eko.css:	static/eko.scss static/responsive.scss
 	@mkdir -p ${ASSETS_DEST_DIR}css

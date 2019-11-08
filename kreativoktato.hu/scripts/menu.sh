@@ -4,6 +4,7 @@
 
 MENUFILE=data/menus.lst
 genfile=${1}.html
+genfile=${genfile##*/}
 lang=${2}
 
 printf "<div id='menu'>\n"

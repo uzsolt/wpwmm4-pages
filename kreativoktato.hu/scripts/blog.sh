@@ -8,9 +8,14 @@
 # 5. sor: rövid összefoglaló
 # többi sor: szöveg
 
-BLOGDIR=data/blogs/
+if [ "${1}" = "en" ]; then
+  BLOGDIR=data/blogs_en/
+else
+  BLOGDIR=data/blogs/
+fi
+
 taglist() {
-  sed -n 4p data/blogs/*.txt | tr ";" "\n" | sort -u
+  sed -n 4p ${BLOGDIR}/*.txt | tr ";" "\n" | sort -u
 }
 
 tartalomjegyzek() {

@@ -1,5 +1,9 @@
 #!/bin/sh
-BLOGDIR=data/blogs/
+if [ "${2}" == "en" ]; then
+  BLOGDIR=data/blogs_en/
+else
+  BLOGDIR=data/blogs/
+fi
 BLOGFILE=${BLOGDIR}${1}.txt
 
 printf '_H1(%s)\n' "`sed -n 1p "${BLOGFILE}"`"
