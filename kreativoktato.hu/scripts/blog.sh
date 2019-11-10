@@ -10,8 +10,16 @@
 
 if [ "${1}" = "en" ]; then
   BLOGDIR=data/blogs_en/
+  STR_CIM="Title"
+  STR_SZERZO="Author"
+  STR_DATUM="Published"
+  STR_CIMKEK="Label"
 else
   BLOGDIR=data/blogs/
+  STR_CIM="Cím"
+  STR_SZERZO="Szerző"
+  STR_DATUM="Közzététel"
+  STR_CIMKEK="Cimkék"
 fi
 
 taglist() {
@@ -23,10 +31,10 @@ tartalomjegyzek() {
 <table id="blogtoc">
 <thead>
   <tr>
-    <th>Cím</th>
-    <th>Szerző</th>
-    <th>Közzététel</th>
-    <th>Cimkék</th>
+    <th>${STR_CIM}</th>
+    <th>${STR_SZERZO}</th>
+    <th>${STR_DATUM}</th>
+    <th>${STR_CIMKEK}</th>
   </tr>
 </thead>
 <tbody>
