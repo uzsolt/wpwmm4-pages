@@ -6,7 +6,9 @@ else
 fi
 BLOGFILE=${BLOGDIR}${1}.txt
 
-printf '_H1(%s)\n' "`sed -n 1p "${BLOGFILE}"`"
+BLOG_TITLE=`sed -n 1p "${BLOGFILE}"`
+printf '_2_HEAD(_TITLE(%s))' "${BLOG_TITLE}"
+printf '_H1(%s)\n' "${BLOG_TITLE}"
 printf '<h2>%s</h2>\n' "`sed -n 2p "${BLOGFILE}"`"
 printf '<b>(%s, %s)</b>\n' \
   "$(sed -n '3p' ${BLOGFILE})" \
