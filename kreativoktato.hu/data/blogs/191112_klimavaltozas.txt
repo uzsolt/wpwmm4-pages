@@ -50,3 +50,6 @@ sikerüljön betartani.</p>
 <p>Ez a szervezet a klímaváltozásról készít jelentéseket. 2007-ben még
 béke Nobel-díjat is kapott. Amit a szervezet előre jelez, az nagy
 valószínűséggel úgy is lesz.</p>
+<hr>
+<p><em>Az Innovációs és Technológiai Minisztérium ÚNKP-19-2-SZTE-102 kódszámú
+Új Nemzeti Kiválóság Programjának szakmai támogatásával készült.</em></p>

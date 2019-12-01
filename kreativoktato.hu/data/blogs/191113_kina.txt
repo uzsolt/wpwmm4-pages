@@ -44,3 +44,6 @@ onnantól próbálja csökkenteni azt. Azonban a számok mást mutatnak… A
 jelen intézkedések alapján nem 2, hanem 4-5°C lesz a hőmérséklet, még
 ha a többi ország ezen határon belül maradna is. (Elöljáróban annyit,
 hogy ők sem fogják ezt teljesíteni.)</p>
+<hr>
+<p><em>Az Innovációs és Technológiai Minisztérium ÚNKP-19-2-SZTE-102 kódszámú
+Új Nemzeti Kiválóság Programjának szakmai támogatásával készült.</em></p>
