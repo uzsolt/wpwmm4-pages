@@ -103,11 +103,9 @@ detox() {
   tr '[:upper:]' '[:lower:]' | tr 'öüóőúéáí ' 'ouooueai-' | tr -d '()/'
 }
 
-# $1 - magyar cím
-# $2 - eredeti cím
-# $3 - port azonosító
+# $1 - port azonosító
 generate_port_link() {
-  printf "%s%s--%s/movie-%d" "${PORTBEGIN}" `echo "$1" | detox` `echo "$2" | detox` "$3"
+  printf "%splaceholder/movie-%d" "${PORTBEGIN}" "$1"
 }
 
 generate_mafab_link() {
@@ -131,7 +129,7 @@ cache() {
     LC_ALL=C printf "%s;%s;%s;%s;%.1f;%.1f\n" \
       "${title}" \
       "${titleor}" \
-      "`generate_port_link "${titlehu}" "${titleor}" "${portnr}"`" \
+      "`generate_port_link "${portnr}"`" \
       "`generate_mafab_link "${mafabnr}"`" \
       "${erta}" "${ertb}"
   done > ${CACHEFILE}
