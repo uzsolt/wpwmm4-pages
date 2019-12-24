@@ -48,10 +48,11 @@ r$(svnlite info --show-item revision) $(date +'(%Y-%m-%d %H:%M:%S)')
   <tr>
    <th>Magyar cím</th>
    <th>Eredeti cím</th>
-   <th>Port</th>
-   <th>Mafab</th>
+   <th>Linkek</th>
    <th>ÉrtA</th>
    <th>ÉrtB</th>
+   <th>műfaj</th>
+   <th>ország</th>
   </tr>
 </thead>
 <tbody>
@@ -87,15 +88,18 @@ print_films_sort_revdate() {
 
 convert_cache_csv_tr() {
   awk -F ';' -v imgport="${IMGPORT}" -v imgmafab="${IMGMAFAB}" '{
-    printf "<tr>\
-  <td>%s</td>\
-  <td>%s</td>\
-  <td class=\"tdimg\"><a href=\"%s\">%s</a></td>\
-  <td class=tdimg><a href=\"%s\">%s</a></td>\
-  <td>%s</td>\
-  <td>%s</td>\
-</tr>\n",
-    $1,$2,$3,imgport,$4,imgmafab,$5,$6
+    printf "  <tbody class=\"tbmovie\"><tr>\
+    <td class=\"tdhutitle\">%s</td>\
+    <td class=\"tdentitle\">%s</td>\
+    <td class=\"tdimg\"><a href=\"%s\">%s</a>\
+    <a href=\"%s\">%s</a></td>\
+    <td>%s</td>\
+    <td>%s</td>\
+    <td>%s</td>\
+    <td>%s</td></tr>\
+    <tr><td colspan=8 class=\"tdcontent\">%s</td>\
+  </tr></tbody>\n",
+    $1,$2,$3,imgport,$4,imgmafab,$5,$6,$7,$8,$9
   }'
 }
 
@@ -125,13 +129,18 @@ cache() {
   filter_list | \
   while IFS=';' read titlehu titleor portnr mafabnr erta ertb titlealthu; do
     local title="${titlehu}"
+    local genre="`sed -n 2p cache/${portnr}`"
+    local country="`sed -n 3p cache/${portnr}`"
+    local content="`sed -n 1p cache/${portnr}`"
     [ -n "${titlealthu}" ] && title="${title} / ${titlealthu}"
-    LC_ALL=C printf "%s;%s;%s;%s;%.1f;%.1f\n" \
+    LC_ALL=C printf "%s;%s;%s;%s;%.1f;%.1f;%s;%s;%s\n" \
       "${title}" \
       "${titleor}" \
       "`generate_port_link "${portnr}"`" \
       "`generate_mafab_link "${mafabnr}"`" \
-      "${erta}" "${ertb}"
+      "${erta}" "${ertb}" \
+      "${genre}" "${country}" \
+      "${content}"
   done > ${CACHEFILE}
 }
 

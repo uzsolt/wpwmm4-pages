@@ -1,17 +1,13 @@
 /* $Id$ */
-table, th, td {
-  border: 1px solid black;
-}
-
-tbody tr:nth-child(odd) {
+.tbmovie:nth-child(odd) {
   background-color:#adad85;
 }
 
-tbody tr:nth-child(even) {
+.tbmovie:nth-child(even) {
   background-color:#ccccb3;
 }
 
-tbody tr:hover {
+tbody .tbmovie:hover {
   background-color:#999966;
 }
 
@@ -36,6 +32,19 @@ img {
 
 .tdimg {
   text-align:center;
+}
+
+.tdhutitle {
+  font-weight:bold;
+}
+
+.tdentitle {
+  font-weight:bold;
+  font-style:italic;
+}
+
+.tdcontent {
+  font-style:italic;
 }
 
 #ordernav a {
