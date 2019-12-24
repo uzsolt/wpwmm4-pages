@@ -89,7 +89,7 @@ print_films_sort_revdate() {
 convert_cache_csv_tr() {
   awk -F ';' -v imgport="${IMGPORT}" -v imgmafab="${IMGMAFAB}" '{
     printf "  <tbody class=\"tbmovie\"><tr>\
-    <td class=\"tdhutitle\">%s</td>\
+    <td class=\"tdhutitle\" rowspan=2>%s</td>\
     <td class=\"tdentitle\">%s</td>\
     <td class=\"tdimg\"><a href=\"%s\">%s</a>\
     <a href=\"%s\">%s</a></td>\
@@ -97,7 +97,7 @@ convert_cache_csv_tr() {
     <td>%s</td>\
     <td>%s</td>\
     <td>%s</td></tr>\
-    <tr><td colspan=8 class=\"tdcontent\">%s</td>\
+    <tr><td colspan=7 class=\"tdcontent\">%s</td>\
   </tr></tbody>\n",
     $1,$2,$3,imgport,$4,imgmafab,$5,$6,$7,$8,$9
   }'
