@@ -6,6 +6,10 @@
 
 PORTBEGIN=https://port.hu/adatlap/film/tv/
 MAFABBEGIN=https://www.mafab.hu/movies/
+CACHEFILE=cache/film.csv
+
+IMGPORT="<img src='port.png' alt='Port.hu'>"
+IMGMAFAB="<img src='mafab.jpg' alt='Mafab.hu'>"
 
 sortalgorithm=$(awk -F ':' '{print $2}' orders.csv | tr '\n' ' ')
 
@@ -73,28 +77,26 @@ filter_list() {
 }
 
 print_films_sort_hun() {
-  filter_list | sort -k1 -t ';' | convert_csv_tr
+  sort -k1 -t ';' ${CACHEFILE} | convert_cache_csv_tr
 }
 
 print_films_sort_revdate() {
   # 'tail -r' FreeBSD-specifikus
-  filter_list | tail -r | convert_csv_tr
+  tail -r ${CACHEFILE} | convert_cache_csv_tr
 }
 
-convert_csv_tr() {
-  while IFS=';' read titlehu titleor portnr mafabnr erta ertb titlealthu; do
-    local title="${titlehu}"
-    [ -n "${titlealthu}" ] && title="${title} / ${titlealthu}"
-    LC_ALL=C printf "<tr><td>%s</td><td>%s</td>\n\
-\t<td class=\"tdimg\"><a href=\"%s\"><img src=\"port.png\" alt=\"Port.hu\"></a></td>\n\
-\t<td class=\"tdimg\"><a href=\"%s\"><img src=\"mafab.jpg\" alt=\"Mafab\"></a></td>\n\
-\t<td>%.1f</td><td>%.1f</td></tr>\n" \
-      "${title}" \
-      "${titleor}" \
-      "`generate_port_link "${titlehu}" "${titleor}" "${portnr}"`" \
-      "`generate_mafab_link "${mafabnr}"`" \
-      "${erta}" "${ertb}"
-  done
+convert_cache_csv_tr() {
+  awk -F ';' -v imgport="${IMGPORT}" -v imgmafab="${IMGMAFAB}" '{
+    printf "<tr>\
+  <td>%s</td>\
+  <td>%s</td>\
+  <td class=\"tdimg\"><a href=\"%s\">%s</a></td>\
+  <td class=tdimg><a href=\"%s\">%s</a></td>\
+  <td>%s</td>\
+  <td>%s</td>\
+</tr>\n",
+    $1,$2,$3,imgport,$4,imgmafab,$5,$6
+  }'
 }
 
 detox() {
@@ -121,6 +123,20 @@ generate_html_sort() {
   print_html_tail
 }
 
+cache() {
+  filter_list | \
+  while IFS=';' read titlehu titleor portnr mafabnr erta ertb titlealthu; do
+    local title="${titlehu}"
+    [ -n "${titlealthu}" ] && title="${title} / ${titlealthu}"
+    LC_ALL=C printf "%s;%s;%s;%s;%.1f;%.1f\n" \
+      "${title}" \
+      "${titleor}" \
+      "`generate_port_link "${titlehu}" "${titleor}" "${portnr}"`" \
+      "`generate_mafab_link "${mafabnr}"`" \
+      "${erta}" "${ertb}"
+  done > ${CACHEFILE}
+}
+
 if [ $# -ne 1 ]; then
   cat << EOF
 Usage: $0 sort-algorithm
@@ -132,4 +148,8 @@ else
   curralg=$1
 fi
 
-generate_html_sort
+if [ "${curralg}" = "cache" ]; then
+  cache
+else
+  generate_html_sort
+fi
