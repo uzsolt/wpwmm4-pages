@@ -21,7 +21,7 @@ print_html_header() {
   <meta charset="utf-8">
   <title>Filmek, amiket már láttunk</title>
 <style>
-$(cat lattuk.css)
+$(sassc -t compressed lattuk.css)
 </style>
 </head>
 <body>
@@ -53,6 +53,7 @@ r$(svnlite info --show-item revision) $(date +'(%Y-%m-%d %H:%M:%S)')
    <th>ÉrtB</th>
    <th>műfaj</th>
    <th>ország</th>
+   <th>nr</th>
   </tr>
 </thead>
 <tbody>
@@ -96,12 +97,13 @@ convert_cache_csv_tr() {
     <td>%s</td>\
     <td>%s</td>\
     <td>%s</td>\
+    <td>%s</td>\
     <td>%s</td></tr>\
     <tr><td colspan=7 class=\"tdcontent\">\
       <input type=\"checkbox\" class=\"cbcontent\">\
       <div class=\"content\">%s</div></td>\
   </tr></tbody>\n",
-    $1,$2,$3,imgport,$4,imgmafab,$5,$6,$7,$8,$9
+    $1,$2,$3,imgport,$4,imgmafab,$5,$6,$7,$8,$10,$9
   }'
 }
 
@@ -128,21 +130,23 @@ generate_html_sort() {
 }
 
 cache() {
+  local nr=0
   filter_list | \
   while IFS=';' read titlehu titleor portnr mafabnr erta ertb titlealthu; do
     local title="${titlehu}"
     local genre="`sed -n 2p cache/${portnr}`"
     local country="`sed -n 3p cache/${portnr}`"
     local content="`sed -n 1p cache/${portnr}`"
+    nr=$((nr+1))
     [ -n "${titlealthu}" ] && title="${title} / ${titlealthu}"
-    LC_ALL=C printf "%s;%s;%s;%s;%.1f;%.1f;%s;%s;%s\n" \
+    LC_ALL=C printf "%s;%s;%s;%s;%.1f;%.1f;%s;%s;%s;%d\n" \
       "${title}" \
       "${titleor}" \
       "`generate_port_link "${portnr}"`" \
       "`generate_mafab_link "${mafabnr}"`" \
       "${erta}" "${ertb}" \
       "${genre}" "${country}" \
-      "${content}"
+      "${content}" "${nr}"
   done > ${CACHEFILE}
 }
 
