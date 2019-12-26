@@ -64,3 +64,19 @@ img {
   font-weight: bold;
   font-size:1.2em;
 }
+
+table {
+  width: 100%;
+}
+.tdhutitle {
+  width: 20em;
+}
+.tdentitle {
+  width: 20em;
+}
+.content {
+  display: none;
+}
+.cbcontent:checked + .content {
+  display: inline-block;
+}

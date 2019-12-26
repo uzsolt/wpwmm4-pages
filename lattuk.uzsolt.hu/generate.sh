@@ -97,7 +97,9 @@ convert_cache_csv_tr() {
     <td>%s</td>\
     <td>%s</td>\
     <td>%s</td></tr>\
-    <tr><td colspan=7 class=\"tdcontent\">%s</td>\
+    <tr><td colspan=7 class=\"tdcontent\">\
+      <input type=\"checkbox\" class=\"cbcontent\">\
+      <div class=\"content\">%s</div></td>\
   </tr></tbody>\n",
     $1,$2,$3,imgport,$4,imgmafab,$5,$6,$7,$8,$9
   }'
