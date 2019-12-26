@@ -4,12 +4,13 @@ ICONS=		favicon.ico mafab.jpg port.png
 CACHEDIR=	cache
 CACHEFILE=	${CACHEDIR}/film.csv
 CACHEDB!=	awk -F ';' '{print $$3}' lista.csv
+CACHEDEPS=	common.sh gen_cache.sh lista.csv
 
 all:	${HTMLRULES:H:@x@${WWWDIR}/${x}@} ${ICONS:@ico@${WWWDIR}/${ico}@}
 
-${CACHEFILE}:	generate.sh lista.csv ${CACHEDB:@portid@${CACHEDIR}/${portid}@}
+${CACHEFILE}:	${CACHEDEPS} ${CACHEDB:@portid@${CACHEDIR}/${portid}@}
 	@echo Generate $@
-	@./generate.sh cache
+	@./gen_cache.sh
 
 .for htmlr in ${HTMLRULES}
 ${WWWDIR}/${htmlr:H}:	${CACHEFILE} lattuk.css

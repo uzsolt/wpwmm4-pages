@@ -4,9 +4,7 @@
 
 # $1 - melyik rendező algoritmus kell
 
-PORTBEGIN=https://port.hu/adatlap/film/tv/
-MAFABBEGIN=https://www.mafab.hu/movies/
-CACHEFILE=cache/film.csv
+. common.sh
 
 IMGPORT="<img src='port.png' alt='Port.hu'>"
 IMGMAFAB="<img src='mafab.jpg' alt='Mafab.hu'>"
@@ -75,7 +73,6 @@ EOF
 }
 
 filter_list() {
-  grep -v '^#.*' lista.csv
 }
 
 print_films_sort_hun() {
@@ -111,14 +108,6 @@ detox() {
   tr '[:upper:]' '[:lower:]' | tr 'öüóőúéáí ' 'ouooueai-' | tr -d '()/'
 }
 
-# $1 - port azonosító
-generate_port_link() {
-  printf "%splaceholder/movie-%d" "${PORTBEGIN}" "$1"
-}
-
-generate_mafab_link() {
-  printf "%s%d" "${MAFABBEGIN}" "$1"
-}
 
 generate_html_sort() {
   print_html_header
@@ -130,24 +119,6 @@ generate_html_sort() {
 }
 
 cache() {
-  local nr=0
-  filter_list | \
-  while IFS=';' read titlehu titleor portnr mafabnr erta ertb titlealthu; do
-    local title="${titlehu}"
-    local genre="`sed -n 2p cache/${portnr}`"
-    local country="`sed -n 3p cache/${portnr}`"
-    local content="`sed -n 1p cache/${portnr}`"
-    nr=$((nr+1))
-    [ -n "${titlealthu}" ] && title="${title} / ${titlealthu}"
-    LC_ALL=C printf "%s;%s;%s;%s;%.1f;%.1f;%s;%s;%s;%d\n" \
-      "${title}" \
-      "${titleor}" \
-      "`generate_port_link "${portnr}"`" \
-      "`generate_mafab_link "${mafabnr}"`" \
-      "${erta}" "${ertb}" \
-      "${genre}" "${country}" \
-      "${content}" "${nr}"
-  done > ${CACHEFILE}
 }
 
 if [ $# -ne 1 ]; then
@@ -161,8 +132,4 @@ else
   curralg=$1
 fi
 
-if [ "${curralg}" = "cache" ]; then
-  cache
-else
-  generate_html_sort
-fi
+generate_html_sort

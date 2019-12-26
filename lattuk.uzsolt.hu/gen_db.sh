@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $Info$
+# $Id$
 
 # $1 - port azonosító
 
