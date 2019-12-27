@@ -7,6 +7,10 @@ $menuSelectedBG:#fde19b;
 $menuSelectedC:$menuNormalC;
 $menuWidth:15em;
 $menuDelta:0.5em; 
+$submenuNormalBG:#af7e04;
+$submenuNormalC:white;
+$submenuSelectedBG:#fabc1e;
+$submenuSelectedC:black;
 $mainWidthMult:3;
 $mainMaxWidth:$mainWidthMult*$menuWidth;
 $nevjegyBG:rgba(157, 169, 226,0.5);
@@ -120,6 +124,34 @@ blockquote {
   background-color: $menuSelectedBG;
   color: $menuSelectedC;
 }
+#submenu {
+  table-layout: fixed;
+  padding-left:$menuWidth+$menuDelta;
+  font-weight: bold;
+}
+#submenu a {
+  width: 10em;
+}
+.normal_submenu {
+  @extend %normal_menu;
+  @extend %normal_menu_href;
+  display: inline-block;
+  border: 1px solid black;
+  background-color: $submenuNormalBG;
+  color: $submenuNormalC;
+  opacity:0.6;
+  text-shadow: 5px;
+}
+.selected_submenu {
+  @extend %normal_menu;
+  @extend %normal_menu_href;
+  display: inline-block;
+  border: 0.1em solid black;
+  border-radius: 0.5em;
+  background-color: $submenuSelectedBG;
+  color: $submenuSelectedC;
+}
+
 body {
   background-image: url("/pict/logo-tr.png");
 }
