@@ -1,5 +1,6 @@
 $footerHeight: 3ex;
 $mainTextColor: #444;
+$nevjegyBG:rgba(157, 169, 226,0.5);
 $menuBG:rgba(255,255,255,0.5);
 $menuNormalC:#eb0144;
 $menuNormalHBG:#c4cbed;
@@ -7,13 +8,13 @@ $menuSelectedBG:#fde19b;
 $menuSelectedC:$menuNormalC;
 $menuWidth:15em;
 $menuDelta:0.5em; 
-$submenuNormalBG:#af7e04;
-$submenuNormalC:white;
+$submenuNormalBG:$nevjegyBG;
+$submenuNormalHBG:rgba(157,169,226,0.9);
+$submenuNormalC:black;
 $submenuSelectedBG:#fabc1e;
 $submenuSelectedC:black;
 $mainWidthMult:3;
 $mainMaxWidth:$mainWidthMult*$menuWidth;
-$nevjegyBG:rgba(157, 169, 226,0.5);
 $tableCol1: #ededed;
 
 // ***************
@@ -141,6 +142,9 @@ blockquote {
   color: $submenuNormalC;
   opacity:0.6;
   text-shadow: 5px;
+}
+.normal_submenu:hover {
+  background-color: $submenuNormalHBG;
 }
 .selected_submenu {
   @extend %normal_menu;
