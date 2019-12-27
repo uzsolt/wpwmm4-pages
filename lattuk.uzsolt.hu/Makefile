@@ -13,7 +13,7 @@ ${CACHEFILE}:	${CACHEDEPS} ${CACHEDB:@portid@${CACHEDIR}/${portid}@}
 	@./gen_cache.sh
 
 .for htmlr in ${HTMLRULES}
-${WWWDIR}/${htmlr:H}:	${CACHEFILE} lattuk.css
+${WWWDIR}/${htmlr:H}:	${CACHEFILE} generate.sh lattuk.css
 	@echo Generating $@
 	@./generate.sh ${htmlr:T} > $@
 .endfor
