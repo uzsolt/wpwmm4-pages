@@ -97,10 +97,11 @@ convert_cache_csv_tr() {
     <td>%s</td>\
     <td>%s</td></tr>\
     <tr><td colspan=7 class=\"tdcontent\">\
-      <input type=\"checkbox\" class=\"cbcontent\">\
+      <label for=\"cb%03d\" class=\"lbcontent\">Tartalom</label>\
+      <input type=\"checkbox\" class=\"cbcontent\" id=\"cb%03d\">\
       <div class=\"content\">%s</div></td>\
   </tr></tbody>\n",
-    $1,$2,$3,imgport,$4,imgmafab,$5,$6,$7,$8,$10,$9
+    $1,$2,$3,imgport,$4,imgmafab,$5,$6,$7,$8,$10,NR,NR,$9
   }'
 }
 

@@ -77,6 +77,18 @@ table {
 .content {
   display: none;
 }
+.cbcontent {
+  display: none;
+}
+.lbcontent {
+  font-style: normal;
+  background-color: #ad8585;
+  color: white;
+  box-shadow: 3px 3px grey;
+}
+.lbcontent:hover {
+  cursor: grab;
+}
 .cbcontent:checked + .content {
   display: inline-block;
 }
