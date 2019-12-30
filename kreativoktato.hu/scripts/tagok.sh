@@ -1,20 +1,20 @@
 #!/bin/sh
 
-TAGOKDIR=data/tagok/
-TAGOKLISTA=${TAGOKDIR}/tagok.lst
+TAGOKDIR=${TAGOKDIR:-data/tagok/}
+TAGOKLISTA=${TAGOKLISTA:-${TAGOKDIR}/tagok.lst}
 
 MT_PREFIX="mt_"
 ID_NEVJEGYEK="${MT_PREFIX}nevjegyek"
 
 if [ -n "${2}" ]; then
   WWWLANG="_${2}"
-  STR_MUNKATARSAINK="Our colleagues"
+  STR_MUNKATARSAINK=${STR_MUNKATARSAINK:-"Our colleagues"}
   STR_NEVJEGYEK="Cards"
   STR_FEL="up"
   STR_BEMUTATKOZAS="Introductions"
 else
   WWWLANG=""
-  STR_MUNKATARSAINK="Munkatársaink"
+  STR_MUNKATARSAINK=${STR_MUNKATARSAINK:-"Munkatársaink"}
   STR_NEVJEGYEK="Névjegyek"
   STR_FEL="fel"
   STR_BEMUTATKOZAS="Bemutatkozások"

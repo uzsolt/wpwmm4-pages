@@ -21,6 +21,7 @@ PAGES+=	index.html \
 	jogyakorlat.html \
 	kapcsolat.html \
 	munkatarsak.html \
+	onkentesek.html \
 	partnerek.html \
 	projektek.html \
 	publikaciok.html
@@ -28,6 +29,7 @@ PAGES+=	index.html \
 TARGETS+=	${PAGES:@t@${l}/$t@}
 .endfor
 
+almenuk!=	echo data/submenu_*
 publikaciocsoportok!=	sed "s,.*|\(.*\),data/publikaciok/\1.csv," data/publikaciok/lista.csv
 ${LANG_HU_DIR}/munkatarsak.html_REQ!=	sed "s,.*|\(.*\)|.*,data/tagok/\1.txt," data/tagok/tagok.lst
 ${LANG_EN_DIR}/munkatarsak.html_REQ!=	sed "s,.*|\(.*\)|.*,data/tagok/\1_en.txt," data/tagok/tagok.lst
@@ -35,9 +37,17 @@ ${LANG_EN_DIR}/munkatarsak.html_REQ!=	sed "s,.*|\(.*\)|.*,data/tagok/\1_en.txt,"
 ${l}/blog.html_REQ+=	scripts/blog.sh
 ${l}/munkatarsak.html_REQ+=	scripts/tagok.sh \
 				data/tagok/tagok.lst
+${l}/onkentesek.html_REQ+=	scripts/tagok.sh scripts/onkentesek.sh \
+				data/onkentesek/onkentesek.lst
 ${l}/publikaciok.html_REQ+=	${publikaciocsoportok} \
 				scripts/publikaciok.sh \
 				data/publikaciok/lista.csv
+.for almenu in ${almenuk}
+almenupontok!=	awk -F '|' '{print $$3}' ${almenu}
+.for almenupont in ${almenupontok}
+${l}/${almenupont}_REQ+=	${almenu}
+.endfor # almenupont
+.endfor # almenu
 .endfor
 blogbejegyzesek!=	echo data/blogs/*
 ${LANG_HU_DIR}/blog.html_REQ+=	${blogbejegyzesek}
@@ -52,7 +62,7 @@ GREQ=	scripts/menu.sh \
 	include/base.m4 include/base_en.m4 include/base_hu.m4 \
 	data/menus.lst
 
-TAGKEPEK!=	sed "s,.*|\(.*\)|.*,\1.jpg," data/tagok/tagok.lst
+TAGKEPEK!=	sed "s,.*|\(.*\)|.*,\1.jpg," data/tagok/tagok.lst data/onkentesek/onkentesek.lst
 TARGETS_MANUAL+=	${TAGKEPEK:@kep@${PICTDIR}/${kep}@}
 TARGETS_MANUAL+=	www_static/css/eko.css
 TARGETS_MANUAL+=	${PICTDIR}/favicon.ico ${PICTDIR}/logo.png \
