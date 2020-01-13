@@ -29,6 +29,7 @@ fogyasztók ötlete, melyet co-creationnek nevezünk. (Ha neked is van egy jó
 _HREF(`https://ideas.starbucks.com/',`Starbucks') oldalára,
 beküldeni az ötletet és várni, hogy azt arra érdemesnek találják és
 megvalósítsák.)</p>
+<img src="https://static.kreativoktato.hu/pict/blog/200106_1.png" alt="grafika"/>
 <p>Nézzük a második példát az IKEA-t. Közismert, hogy az IKEA-s bútorokat a
 fogyasztóknak kell összeszerelnie, ez már tekinthető egyfajta
 co-creationnek, de az IKEA ennél is tovább lépett. Online bárki
