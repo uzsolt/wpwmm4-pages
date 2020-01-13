@@ -53,7 +53,7 @@ attitude of Generation Z towards global issues. In order to achieve this
 aim, we are going to conduct on online survey that covers not only
 Hungarian students but foreign students studying in Hungary.</p>
 
-<h3>4) Milyen az ideális munkahely?</h3>
+<h3>4) What is an ideal work place like?</h3>
 <p>In the past years, we could see two significant processes on the labor
 market: the shortage of labor and labor turnover. So the role of workforce
 has valorized, and there is a war for the most talented ones among the
