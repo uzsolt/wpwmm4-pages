@@ -54,13 +54,11 @@ r$(svnlite info --show-item revision) $(date +'(%Y-%m-%d %H:%M:%S)')
    <th>nr</th>
   </tr>
 </thead>
-<tbody>
 EOF
 }
 
 print_table_tail() {
   cat << EOF
-</tbody>
 </table>
 EOF
 }
