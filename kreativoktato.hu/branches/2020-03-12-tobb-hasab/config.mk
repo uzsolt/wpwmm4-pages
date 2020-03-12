@@ -1,7 +1,7 @@
 COMMON_DIR=	/home/zsolt/svn/wpwmm4/
 INCLUDE_DIR=	include/
 SRC_DIR=	src/
-DEST_DIR=	generated/
+DEST_DIR=	generated/www_branch/
 LAYOUT_DIR=	layouts/
 
 ASSETS_DIR=	assets/
