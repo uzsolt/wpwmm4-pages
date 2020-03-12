@@ -3,6 +3,7 @@ Simon Anholt „good generation” projektje (Helsinki, 2019. szeptember 24.)
 Udvari Bea
 konferencia;globális nevelés;globális probléma;good generation
 A globális problémákat – a saját viselkedésünkkel – mi magunk okoztuk!
+<div class="multicol">
 <p>Pusztai-Varga Ildikó kolléganőmmel 2019. szeptember végén vettünk részt az EAIE
 (European Association of International Education) éves kiállításán és
 konferenciáján Helsinkiben.</p>
@@ -45,3 +46,4 @@ ezen az előadáson, mintha Simon Anholt lett volna az EKO szószólója.</p>
 <p>Köszönjük, ezt az élményt! Javasoljuk mindenkinek, hogy
 <a href="https://www.eaie.org/blog/simon-anholt-good-generation.html">az
 előadást</a> nézze meg, az a 25 perc egy felejthetetlen élmény lesz!</p>
+</div>
