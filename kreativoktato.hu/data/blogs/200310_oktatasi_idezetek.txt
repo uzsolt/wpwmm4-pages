@@ -10,7 +10,7 @@ gyakran ezekhez fordulunk inspirációért. Be kell ismernünk, működik.
 Reméljük, hogy Te is találsz közülük számodra hasznosat.</p>
 <blockquote>
 <p>Olyan lesz a jövő, mint amilyen a ma iskolája.</p>
-<cite>Szent-Györgyi Albert</cite>
+<div class="cite">Szent-Györgyi Albert</div>
 </blockquote>
 
 <blockquote>
@@ -18,14 +18,14 @@ Reméljük, hogy Te is találsz közülük számodra hasznosat.</p>
 felfogóképesség akkor jut csúcspontjára és kap kitűnő lehetőséget a
 gyakorláshoz, ha gondolatainkat megragadja egy bennünket érdeklő feladat
 megoldásának keresése.</p>
-<cite>B. A. Korgyemszkij</cite>
+<div class="cite">B. A. Korgyemszkij</div>
 </blockquote>
 
 <blockquote>
 <p>A tanulóknak tisztelniük kell a tanárokat, de a tanároknak ki
 kell érdemelniük ezt a tiszteletet azzal, hogy maguk is tiszteletben
 tartják a diák egyéniségét, emberi méltóságát, önbecsülését.</p>
-<cite>Tar Károly</cite>
+<div class="cite">Tar Károly</div>
 </blockquote>
 
 <blockquote>
@@ -34,60 +34,60 @@ mindig tudja, akkor is szeretik őt, ha nem tökéletes, és hogy ezen képes
 javítani. Ez olyan bizalom a felnőtt részéről, amit minden korú gyerek
 megérez. Hogy hisznek benne. Tévedhet és hibázhat. Nem kell tökéletesnek
 lennie. A világ sem az.</p>
-<cite>Tari Annamária</cite>
+<div class="cite">Tari Annamária</div>
 </blockquote>
 
 <blockquote>
 <p>Minden kisgyerek okos, a legtöbb ember ostoba. Ezt teszi a nevelés.</p>
-<cite>Móra Ferenc</cite>
+<div class="cite">Móra Ferenc</div>
 </blockquote>
 
 <blockquote>
 <p>Az oktatás nem egy csöbör megtöltése, hanem a tűz fellobantása.</p>
-<cite>William Buttler Yeats</cite>
+<div class="cite">William Buttler Yeats</div>
 </blockquote>
 
 <blockquote>
 <p>Sokat kell tanulnia az embernek ahhoz, hogy megtudhassa, milyen keveset
 is tud.</p>
-<cite>Széchenyi István</cite>
+<div class="cite">Széchenyi István</div>
 </blockquote>
 
 <blockquote>
 <p>Olyan kevesen vagyunk, hogy a műveletlenség luxusát nem
 engedhetjük meg magunknak.</p>
-<cite>Kodály Zoltán</cite>
+<div class="cite">Kodály Zoltán</div>
 </blockquote>
 
 <blockquote>
 <p>Csak szórakozva tanulhatunk.</p>
-<cite>Anatole France</cite>
+<div class="cite">Anatole France</div>
 </blockquote>
 
 <blockquote>
 <p>Nem az a mester, aki megtanít valamire, hanem aki megihleti a
 tanítványt, hogy legjobb tudását latba vetve fölfedezze azt, amit már eddig
 is tudott.</p>
-<cite>Paulo Coelho</cite>
+<div class="cite">Paulo Coelho</div>
 </blockquote>
 
 <blockquote>
 <p>A gyermek feje nem edény, amit meg kell tölteni, hanem fáklya,
 amit lángra kell lobbantani.</p>
-<cite>Galileo Galilei</cite>
+<div class="cite">Galileo Galilei</div>
 </blockquote>
 
 <blockquote>
 <p>A tanár híddá feszül s biztatja tanítványait, keljenek át rajta; majd
 miután megkönnyítette számukra az átjutást, boldogan összeroskad, arra
 buzdítva őket, hogy maguk építsenek hidakat.</p>
-<cite>Nikosz Kazantzakisz</cite>
+<div class="cite">Nikosz Kazantzakisz</div>
 </blockquote>
 
 <blockquote>
 <p>A jobb világért folytatott küzdelem legfontosabb helyszíne az
 osztályterem.</p>
-<cite>Rutger Bregman</cite>
+<div class="cite">Rutger Bregman</div>
 </blockquote>
 
 <blockquote>
@@ -97,14 +97,14 @@ ha a következő generációknak tervezel, tanítsd az embereket.</p>
 
 <blockquote>
 <p>Az embert megszülni nehéz, de jóra nevelni még nehezebb.</p>
-<cite>Makszim Gorkij</cite>
+<div class="cite">Makszim Gorkij</div>
 </blockquote>
 
 <blockquote>
 <p>Az iskola arra való, hogy az ember megtanuljon tanulni, hogy felébredjen
 tudásvágya, megismerje a jól végzett munka örömét, megízlelje az alkotás
 izgalmát, és megtalálja a munkát, amit szeretni fog.</p>
-<cite>Szent-Györgyi Albert</cite>
+<div class="cite">Szent-Györgyi Albert</div>
 </blockquote>
 
 <blockquote>
@@ -112,37 +112,37 @@ izgalmát, és megtalálja a munkát, amit szeretni fog.</p>
 és szó nélkül kiosztod közöttük a szerszámokat, és rámutatsz a tervrajzra.
 Ehelyett először keltsd fel bennük az olthatatlan vágyat a végtelen tenger
 iránt.</p>
-<cite>Antoine de Saint-Exupéry</cite>
+<div class="cite">Antoine de Saint-Exupéry</div>
 </blockquote>
 
 <blockquote>
 <p>A tanulatlan emberek csak alakjukban különböznek a vadállatoktól.</p>
-<cite>Kleanthész</cite>
+<div class="cite">Kleanthész</div>
 </blockquote>
 
 <blockquote>
 <p>Lehet, hogy elfelejtik, mit mondtál nekik, de soha nem fogják
 elfelejteni, hogy hogyan érezték magukat szavaidtól.</p>
-<cite>Carl Wiliam Buehner</cite>
+<div class="cite">Carl Wiliam Buehner</div>
 </blockquote>
 
 <blockquote>
 <p>A tanári szakma állandó nyomást jelent, különösen középiskolai szinten.
 Az ember minden hét órából ötöt a színpadon tölt, és a világ legnehezebb
 közönségének kell játszania.</p>
-<cite>Stephen King</cite>
+<div class="cite">Stephen King</div>
 </blockquote>
 
 <blockquote>
 <p>Tanítani annyi, mint emberekkel foglalkozni, átadni mindazt a tudást,
 amit az előző nemzedékek felhalmoztak.</p>
-<cite>Barát Tamás</cite>
+<div class="cite">Barát Tamás</div>
 </blockquote>
 
 <blockquote>
 <p>A tanító olyan lámpás, mely minél inkább világít másnak, annál inkább
 fogyasztja önmagát.</p>
-<cite>Gárdonyi Géza</cite>
+<div class="cite">Gárdonyi Géza</div>
 </blockquote>
 
 <blockquote>
@@ -153,25 +153,25 @@ az érdeklődést, önálló véleményalkotásra és munkára ösztönöz, ugya
 tudásban, magatartásban, anyanyelvhez, hagyományokhoz való ragaszkodásban
 és gondolkodásban a tevékeny, művelt ember mintaképe. Csak az ilyen tanár
 tud jelenlétével és munkájával szellemi forrongást kiváltani.</p>
-<cite>Németh László</cite>
+<div class="cite">Németh László</div>
 </blockquote>
 
 <blockquote>
 <p>Kezdeményezni, azután hagyni, hogy a gyermek szabadon kibontakoztathassa
 képességeit. Ez a pedagógus feladata.</p>
-<cite>Maria Montessori</cite>
+<div class="cite">Maria Montessori</div>
 </blockquote>
 
 <blockquote>
 <p>Egy tanárnak minden körülmények között morális példát kell adnia. Nem
 cselekedhet másként.</p>
-<cite>Cornides István</cite>
+<div class="cite">Cornides István</div>
 </blockquote>
 
 <blockquote>
 <p>Amikor az ember tanít, nem engedheti meg, hogy a tanítványai előtte
 járjanak, különösen nem a technológia terén.</p>
-<cite>Edward Snowden</cite>
+<div class="cite">Edward Snowden</div>
 </blockquote>
 
 <blockquote>
@@ -179,23 +179,23 @@ járjanak, különösen nem a technológia terén.</p>
 tanítjuk. Amit az iskolában tanultunk, annak legnagyobb részét elfelejtjük,
 de a hatás, melyet egy jó oktatási rendszer szellemi tehetségeinkre
 gyakorol, megmarad.</p>
-<cite>Eötvös József</cite>
+<div class="cite">Eötvös József</div>
 </blockquote>
 
 <blockquote>
 <p>Szeretet nélkül lehet fát aprítani, és szeretet nélkül lehet téglákat
 formálni, de szeretet nélkül nem szabad gyermekekkel bánni!</p>
-<cite>Lev Tolsztoj</cite>
+<div class="cite">Lev Tolsztoj</div>
 </blockquote>
 
 <blockquote>
 <p>Én azt hiszem, annál nincs nagyobb öröm, mint valakit megtanítani
 valamire, amit nem tud, és nagyobb jótétemény sem.</p>
-<cite>Móricz Zsigmond</cite>
+<div class="cite">Móricz Zsigmond</div>
 </blockquote>
 
 <blockquote>
 <p>Szép dolog kifaragni egy szobrot és életet adni neki; de még szebb
 kiformálni egy emberi lelket és megtölteni igazsággal.</p>
-<cite>Victor Hugo</cite>
+<div class="cite">Victor Hugo</div>
 </blockquote>

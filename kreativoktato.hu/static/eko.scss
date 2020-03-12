@@ -71,6 +71,27 @@ blockquote {
   border-left: 3px solid gray;
 }
 
+$blockquoteswidth:80%;
+$blockquotespadding:100%-$blockquoteswidth;
+%blockquotes {
+  font-style: normal;
+  width:$blockquoteswidth;
+}
+blockquote:nth-child(odd) p {
+  @extend %blockquotes;
+  text-align: left;
+}
+blockquote:nth-child(even) p {
+  @extend %blockquotes;
+  text-align: right;
+  padding-left: $blockquotespadding;
+}
+
+blockquote .cite {
+  font-style: italic;
+  text-align: right;
+}
+
 // ************
 // Menürendszer
 // https://www.w3schools.com/Css/css_navbar.asp
