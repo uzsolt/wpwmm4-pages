@@ -19,7 +19,7 @@ create_mainmenu() {
   printf "<div id='menu'>\n"
   printf "  <div id='menubtn'>MENÜ</div>\n"
   printf "  <div id='menucontent'>\n"
-  printf "    <img src='%s' alt='%s'>\n" "https://static.kreativoktato.hu/pict/logo-menu.png" "EKO"
+  printf "    <img src='%s' alt='%s'>\n" "STATIC/pict/logo-menu.png" "EKO"
   IFS="|"
   
   while read menu menuen file; do

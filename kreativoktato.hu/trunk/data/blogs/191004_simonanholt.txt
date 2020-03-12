@@ -6,7 +6,7 @@ A globális problémákat – a saját viselkedésünkkel – mi magunk okoztuk!
 <p>Pusztai-Varga Ildikó kolléganőmmel 2019. szeptember végén vettünk részt az EAIE
 (European Association of International Education) éves kiállításán és
 konferenciáján Helsinkiben.</p>
-<img src="https://static.kreativoktato.hu/pict/blog/191004_01.jpg" alt="fotó"/>
+<img src="STATIC/pict/blog/191004_01.jpg" alt="fotó"/>
 <p>Amellett, hogy Ildikó második hazájának tekinti
 Finnországot tanulmányai és az itt eltöltött kalandos hónapjai miatt, azon
 sajátos élmény mellett, hogy szeptember végén már-már téli kabátot kellett
