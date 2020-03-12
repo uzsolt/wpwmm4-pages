@@ -1,0 +1,329 @@
+$footerHeight: 3ex;
+$mainTextColor: #444;
+$nevjegyBG:rgba(157, 169, 226,0.5);
+$menuBG:rgba(255,255,255,0.5);
+$menuNormalC:#eb0144;
+$menuNormalHBG:#c4cbed;
+$menuSelectedBG:#fde19b;
+$menuSelectedC:$menuNormalC;
+$menuWidth:15em;
+$menuDelta:0.5em; 
+$submenuNormalBG:$nevjegyBG;
+$submenuNormalHBG:rgba(157,169,226,0.9);
+$submenuNormalC:black;
+$submenuSelectedBG:#fabc1e;
+$submenuSelectedC:black;
+$mainWidthMult:3;
+$mainMaxWidth:$mainWidthMult*$menuWidth;
+$tableCol1: #ededed;
+
+// ***************
+// Alapbeállítások
+// ***************
+h1,h2,h3 {
+  line-height: 1.2;
+  color: $menuNormalC;
+}
+#flag {
+  height: 1em;
+  box-shadow: 3px 5px #bbb;
+}
+#main a {
+  color: $menuNormalC;
+}
+dt {
+  font-weight: bold;
+}
+dd img {
+  width: 2em;
+}
+
+video {
+  max-width: $mainMaxWidth;
+  height: auto;
+}
+
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: $footerHeight;
+  line-height: $footerHeight;
+  width: 100%;
+
+  background-color: $menuSelectedBG;
+  color: $menuNormalC;
+
+  font-weight: bold;
+  text-align: center;
+
+  border-color: black;
+  border-top-style: outset;
+}
+#footer a {
+  color: $menuNormalC;
+  text-decoration: none;
+}
+
+blockquote {
+  padding: 0 10px;
+  font-style: italic;
+  border-left: 3px solid gray;
+}
+
+$blockquoteswidth:80%;
+$blockquotespadding:100%-$blockquoteswidth;
+%blockquotes {
+  font-style: normal;
+  width:$blockquoteswidth;
+}
+blockquote:nth-child(odd) p {
+  @extend %blockquotes;
+  text-align: left;
+}
+blockquote:nth-child(even) p {
+  @extend %blockquotes;
+  text-align: right;
+  padding-left: $blockquotespadding;
+}
+
+blockquote .cite {
+  font-style: italic;
+  text-align: right;
+}
+
+// ************
+// Menürendszer
+// https://www.w3schools.com/Css/css_navbar.asp
+// ************
+#menu {
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: $menuWidth;
+  height: 100%;
+
+  background-color: $menuBG;
+  font-weight: bold;
+
+  float: left;
+
+  padding-left:5px;
+  padding-right:5px;
+
+  border-color:black;
+  border-right-style:inset;
+  border-top-style:outset;
+}
+#menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+%normal_menu {
+  display: block;
+  text-align: center;
+  padding: 1em;
+}
+%normal_menu_href {
+  color:  $menuNormalC;
+  text-decoration: none;
+  font-size: 1em;
+}
+.normal_menu {
+  @extend %normal_menu;
+  @extend %normal_menu_href;
+}
+.normal_menu:hover {
+  background-color:  $menuNormalHBG;
+}
+.selected_menu {
+  @extend %normal_menu;
+  @extend %normal_menu_href;
+  border: 0.1em solid black;
+  border-radius: 0.5em;
+  background-color: $menuSelectedBG;
+  color: $menuSelectedC;
+}
+#submenu {
+  table-layout: fixed;
+  padding-left:$menuWidth+$menuDelta;
+  font-weight: bold;
+}
+#submenu a {
+  width: 10em;
+}
+.normal_submenu {
+  @extend %normal_menu;
+  @extend %normal_menu_href;
+  display: inline-block;
+  border: 1px solid black;
+  background-color: $submenuNormalBG;
+  color: $submenuNormalC;
+  opacity:0.6;
+  text-shadow: 5px;
+}
+.normal_submenu:hover {
+  background-color: $submenuNormalHBG;
+}
+.selected_submenu {
+  @extend %normal_menu;
+  @extend %normal_menu_href;
+  display: inline-block;
+  border: 0.1em solid black;
+  border-radius: 0.5em;
+  background-color: $submenuSelectedBG;
+  color: $submenuSelectedC;
+}
+
+body {
+  background-image: url("/pict/logo-tr.png");
+}
+%base {
+  margin-left: $menuWidth+$menuDelta;
+  padding-bottom: $footerHeight;
+  color: $mainTextColor;
+  font-size: 1.1em;
+  line-height: 1.4;
+  float: left;
+}
+#main {
+  @extend %base;
+  max-width: $mainMaxWidth;
+}
+
+// **************
+// Bemutatkozások
+// **************
+#mt_nevjegyek {
+  @extend %base;
+  overflow: hidden;
+}
+#mt_nevjegyek a {
+  text-decoration: none;
+  color: black;
+}
+%tagnevjegy {
+  border: 2px solid black;
+  border-radius: 15px 20px 30px 5px;
+  box-shadow: 3px 5px #555;
+  padding: 10px;
+
+  float: left;
+
+  font-size: 1em;
+
+  background-color: $nevjegyBG;
+}
+.tagnevjegy {
+  @extend %tagnevjegy;
+  width: 20em;
+  height: 9em;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+.tagnevjegy img {
+  max-width: 64px;
+  max-height: 90px;
+  padding-right: 10px;
+  float: left;
+}
+.tagnevjegy_nev {
+  font-weight: bold;
+}
+.tagnevjegy_vegz {
+  font-style: italic;
+}
+.tagnevjegy_eko {
+  font-style: normal;
+}
+.tagnevjegy_email {
+  color: $menuNormalC;
+}
+.tag {
+  float: left;
+  display:table-row;
+
+  border-color:#444;
+  border-bottom-style:solid;
+
+  padding-left:6px;
+  padding-top:10px;
+  padding-bottom:4px;
+}
+.hrefvissza {
+  float: right;
+}
+.tag .tagnev {
+  font-weight: bold;
+  font-size: 1.2em;
+  line-height: 1.2;
+}
+.tag .tagleiras {
+  padding: 12px;
+  float: none;
+  display:table-cell;
+}
+.tag .tagimg {
+  float: left;
+  width: 200px;
+  display:table-cell;
+}
+
+// ***************
+// Blogbejegyzések
+// ***************
+#blogcontent {
+  margin-left: $menuWidth+$menuDelta;
+  padding-right: 10px;
+  overflow-x: auto;
+}
+#blogtoc {
+  width:100%;
+  border-collapse: collapse;
+}
+#blogtoc th {
+  height: 2em;
+  background-color: $menuSelectedBG;
+}
+#blogtoc, td {
+  border-bottom: 1px solid black;
+}
+#blogtoc td {
+  padding-left: 5px;
+}
+#blogtoc tr:nth-child(even) {
+  background-color:$tableCol1;
+}
+#blogtoc tr:hover {
+  background-color:$menuNormalHBG;
+}
+.bcdate {
+  width:10%;
+  text-align: center;
+}
+.bctitle {
+  width:20%;
+}
+.bctitle a {
+  text-decoration: none;
+  color: $menuNormalC;
+  font-weight: bold;
+}
+.bctitle .bcheadline {
+  color: black;
+  font-weight: normal;
+}
+.bcauthor {
+  width:15%;
+  text-align: center;
+}
+.bctags {
+  width:10%;
+}
+.blogtext img {
+  max-width: 100%;
+}
+
+@import "responsive.scss";

@@ -1,0 +1,53 @@
+// Reszponzív kiegészítések
+#menubtn {
+  display: none;
+}
+
+// https://www.w3schools.com/Css/css_dropdowns.asp
+@media only screen and (max-width:($mainWidthMult)*$menuWidth) {
+
+  #menu {
+    width:100%;
+    position:relative;
+    border:none;
+    font-size:1em;
+
+    background-image: url("/pict/logo-tr0.png");
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-position: 2% 15%;
+  }
+
+  #menu img {
+    display: none;
+  }
+
+  #menu a {
+    border: 0.1em solid black;
+    border-radius: 0.3em;
+    padding-top:0.5em;
+  }
+
+  #main, #mt_nevjegyek, #blogcontent {
+    margin-left: 0;
+    float: left;
+    width:100%;
+    position:relative;
+  }
+
+  #submenu {
+    padding-left:0;
+    width:100%;
+  }
+
+}
+
+@media only screen and (max-height:25em) {
+  #menu img {
+    display:none;
+  }
+  .normal_menu, .selected_menu {
+    font-size: 0.7em;
+    padding: 0.5em;
+  }
+}

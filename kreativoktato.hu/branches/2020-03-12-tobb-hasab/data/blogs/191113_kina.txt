@@ -1,0 +1,49 @@
+Klímaproblémák 1. rész
+Kína, avagy hogyan tudja egy ország egyedül romba dönteni a világot?
+Pintér Katalin
+klíma
+Kína, avagy hogyan tudja egy ország egyedül romba dönteni a világot?
+<p>Az _HREF(`191112_klimavaltozas.html',`előző bejegyzésben')
+már elmondtam, hogyan kezdtem a
+klímaváltozással foglalkozni. Jelenleg az Új Nemzeti Kiválósági
+Program keretében foglalkozom a legnagyobb kibocsátók intézkedéseivel,
+magatartásával és motivációival. Ezek közül az első Kína, mint a
+legnagyobb üvegházgáz kibocsátó a világon.</p>
+<img src="STATIC/pict/blog/191113_1.jpg" alt="Kína"/>
+<p>Nézzük meg részletesen, hogyan járul hozzá Kína a katasztrófához
+(vagy éppen annak megoldásához):</p>
+<h3>1. A legnagyobb üvegház-hatású gázkibocsátó</h3>
+<p>2017-ben a világ CO<sub>2</sub> kibocsátásának 27%-át adta a maga 9839
+megatonnájával, ezzel megszerezve az első helyet. 2019 második
+negyedévében ez a szám már 10.898 Mt volt és hol van még az Újév?</p>
+<h3>2. Egy övezet, egy út</h3>
+<p>A kínai kormány 2013-ban hirdette meg az Új Selyemút projektet,
+azért, hogy az áruk könnyen eljussanak a legnagyobb kereskedelmi
+partnerekhez. Egy hátulütője, hogy rengeteg üvegházgázba kerül
+kiépíteni az infrastruktúrát, a kikötőket, vasútvonalakat,
+repülőtereket.</p>
+<h3>3. Kereskedelmi háború az Egyesült Államokkal</h3>
+<p>Nem egyedül Kína a ludas a világ elpusztításában, az USA is szépen
+kiveszi a részét belőle. Ilyen helyzetben természetes, hogy a
+kormányok a munkahelyek, az életszínvonal, a stabil gazdaság
+fenntartását szorgalmazzák a klímacélok elérése helyett. Persze
+kérdés, vajon melyik érné meg jobban hosszútávon?</p>
+<h3>4. Cap-and-trade rendszer EU mintára</h3>
+<p>Ennyi rossz után jöhet egy kis előrelépés. Az Unióban ez a rendszer
+már régóta jól működik, ezért felajánlotta Kínának, hogy segít
+kiépíteni egy ilyet az országban is. Ez a „kis” segítség 10 millió
+euróba kerül.</p>
+<h3>5. Nemzeti Terv az Éghajlatváltozás Megoldására és Kék Ég Védelmi
+Terv</h3>
+<p>Maga a kormány is próbál hozzájárulni a kibocsátás csökkentéséhez,
+az egyik terv a kibocsátás csökkentésére, a másik a levegőminőség
+javítására irányul. Hajrá Kína! &#9786;</p>
+<h3>6. Kötelezettségvállalások a Párizsi egyezményben</h3>
+<p>Kína vállalta, hogy 2030-ra tetőzi kibocsátásának mértékét és
+onnantól próbálja csökkenteni azt. Azonban a számok mást mutatnak… A
+jelen intézkedések alapján nem 2, hanem 4-5°C lesz a hőmérséklet emelkedése, még
+ha a többi ország ezen határon belül maradna is. (Elöljáróban annyit,
+hogy ők sem fogják ezt teljesíteni.)</p>
+<hr>
+<p><em>Az Innovációs és Technológiai Minisztérium ÚNKP-19-2-SZTE-102 kódszámú
+Új Nemzeti Kiválóság Programjának szakmai támogatásával készült.</em></p>

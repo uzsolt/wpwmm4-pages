@@ -1,0 +1,56 @@
+Mi fán terem klímaváltozás?
+A nagy tényfeltáró bejegyzés
+Pintér Katalin
+klíma
+A nagy tényfeltáró bejegyzés
+<p>Mint rendes egyetemista, én is a szakdolgozat témájának leadása
+előtt néhány nappal, hirtelen ötlettől vezérelve választottam ki egy
+évvel ezelőtt a klímaváltozást témámnak. Motivációim a következők
+voltak: napjaink kihívása, biztosan sok forrás lesz hozzá, épp volt
+erről egy kurzusom, így kevés energiaráfordítással meglesz az a
+szakdolgozat... Nem ez a legjobb recept, ne kövesse senki a
+példámat!</p>
+<p>De viccet félretéve, már egy éve foglalkozok kutatás szintjén a
+klímaváltozással, hiszen a szakdolgozatom megírása közben egyre jobban
+elkezdett érdekelni, hogy mi van mögötte. És természetesen ahogy
+többet tudtam, úgy egyre jobban elkezdtem aggódni, mi lesz velünk?</p>
+<img src="STATIC/pict/blog/191112_1.jpg" alt="Klímaváltozás"/>
+<p><em>Kép forrása:
+_HREF(`https://www.pinterest.com',`pinterest')</em></p>
+<p>Jelen bejegyzés célja, azon alapvető fogalmak tisztázása, amelyekre
+a későbbi bejegyzésekben hivatkozni fogok. Nyugi, semmiféle tudományos
+és érthetetlen maszlag nem lesz!</p>
+<h3>Klímaváltozás</h3>
+<p>Természetes folyamat, a Föld történetének kezdete óta jelen van.
+Oka a bolygó légköri összetételének folyamatos változása. Jelenleg is
+erről van szó, kivéve azt, hogy mi, emberek ráteszünk még egy
+lapáttal, így egyre jobban gyorsul a melegedés.</p>
+<h3>Üvegházhatású gáz (ÜHG)</h3>
+<p>Hat ilyen gáz van a légkörben (a legfontosabbak: CO<sub>2</sub>,
+CH<sub>4</sub>), amely nem
+engedi visszaverődni a világűrbe a napsugarak egy részét. Ez
+szükséges, nélküle bolygónk átlaghőmérséklete -18°C körül lenne. (Ez
+igen kellemetlen volna az élővilág számára...)</p>
+<h3>Kiotói Jegyzőkönyv</h3>
+<p>Az első és az egyik legfontosabb ENSZ dokumentum a klímaváltozás
+elleni küzdelemben. Lényege, hogy minden országnak van egy ÜHG
+kibocsátási kerete, amelyet, ha túllép más országtól vehet szabad
+kapacitást, vagy büntetést fizethet. Ha jól dönt, igazi win-win
+szituáció.</p>
+<h3>Cap-and-trade rendszer</h3>
+<p>Ennek mintájára az Európai Unió létrehozott egy kereskedelmi
+rendszert, amelynek ugyanez a lényege, csak nem országok, hanem gyárak
+között.</p>
+<h3>Párizsi Egyezmény</h3>
+<p>A másik legfontosabb ENSZ dokumentum ezen a területen. Lényege,
+hogy maximum 2°C-on kell stabilizálni a Föld átlaghőmérsékletének
+emelkedését az ipari forradalomhoz képest.
+A részes országok kötelezettségvállalásokat tettek, azért, hogy ezt
+sikerüljön betartani.</p>
+<h3>IPCC</h3>
+<p>Ez a szervezet a klímaváltozásról készít jelentéseket. 2007-ben még
+béke Nobel-díjat is kapott. Amit a szervezet előre jelez, az nagy
+valószínűséggel úgy is lesz.</p>
+<hr>
+<p><em>Az Innovációs és Technológiai Minisztérium ÚNKP-19-2-SZTE-102 kódszámú
+Új Nemzeti Kiválóság Programjának szakmai támogatásával készült.</em></p>

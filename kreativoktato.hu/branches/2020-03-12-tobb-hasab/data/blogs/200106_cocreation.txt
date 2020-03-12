@@ -1,0 +1,60 @@
+Mi az a „co-creation” és hogyan alkalmazható az oktatásban?
+Co-creation
+Kéri Anita
+co-creation;good generation;felsőoktatás
+Co-creation
+<p>A co-creation jelensége az üzleti világban bukkant fel először, hiszen a
+különböző vállalatok felismerték a fogyasztók változó igényeit és ezzel
+együtt azt is, hogy a vásárlók újabb és újabb generációja számára már nem a
+vállalat szabja meg azt, hogy mit fogyaszt. Így arra jutottak, hogy annak
+érdekében, hogy termékeiket/szolgáltatásaikat továbbra is értékesíteni
+tudják, megkérdezik a vásárlóikat arról, hogy mit szeretnének
+fogyasztani.</p>
+<p>Bizonyára a legtöbb ember hallott már a Starbucks kávézóról vagy az
+IKEA-ról. Mi lehet bennük a közös? Mindkettőnél alkalmazzák a
+co-creation-t. No de nézzük akkor a gyakorlatban is, hogy mi az a
+co-creation. Kezdjük a Starbucks-szal és két közismert ténnyel:</p>
+<ol>
+<li>A Starbucks egyik leghíresebb itala az őszi időszakban kapható Pumpkin
+Spice Latte, ami egy sütőtökös ízesítésű latte.</li>
+<li>A Starbucksban mindig ingyenes a WiFi.</li>
+</ol>
+<p>Mindkét tényező sikeres marketingfogásnak tekinthető, hiszen mindenki
+jól ismeri a Starbucksban ülő hölgyeket és urakat, de talán legtöbbször
+egyetemistákat és üzetembereket, akiknek különleges ismertetőjegye a laptop
+és egy Starbucks ital az asztalukon. De kinek az ötlete volt a Pumpkin
+Spice Latte és az ingyen WiFi? Nem a Starbucks, hanem a náluk vásárló
+fogyasztók ötlete, melyet co-creationnek nevezünk. (Ha neked is van egy jó
+ötleted, nem kell mást tenned, mint felmenni a
+_HREF(`https://ideas.starbucks.com/',`Starbucks') oldalára,
+beküldeni az ötletet és várni, hogy azt arra érdemesnek találják és
+megvalósítsák.)</p>
+<img src="https://static.kreativoktato.hu/pict/blog/200106_1.png" alt="grafika"/>
+<p>Nézzük a második példát az IKEA-t. Közismert, hogy az IKEA-s bútorokat a
+fogyasztóknak kell összeszerelnie, ez már tekinthető egyfajta
+co-creationnek, de az IKEA ennél is tovább lépett. Online bárki
+megtervezheti saját szekrényét különböző elemekből, amit aztán az IKEA
+leszállít neki, a vevő pedig otthon összeszereli. Ezt szintén
+co-creationnek nevezzük.</p>
+<p>Ha az üzleti világban sikerült elsajátítanunk a co-creation jelentését,
+nézzük akkor, hogy mit jelent az oktatásban. Hasonlóan a Starbucks és IKEA
+példához, oktatásban is a fogyasztók, vagyis a hallgatók véleményét kérjük
+ki arról, hogy mit és hogyan szeretnének fogyasztani, vagyis tanulni. A
+szakirodalom alapján megkülönböztethetjük egymástól az egész tananyag
+együttes megalkotását, a tanórák menetének kialakítását és egy-egy órai
+feladat közös kidolgozását. Az oktatón és a hallgatók hajlandóságán,
+képességein és készségein múlik az, hogy a co-creation melyik verzióját
+szeretnék és tudják megvalósítani.</p>
+<p>Miért is fontos a co-creation az oktatásban? Az újabb és újabb
+generációk immáron a technológia és internet világában nőnek fel.
+Bizonyítottan kevesebb ideig tudnak odafigyelni egy-egy dologra, képzeljük
+csak el, hogy tudnának csendben végig ülni és folyamatosan figyelni 90
+percig, ami egy egyetemi előadás időtartama, ha egy 20 perces videó
+megtekintése is gondot okoz. Erre a dilemmára lehet megoldás a co-creation,
+mely módszer arra törekszik, hogy a hallgatók aktív részesei, megalkotói
+legyenek annak, amit tanulnak, így élmény és tapasztalás útján
+sajátíthatják el az ismeretanyagot.</p>
+<p>Ha az alábbi bejegyzés felkeltette az érdeklődésedet és szeretnél többet
+megtudni a co-creation jelenségéről az oktatásban, olvasd el az
+_HREF(`https://www.researchgate.net/publication/338402649_Engaging_students_-_Is_co-creation_the_answer',`alábbi
+cikket'), mely mélyebb betekintést nyújt a fogalomba.</p>
