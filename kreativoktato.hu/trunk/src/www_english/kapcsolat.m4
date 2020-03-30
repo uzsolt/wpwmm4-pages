@@ -8,8 +8,12 @@ _H1(`Contact')
   <dt>E-mail:</dt><dd><a href="mailto:info@kreativoktato.hu">info@kreativoktato.hu</a></dd>
   <dt>Community sites:</dt>
     <dd>
-      <a href="https://www.facebook.com/kreativ.oktato"><img src="STATIC/pict/facebook.png" alt="Facebook"/></a>
-      <a href="https://www.linkedin.com/company/association-for-creative-education"><img src="STATIC/pict/linkedin.svg" alt="LinkedIn"/></a>
-      <a href="https://www.youtube.com/watch?v=RJOHNNeI84M"><img src="STATIC/pict/youtube.png" alt="Youtube"/></a>
+      <a href="https://www.facebook.com/kreativ.oktato"><img src="STATIC/pict/facebook.png" alt="Facebook"/>EKO - Kreatív Oktatás</a>
+    </dd>
+    <dd>
+      <a href="https://www.linkedin.com/company/association-for-creative-education"><img src="STATIC/pict/linkedin.svg" alt="LinkedIn"/>Association for Creative Education</a>
+    </dd>
+    <dd>
+      <a href="https://www.youtube.com/watch?v=RJOHNNeI84M"><img src="STATIC/pict/youtube.png" alt="Youtube"/>Kreatív Oktatás</a>
     </dd>
 </dl>
