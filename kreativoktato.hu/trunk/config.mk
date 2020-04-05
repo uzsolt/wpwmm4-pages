@@ -110,4 +110,4 @@ ${DEST_DIR}${PICTDIR}/logo-menu.png:	static/logo/logo-small-200px-01.png
 upload:
 	cat upload.lftp | lftp
 
-.include "css.mk"
+.include "mk/css.mk"
