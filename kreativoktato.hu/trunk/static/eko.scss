@@ -279,51 +279,9 @@ body {
   padding-right: 10px;
   overflow-x: auto;
 }
-#blogtoc {
-  width:100%;
-  border-collapse: collapse;
-}
-#blogtoc th {
-  height: 2em;
-  background-color: $menuSelectedBG;
-}
-#blogtoc, td {
-  border-bottom: 1px solid black;
-}
-#blogtoc td {
-  padding-left: 5px;
-}
-#blogtoc tr:nth-child(even) {
-  background-color:$tableCol1;
-}
-#blogtoc tr:hover {
-  background-color:$menuNormalHBG;
-}
-.bcdate {
-  width:10%;
-  text-align: center;
-}
-.bctitle {
-  width:20%;
-}
-.bctitle a {
-  text-decoration: none;
-  color: $menuNormalC;
-  font-weight: bold;
-}
-.bctitle .bcheadline {
-  color: black;
-  font-weight: normal;
-}
-.bcauthor {
-  width:15%;
-  text-align: center;
-}
-.bctags {
-  width:10%;
-}
 .blogtext img {
   max-width: 100%;
 }
 
+@import "table.scss";
 @import "responsive.scss";

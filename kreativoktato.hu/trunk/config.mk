@@ -64,7 +64,6 @@ GREQ=	scripts/menu.sh \
 
 TAGKEPEK!=	sed "s,.*|\(.*\)|.*,\1.jpg," data/tagok/tagok.lst data/onkentesek/onkentesek.lst
 TARGETS_MANUAL+=	${TAGKEPEK:@kep@${PICTDIR}/${kep}@}
-TARGETS_MANUAL+=	www_static/css/eko.css
 TARGETS_MANUAL+=	${PICTDIR}/favicon.ico ${PICTDIR}/logo.png \
 			${PICTDIR}/logo-tr.png \
 			${PICTDIR}/logo-tr0.png \
@@ -84,10 +83,6 @@ VIRTUALDIR_blog_en=	${LANG_EN_DIR}/blog/
 VIRTUALOUT_blog_en!=	ls data/blogs_en/ | sed 's,\.txt$$,.html,'
 VIRTUALREQ_blog_en=	scripts/blogentry.sh layouts/main_en.m4
 VIRTUALREQRULE_blog_en=	C,.html,.txt,:C,^,data/blogs_en/,
-
-${ASSETS_DEST_DIR}css/eko.css:	static/eko.scss static/responsive.scss
-	@mkdir -p ${ASSETS_DEST_DIR}css
-	sassc -t compressed ${>:[1]} $@
 
 .for kep in ${TAGKEPEK}
 ${DEST_DIR}${PICTDIR}/${kep}:	static/tagok/${kep}
@@ -114,3 +109,5 @@ ${DEST_DIR}${PICTDIR}/logo-menu.png:	static/logo/logo-small-200px-01.png
 
 upload:
 	cat upload.lftp | lftp
+
+.include "css.mk"

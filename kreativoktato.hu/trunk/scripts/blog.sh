@@ -28,16 +28,13 @@ taglist() {
 
 tartalomjegyzek() {
   cat << EOF
-<table id="blogtoc">
-<thead>
-  <tr>
-    <th>${STR_CIM}</th>
-    <th>${STR_SZERZO}</th>
-    <th>${STR_DATUM}</th>
-    <th>${STR_CIMKEK}</th>
-  </tr>
-</thead>
-<tbody>
+<div class='dtable'>
+  <div class='dheading'>
+    <div class='dcell'>${STR_CIM}</div>
+    <div class='dcell'>${STR_SZERZO}</div>
+    <div class='dcell'>${STR_DATUM}</div>
+    <div class='dcell'>${STR_CIMKEK}</div>
+  </div>
 EOF
   for blog in $(ls ${BLOGDIR}/*.txt | sort -r); do
     bl=$(echo ${blog} | sed "s,.*/,, ; s,\.txt$,,")
@@ -47,12 +44,12 @@ EOF
     AUTHOR=$(sed -n 3p ${blog})
     TAGS=$(sed -n "s@;@, @g ; 4p" ${blog})
     HEADLINE=$(sed -n 5p ${blog})
-    printf "  <tr>
-    <td class='bctitle'><a href='%s'><div class='bctitlediv'>%s<br><span class='bcheadline'>%s</span></div></a></td>
-    <td class='bcauthor'>%s</td>
-    <td class='bcdate'>%s</td>
-    <td class='bctags'>%s</td>
-  </tr>\n" \
+    printf "  <div class='drow'>
+    <div class='dcell bctitle'><a href='%s'><div class='bctitlediv'>%s<br></div></a> (%s)</div>
+    <div class='dcell bcauthor'>%s</div>
+    <div class='dcell bcdate'>%s</div>
+    <div class='dcell bctags'>%s</div>
+  </div>\n" \
       "/blog/${bl}.html" "${TITLE}" \
       "${HEADLINE}" \
       "${AUTHOR}" \
@@ -60,8 +57,7 @@ EOF
       "${TAGS}"
   done
   cat << EOF
-</tbody>
-</table>
+</div>
 EOF
 }
 
