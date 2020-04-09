@@ -8,6 +8,8 @@
 # 5. sor: rövid összefoglaló
 # többi sor: szöveg
 
+. "scripts/function.sh"
+
 if [ "${1}" = "en" ]; then
   BLOGDIR=data/blogs_en/
   STR_CIM="Title"
@@ -27,15 +29,15 @@ taglist() {
 }
 
 tartalomjegyzek() {
-  cat << EOF
-<div class='dtable'>
-  <div class='dheading'>
-    <div class='dcell'>${STR_CIM}</div>
-    <div class='dcell'>${STR_SZERZO}</div>
-    <div class='dcell'>${STR_DATUM}</div>
-    <div class='dcell'>${STR_CIMKEK}</div>
-  </div>
-EOF
+
+  divtable_begin
+
+  divtable_row_heading \
+    "${STR_CIM}" "" \
+    "${STR_SZERZO}" "" \
+    "${STR_DATUM}" "" \
+    "${STR_CIMKEK}" ""
+
   for blog in $(ls ${BLOGDIR}/*.txt | sort -r); do
     bl=$(echo ${blog} | sed "s,.*/,, ; s,\.txt$,,")
     DATUM=$(date -j -f "%y%m%d" $(echo ${bl} | cut -b 1-6) +"%Y.%m.%d.")
@@ -44,21 +46,15 @@ EOF
     AUTHOR=$(sed -n 3p ${blog})
     TAGS=$(sed -n "s@;@, @g ; 4p" ${blog})
     HEADLINE=$(sed -n 5p ${blog})
-    printf "  <div class='drow'>
-    <div class='dcell bctitle'><a href='%s'><div class='bctitlediv'>%s<br></div></a> (%s)</div>
-    <div class='dcell bcauthor'>%s</div>
-    <div class='dcell bcdate'>%s</div>
-    <div class='dcell bctags'>%s</div>
-  </div>\n" \
-      "/blog/${bl}.html" "${TITLE}" \
-      "${HEADLINE}" \
-      "${AUTHOR}" \
-      "${DATUM}" \
-      "${TAGS}"
+    divtable_row \
+      "<a href='/blog/${bl}.html'><div class='bctitlediv'>${TITLE}<br></div></a> ${HEADLINE}" "bctitle" \
+      "${AUTHOR}" "bcauthor" \
+      "${DATUM}" "bcdate" \
+      "${TAGS}" "bctags"
   done
-  cat << EOF
-</div>
-EOF
+
+  divtable_end
+
 }
 
 tartalomjegyzek

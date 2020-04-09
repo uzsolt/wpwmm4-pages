@@ -1,5 +1,5 @@
 .for l in ${LANG_DIRS}
-${l}/blog.html_REQ+=	scripts/blog.sh
+${l}/blog.html_REQ+=	scripts/blog.sh scripts/function.sh
 .endfor
 blogbejegyzesek!=	echo data/blogs/*
 ${LANG_HU_DIR}/blog.html_REQ+=	${blogbejegyzesek}
