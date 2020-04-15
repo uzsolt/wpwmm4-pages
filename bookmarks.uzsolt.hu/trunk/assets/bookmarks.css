@@ -1,21 +1,19 @@
 nav {
   text-align: center;
-  background-color: #aabbbb;
+  background-color: #e6dfcb;
   padding: 18px;
 }
 
 body {
-  background-color:#cccccc;
+  background-color:#eee9dd;
 }
 
 nav a {
-  color:#ffffff;
-  background-color:#4da682;
+  color:black;
+  background-color:#c5b387;
   text-decoration:  none;
-  -moz-border-radius:10px;
-  -webkit-border-radius:10px;
   border-radius:1px;
-  border:1px solid #3d9672;
+  border:1px solid #8a7742;
   padding:2px 2px 2px 2px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
@@ -40,9 +38,7 @@ h1,h2 {
   display:table-row;
   text-align:center;
   margin-top: 15px;
-  background-color: #99aaaa;
-  -moz-border-radius:10px;
-  -webkit-border-radius:10px;
+  background-color: #ded4ba;
   border-radius:10px;
   border:4px solid grey;
   padding-bottom: 10px;
@@ -56,11 +52,11 @@ h1,h2 {
   margin: auto;
   display:  table-cell;
   margin-right: 20px;
-  background:linear-gradient(#4da682,#5eb792);
+  background:linear-gradient(#ded4ba,#c5b387);
   -moz-border-radius:10px;
   -webkit-border-radius:10px;
   border-radius:10px;
-  border:4px solid #309672;
+  border:4px solid #564a29;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
@@ -70,13 +66,13 @@ h1,h2 {
 
 .grouphref {
   display: block;
-  background-color:#5d9682;
+  background-color:#c5b387;
   -moz-border-radius:10px;
   -webkit-border-radius:10px;
   border-radius:10px;
-  border:1px solid #3d9672;
+  border:1px solid #564a29;
   margin-bottom:5px;
-  color:#ffccdd;
+  color:black;
 }
 
 .grouphref:hover {
@@ -90,5 +86,5 @@ h1,h2 {
   width:12px;
   padding-right: 10px;
   text-align: left;
-  color:yellow;
+  color:#78673a;
 }
