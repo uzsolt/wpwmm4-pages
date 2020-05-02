@@ -42,9 +42,4 @@ VIRT_DIR=	virtuals/
 upload:
 	cat upload.lftp | lftp
 
-.include "mk/blog.mk"
-.include "mk/css.mk"
-.include "mk/honlapkepek.mk"
-.include "mk/menu.mk"
-.include "mk/tagkepek.mk"
-.include "mk/tagok.mk"
+.include "includes.mk"

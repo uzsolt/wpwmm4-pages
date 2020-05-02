@@ -1,0 +1,27 @@
+Online tests – Which one shall I use?
+Bea Udvari
+
+<p>One of the biggest classroom challenges in the XXI. century is:
+shall we use and allow the use of smart devices in our lessons in the
+classroom? The following questions have arisen in most of us: should
+the students use their smart devices during the lessons? If yes, when?
+And what would be the suitable extent? Which tasks should we do with
+them? Or shall I completely prohibit the use of smart devices in the
+classroom? How can I do this? If I prohibit, isn’t it harmful? Can I
+only keep the attention through smart devices?</p>
+<p>These are eternal
+dilemmas, which we have already discussed in
+_HREF(`/blog/191010_tariannamaria.html',this blog post).</p>
+<p>Now, in
+this post, we are going to show some free, online platforms, which
+enables us to use smart devices in the classroom. This gamification
+can be used to test the students’ knowledge, and we can also reach
+those students who cannot be open in face-to-face interactions. The
+online pages have been tested based on our experience and with the
+same questionnaire. These tests are also published, so you can test
+their functions and working on your own.</p>
+m4_esyscmd(`scripts/jogyakorlat-online_teszt.sh en')
+<p>Please feel free to test these platforms. If you have any
+questions, or you would like to share your experiences with us, we are
+waiting for your emails to
+<a href="mailto:info@kreativoktato.hu">our email</a>.</p>

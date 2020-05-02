@@ -1,0 +1,29 @@
+Online tesztek – De mivel?
+Udvari Bea
+
+<p>A 21. század egyik legnagyobb tantermi kihívása:
+beengedjük-e az óráinkra az okoseszközöket? Többünkben
+megfogalmazódtak a következő kérdések: a diákok
+használhatják az okoseszközöket a tanórán? Ha igen, mikor?
+Milyen mértékben? Milyen feladatokat végezzünk velük? Vagy
+inkább teljes mértékben tiltsam ki az okoseszközt az
+osztályteremből? Hogyan tudnám ezt megtenni? Ezzel nem
+ártok? Csak az okoseszközökön keresztül tudom fenntartani a
+figyelmet?</p>
+<p>Ezek örök dilemmák, melyekről ebben a
+_HREF(`/blog/191010_tariannamaria.html',`blogbejegyzésben')
+is írtunk már.</p>
+<p>Ebben a bejegyzésben olyan
+ingyenes online felületeket mutatunk be, amelyek
+segítségével becsempészhető az okoseszköz a tanórára. E
+játékos forma a tudás tesztelésére lehet alkalma, és általa
+azokat a diákokat is meg tudjuk szólítani, akik egy
+face-to-face környezetben nem tudnak megnyílni. A
+felületeket a saját tapasztalataink és ugyanazon kérdéssor
+alapján teszteltük és mutatjuk be. Ezeket a teszteket közzé
+is tesszük, így bátran ki lehet próbálni e felületek
+működését.</p>
+m4_esyscmd(`scripts/jogyakorlat-online_teszt.sh')
+<p>Próbálja ki bátran ezeket!
+Ha kérdése van, vagy szeretné tapasztalatait megosztani velünk,
+várjuk levelét az <a href="mailto:info@kreativoktato.hu">e-mail címünkre</a>.</p>
