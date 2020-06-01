@@ -30,7 +30,7 @@ taglist() {
 
 tartalomjegyzek() {
 
-  divtable_begin
+  divtable_begin enableResponsive
 
   divtable_row_heading \
     "${STR_CIM}" "" \

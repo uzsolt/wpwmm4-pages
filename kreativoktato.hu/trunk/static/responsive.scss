@@ -42,17 +42,20 @@
 
 }
 
+// Táblázatok
 @media only screen and (max-width:($mainWidthMult+1)*$menuWidth) {
 
-  .dcell {
-    display:block;
-    width:100%;
-  }
+  .enableResponsive {
+    .dcell {
+      display:block;
+      width:100%;
+    }
 
-  .drow .dcell {
-    padding-top: 0.5em;
-    padding-bottom: 0em;
-    text-align:left;
+    .drow .dcell {
+      padding-top: 0.5em;
+      padding-bottom: 0em;
+      text-align:left;
+    }
   }
 
 }
