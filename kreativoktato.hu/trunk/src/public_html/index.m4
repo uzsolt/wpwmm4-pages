@@ -35,4 +35,6 @@ a globális problémákkal szembeni tudatosság növelhető.
 Hiszünk abban, hogy munkánkkal és szakmai tevékenységeinkkel
 hozzájárulunk ahhoz, hogy a fiatalok és idősek egyaránt
 kritikusabban és bátrabban szemléljék a körülöttünk lévő világot.</p>
+<p>Első bemutatkozó videónkból kiderül, hogy hogyan kapcsolódik Csáth Géza az EKO-hoz,
+illetve az, hogy mit jelent számunkra a kreatív oktatás.</p>
 <div class="video"><video controls poster="STATIC/pict/miert_az_eko_01.jpg"><source src="STATIC/video/miert_az_eko_01.mp4"></video></div>
