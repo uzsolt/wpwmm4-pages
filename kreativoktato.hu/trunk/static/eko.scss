@@ -146,6 +146,9 @@ blockquote .cite {
   background-color: $menuSelectedBG;
   color: $menuSelectedC;
 }
+#menucontent img {
+  padding-bottom: 2em;
+}
 #submenu {
   table-layout: fixed;
   padding-left:$menuWidth+$menuDelta;
