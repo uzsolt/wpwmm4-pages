@@ -31,3 +31,11 @@ the awareness and consciousness to global challenges can be increased.
 We believe that with our work we contribute to the fact that
 the younger and older generations both have a look at the surrounding world
 in a more critical and brave way.</p>
+<p>The education system should be redesigned building on topicality,
+curiosity, development of skills and systematic thinking.
+How does the EKO connect to it?
+Please watch the following video, and you will find the answers.</p>
+<div class="video"><video controls><source src="STATIC/video/miert_az_eko_01_felirat.mp4"></video></div>
+<p>Why is it so important to continuously renew in education?
+Why is the system so slow to open towards creativity? You'll find out from our latest video.</p>
+<div class="video"><video controls><source src="STATIC/video/eko_megujulas_felirat.mp4"></video></div>

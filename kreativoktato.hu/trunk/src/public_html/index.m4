@@ -38,3 +38,6 @@ kritikusabban és bátrabban szemléljék a körülöttünk lévő világot.</p>
 <p>Első bemutatkozó videónkból kiderül, hogy hogyan kapcsolódik Csáth Géza az EKO-hoz,
 illetve az, hogy mit jelent számunkra a kreatív oktatás.</p>
 <div class="video"><video controls poster="STATIC/pict/miert_az_eko_01.jpg"><source src="STATIC/video/miert_az_eko_01.mp4"></video></div>
+<p>Miért fontos folyamatosan megújulni az oktatásban?
+És vajon miért nyit a rendszer ennyire lassan a kreativitás felé? Következő videónkból kiderül.</p>
+<div class="video"><video controls><source src="STATIC/video/eko_megujulas.mp4"></video></div>
