@@ -10,8 +10,8 @@ create_js() {
 window.cookieconsent.initialise({
   "palette": {
       "popup": {
-        "background": "#33333355",
-        "text": "#444"
+        "background": "#333",
+        "text": "#aaa"
       },
       "button": {
         "background": "#56cbdb",
@@ -36,5 +36,5 @@ create_js \
 
 create_js \
   "This website uses cookies. These files provide us with information on the visitors' website browsing habits but do not keep their personal data." \
-  "Dismiss" \
+  "Accept" \
   "More" > ${1}/js/cookie_en.js
