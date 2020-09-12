@@ -9,7 +9,7 @@ _2_HEAD(
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="STATIC`/js/cookieconsent.min.js'"></script>
   <script src="STATIC`/js/facebook.js'"></script>
-	<noscript>
-		<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=860206794320333&ev=PageView&noscript=1"/>
-	</noscript>
 )m4_dnl
+_2_BODY(
+  <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=860206794320333&ev=PageView&noscript=1" alt=""/>
+)
