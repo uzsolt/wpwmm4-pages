@@ -17,6 +17,7 @@ LANG_DIRS=	${LANG_HU_DIR} \
 
 PAGES+=	index.html \
 	blog.html \
+	gdpr.html \
 	globalis.html \
 	jogyakorlat.html \
 	kapcsolat.html \
