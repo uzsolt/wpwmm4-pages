@@ -34,6 +34,9 @@ h1,h2,h3 {
 dt {
   font-weight: bold;
 }
+img {
+  max-width: 60%;
+}
 dd img {
   width: 2em;
 }
@@ -273,7 +276,17 @@ body {
   width: 200px;
   display:table-cell;
 }
-
+.tagnevjegykicsi {
+  @extend %tagnevjegy;
+  width: 20em;
+  height: 5em;
+}
+.tagnevjegykicsi img {
+  max-width: 64px;
+  max-height: 70px;
+  padding-right: 10px;
+  float: left;
+}
 // ***************
 // Blogbejegyzések
 // ***************
@@ -284,6 +297,40 @@ body {
 }
 .blogtext img {
   max-width: 100%;
+}
+
+
+// ***************
+// Projektek
+// ***************
+.gyujto {
+  border: 2px solid black;
+  border-radius: 15px 20px 30px 5px;
+  box-shadow: 3px 5px #555;
+  padding: 10px;
+  max-width: 100%;
+  float: left;
+
+  font-size: 1em;
+}
+.projektdiv {
+  max-width: 70%;
+  float: left;
+
+  font-size: 1em;
+}
+.projektmember {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.projectlogo {
+  max-width: 128px;
+  max-height: 128px;
+  float: left;
+}
+.soclogo {
+  max-width: 64px;
+  max-height: 64px;
 }
 
 @import "table.scss";

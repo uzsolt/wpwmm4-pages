@@ -2,7 +2,28 @@ _LAYOUT(`main_en.m4')
 _2_HEAD(_TITLE(`EKO - Projects'))
 _H1(`Projects')
 <h2>Ongoing research projects</h2>
-<h3>1) Co-creation in higher education</h3>
+
+<h3>1) Fast Art – Slow Fashion</h3>
+<h4>Using creativity to cultivate awareness of young people about the
+contribution of fashion to climate change and social justice</h4>
+<p>Interested in the topics of fast fashion and sustainable development? The Fast
+Art – Slow Fashion project puts fast fashion into the context of the triad of
+sustainable development (environment, society, economy).
+The project aims to
+cultivate awareness of youngsters about the contribution of fashion to climate
+change and social justice by using creativity and building on learning by doing,
+learning by design, learning by feeling and action-based learning.</p>
+
+<p>We put emphasis on providing interactive and creative elements so that young
+adults would be attracted to the topic and sensitized in a playful and positive
+way. Creativity and art are used to face a social challenge. Under the framework
+of the current project, we create creative digital contents including video
+series (showing different decision-making situations), animated videos,
+podcasts, infographics in relation with fast fashion with the engagement of the
+youth and with the participants of the project partners.</p>
+<p>_HREF(`/projects/fasf.html',`Details...')</p>
+
+<h3>2) Co-creation in higher education</h3>
 <p>More and more companies realize the opportunity to boost their profits
 and meet the continuously changing needs of their customers with the help
 of co-creation. However, co-creation may not only be proven effective in
@@ -20,7 +41,7 @@ be the common creation of small classroom tasks and the co-creation of the
 whole curriculum. Our research aims to analyze how much co-creation can be
 applied in higher education.</p>
 
-<h3>2) Raising awareness of university students to global issues</h3>
+<h3>3) Raising awareness of university students to global issues</h3>
 <p>In the 21st century, there is a growing number of global challenges that we
 have to face: poverty, hunger, inequality, climate change, terrorism,
 migration, epidemics, conflicts, sustainability etc. Although the problems
@@ -36,7 +57,7 @@ implementing a pilot at the Faculty of Economics and Business
 Administration, University of Szeged, there is a course entitled
 International Development Cooperation.</p>
 
-<h3>3) Attitude of Generation Z to global issues</h3>
+<h3>4) Attitude of Generation Z to global issues</h3>
 <p>Recently, there is a growing number of global challenges that we have to
 face: poverty, hunger, inequality, climate change, terrorism, migration,
 epidemics, conflicts, sustainability etc. Although the problems that a

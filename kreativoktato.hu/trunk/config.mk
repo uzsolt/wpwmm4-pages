@@ -25,6 +25,8 @@ PAGES+=	index.html \
 	projektek.html \
 	publikaciok.html
 
+PAGES+=	projects/fasf.html
+
 .for l in ${LANG_DIRS}
 TARGETS+=	${PAGES:@t@${l}/$t@}
 .endfor
