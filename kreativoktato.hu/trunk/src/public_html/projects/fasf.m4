@@ -10,4 +10,5 @@ _HREF(`fasf_contact.html',`contact',_CLASS(`normal_submenu'))
 </div>
 <p>Using creativity to cultivate awareness of young people about the
 contribution of fashion to climate change and social justice</p>
-<img src="STATIC/pict/projects/fasf_logo.png" alt="FASF logo">
+<img src="STATIC/pict/projects/fasf_logo.png" alt="FASF logo" class="projectlogo">
+<img src="STATIC/pict/projects/fasf_eu_logo.jpg" alt="FASF EU logo" class="projectwidelogo">
