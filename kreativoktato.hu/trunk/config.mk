@@ -15,15 +15,7 @@ LANG_EN_DIR=	www_english
 LANG_DIRS=	${LANG_HU_DIR} \
 		${LANG_EN_DIR}
 
-PAGES+=	index.html \
-	blog.html \
-	gdpr.html \
-	globalis.html \
-	jogyakorlat.html \
-	kapcsolat.html \
-	partnerek.html \
-	projektek.html \
-	publikaciok.html
+.include "includes.mk"
 
 .for l in ${LANG_DIRS}
 TARGETS+=	${PAGES:@t@${l}/$t@}
@@ -42,5 +34,3 @@ VIRT_DIR=	virtuals/
 
 upload:
 	cat upload.lftp | lftp
-
-.include "includes.mk"

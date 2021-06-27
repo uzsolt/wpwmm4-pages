@@ -1,3 +1,5 @@
+.include "mk/main_pages.mk"
+
 .include "mk/blog.mk"
 .include "mk/css.mk"
 .include "mk/honlapkepek.mk"
