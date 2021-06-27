@@ -62,9 +62,10 @@ _afterdiv
 _afterdiv
   <div class="gyujto">
     <div class="projektdiv">
-      <img src="STATIC/pict/projects/fasf_idec.png" alt="projectlogo">
+      <img src="STATIC/pict/projects/fasf_idec.png" class="projectlogo" alt="IDEC">
       <span class="projektmember">IDEC</span>
     </div>
+    _afterdiv
     <div class='tagnevjegykicsi'>
       <img src="STATIC/pict/projects/fasf_idec_maria.jpg" alt="picture">
       <span class="tagnevjegy_nev">Maria Kandila</span><br>
@@ -74,9 +75,10 @@ _afterdiv
 _afterdiv
   <div class="gyujto">
     <div class="projektdiv">
-      <img src="STATIC/pict/projects/fasf_maszk.png" alt="MASZK">
+      <img src="STATIC/pict/projects/fasf_maszk.png" class="projectlogo" alt="MASZK">
       <span class="projektmember">MASZK</span>
     </div>
+    _afterdiv
     <div class='tagnevjegykicsi'>
       <img src="STATIC/pict/projects/fasf_maszk_bujdoso.png" alt="picture">
       <span class="tagnevjegy_nev">Bujdosó Zoltán</span><br>
