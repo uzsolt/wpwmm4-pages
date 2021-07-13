@@ -128,6 +128,7 @@ blockquote .cite {
   display: block;
   text-align: center;
   padding: 1em;
+  border-radius: 0.5em;
 }
 %normal_menu_href {
   color:  $menuNormalC;
@@ -178,7 +179,6 @@ blockquote .cite {
   @extend %normal_menu_href;
   display: inline-block;
   border: 0.1em solid black;
-  border-radius: 0.5em;
   background-color: $submenuSelectedBG;
   color: $submenuSelectedC;
 }
