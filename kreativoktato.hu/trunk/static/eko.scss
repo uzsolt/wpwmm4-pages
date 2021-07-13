@@ -164,6 +164,7 @@ blockquote .cite {
 .normal_submenu {
   @extend %normal_menu;
   @extend %normal_menu_href;
+  box-shadow: 3px 5px #555;
   display: inline-block;
   border: 1px solid black;
   background-color: $submenuNormalBG;
@@ -177,6 +178,7 @@ blockquote .cite {
 .selected_submenu {
   @extend %normal_menu;
   @extend %normal_menu_href;
+  box-shadow: 3px 5px #555;
   display: inline-block;
   border: 0.1em solid black;
   background-color: $submenuSelectedBG;
