@@ -1,6 +1,4 @@
-_LAYOUT(`main.m4')
-_2_HEAD(_TITLE(`EKO - Fast Art Slow Fashion - Contact'))
-_H1(`Fast Art – Slow Fashion')
+_LAYOUT_PRE(
 <div id="submenu">
 _HREF(`fasf_news.html',`News',_CLASS(`normal_submenu'))
 _HREF(`fasf_description.html',`Description',_CLASS(`normal_submenu'))
@@ -8,6 +6,10 @@ _HREF(`fasf_digguide.html',`Digital guide',_CLASS(`normal_submenu'))
 _HREF(`fasf_competition.html',`Competition',_CLASS(`normal_submenu'))
 _HREF(`fasf_contact.html',`Contact',_CLASS(`selected_submenu'))
 </div>
+)
+_LAYOUT(`main.m4')
+_2_HEAD(_TITLE(`EKO - Fast Art Slow Fashion - Contact'))
+_H1(`Fast Art – Slow Fashion')
 m4_define(`_afterdiv',`<div style="clear:left"></div>')
 <h2>Contact information</h2>
 <p>We are working on the Fast Art Slow Fashion project:</p>
