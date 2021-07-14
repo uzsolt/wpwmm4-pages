@@ -12,6 +12,30 @@ _2_HEAD(_TITLE(`EKO - Fast Art Slow Fashion - News'))
 _H1(`Fast Art – Slow Fashion')
 <h2 id="news">Project news</h2>
 <dl>
+  <dt>Definition, June 2021</dt>
+  <dd>
+  <p>What is fast fashion?</p>
+  <p>The term of fast fashion as such goes back to the fast food phrase.</p>
+  <p>It means that the products are made:
+    <ul>
+      <li>quickly,</li>
+      <li>from cheap ingredients,</li>
+      <li>under bad circumstances.</li>
+      <li>Usually in Asian countries,</li>
+      <li>the employees are poorly paid and overworked.</li>
+    </ul>
+  </p>
+  <p>Fast fashion relies on: 
+    <ul>
+      <li>mass production,</li>
+      <li>low prices</li>
+      <li>large volumes of sales</li>
+    </ul>
+  </p>
+  </dd>
+  <img src='STATIC/pict/projects/fasf_news_202106.png' alt='info'>
+</dl>
+<dl>
   <dt>Kick-off meeting, 12-13 April 2021</dt>
   <dd><p>We organized our online kick-off meeting at the beginning of April. This
   was the first time when all project partners met. We tried to transform some
@@ -25,4 +49,3 @@ _H1(`Fast Art – Slow Fashion')
   slow fashion.</p></dd>
   <img src='STATIC/pict/projects/fasf_01.png' alt='meeting picture'>
 </dl>
-
