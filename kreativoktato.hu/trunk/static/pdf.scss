@@ -1,0 +1,38 @@
+$stuff_width:300px;
+$pdf_icon_width:64px;
+
+%stuffbase {
+  display:inline-block;
+  border:1px solid black;
+  border-radius:5px;
+  padding:5px;
+  margin:5px;
+  text-align:left;
+  box-shadow:0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+%stuffdescrbase {
+  display:inline-block;
+  font-family:arial;
+  font-size:16px;
+  vertical-align:top;
+}
+
+.pdf {
+  @extend %stuffbase;
+  width:$stuff_width;
+}
+
+.pdf .descr {
+  @extend %stuffdescrbase;
+  width:$stuff_width - $pdf_icon_width - 5px;
+}
+
+.pdficon {
+  width: $pdf_icon_width;
+  display:inline-block;
+}
+
+.pdf img {
+  width: $pdf_icon_width;
+}
