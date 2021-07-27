@@ -12,6 +12,24 @@ _2_HEAD(_TITLE(`EKO - Fast Art Slow Fashion - News'))
 _H1(`Fast Art – Slow Fashion')
 <h2 id="news">Project news</h2>
 <dl>
+  <dt>How to solve fast fashion? What is slow fashion? - July 2021</dt>
+  <dd>
+    <p>Design activist and professor Kate Fletcher is widely credited with coining the term.
+    Its concept borrows heavily from the Slow Food Movement.
+    Pleasure and consumption is linked with awareness and responsibility.
+    Slow fashion intends to offer an alternative to fast fashion, with:</p>
+    <ul>
+      <li>mindful manufacturing,</li>
+      <li>fair labor rights,</li>
+      <li>natural materials,</li>
+      <li>lasting garments.</li>
+    </ul>
+    <p>
+    </p>
+    <p>For more information visit our Facebook, LinkedIn, Instagram or YouTube social media channels.
+    See the contact information _HREF(`fasf_contact.html',`here').</p>
+  </dd>
+  <img src='STATIC/pict/projects/fasf_whatissf.png' alt='What is slow fashion?'>
   <dt>Definition, June 2021</dt>
   <dd>
   <p>What is fast fashion?</p>
