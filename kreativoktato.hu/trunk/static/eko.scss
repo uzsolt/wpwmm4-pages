@@ -338,6 +338,11 @@ body {
   max-height: 64px;
 }
 
+details > summary {
+  color: $menuNormalC;
+  font-weight: bold;
+}
+
 @import "table.scss";
 @import "pdf.scss";
 @import "small_screen.scss";
