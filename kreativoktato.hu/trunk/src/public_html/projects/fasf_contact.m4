@@ -99,3 +99,7 @@ _afterdiv
     `<img src="STATIC/pict/facebook.png" alt="facebook" class="soclogo">')
   _HREF(`https://www.linkedin.com/company/fasf-fast-art-slow-fashion',
     `<img src="STATIC/pict/linkedin.svg" alt="LinkedIn" class="soclogo">')
+  _HREF(`https://www.instagram.com/fastartslowfashion/',
+    `<img src="STATIC/pict/instagram.png" alt="Instagram," class="soclogo">')
+  _HREF(`https://www.youtube.com/channel/UCy_1JiVslee1ZgZB7gV3JYw',
+    `<img src="STATIC/pict/youtube.png" alt="YouTube," class="soclogo">')
