@@ -2,6 +2,7 @@
 
 .include "mk/blog.mk"
 .include "mk/css.mk"
+.include "mk/fasf.mk"
 .include "mk/honlapkepek.mk"
 .include "mk/jogyakorlat.mk"
 .include "mk/js.mk"

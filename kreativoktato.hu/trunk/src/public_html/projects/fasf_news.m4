@@ -12,6 +12,19 @@ _2_HEAD(_TITLE(`EKO - Fast Art Slow Fashion - News'))
 _H1(`Fast Art – Slow Fashion')
 <h2 id="news">Project news</h2>
 <details>
+  <summary>Learn about the project from the 1st newsletter</summary>
+  <p>Are you interested in fast fashion and its impacts?
+  Are you interested in how the project was elaborated and what this is about?
+  Would you like to read more about the project partners?</p>
+  <p>Please click on the picture to read the 1st project newsletter!</p>
+  <a href="STATIC/pdf/fasf_newsletter01_eng.pdf">
+    <img src='STATIC/pict/projects/fasf_newsletter01_eng.png' alt='English'>
+  </a>
+  <a href="STATIC/pdf/fasf_newsletter01_gre.pdf">
+    <img src='STATIC/pict/projects/fasf_newsletter01_gre.png' alt='Greek'>
+  </a>
+</details>
+<details>
   <summary>How to solve fast fashion? What is slow fashion? - July 2021</summary>
   <p>Design activist and professor Kate Fletcher is widely credited with coining the term.
   Its concept borrows heavily from the Slow Food Movement.
