@@ -45,7 +45,7 @@ _afterdiv
 </details>
 
 <details>
-  <summary>Aiforia as a partner</summary>
+  <summary>Aiforia from Germany as a partner</summary>
   <div class="gyujto">
     <div class="projektdiv">
       <img src="STATIC/pict/projects/fasf_aiforia.png" alt="aiforia" class="projectlogo">
@@ -71,7 +71,7 @@ _afterdiv
 _afterdiv
 </details>
 <details>
-  <summary>IDEC as a partner</summary>
+  <summary>IDEC from Greece as a partner</summary>
   <div class="gyujto">
     <div class="projektdiv">
       <img src="STATIC/pict/projects/fasf_idec.png" class="projectlogo" alt="IDEC">
@@ -87,7 +87,7 @@ _afterdiv
 _afterdiv
 </details>
 <details>
-  <summary>MASZK as a partner</summary>
+  <summary>MASZK from Hungary as a partner</summary>
   <div class="gyujto">
     <div class="projektdiv">
       <img src="STATIC/pict/projects/fasf_maszk.png" class="projectlogo" alt="MASZK">
