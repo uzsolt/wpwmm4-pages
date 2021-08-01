@@ -1,6 +1,6 @@
 _LAYOUT(`main_en.m4')
 _2_HEAD(_TITLE(`EKO - Tenders'))
-_H1(`Tenders')
+_H1(`Our projects')
 <h2>1) Fast Art – Slow Fashion</h2>
 <h3>Using creativity to cultivate awareness of young people about the
 contribution of fashion to climate change and social justice</h3>
