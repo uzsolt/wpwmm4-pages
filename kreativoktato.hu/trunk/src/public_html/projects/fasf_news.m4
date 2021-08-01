@@ -12,9 +12,6 @@ imiall
   <a href="STATIC/pdf/fasf_newsletter01_eng.pdf">
     <img src='STATIC/pict/projects/fasf_newsletter01_eng.png' alt='English'>
   </a>
-  <a href="STATIC/pdf/fasf_newsletter01_gre.pdf">
-    <img src='STATIC/pict/projects/fasf_newsletter01_gre.png' alt='Greek'>
-  </a>
 </details>
 <details>
   <summary>How to solve fast fashion? What is slow fashion? - July 2021</summary>
