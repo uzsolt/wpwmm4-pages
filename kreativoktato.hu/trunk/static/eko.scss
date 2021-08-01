@@ -345,6 +345,9 @@ details > summary {
   color: $menuNormalC;
   font-weight: bold;
 }
+summary:hover {
+  cursor: copy;
+}
 
 @import "table.scss";
 @import "pdf.scss";
