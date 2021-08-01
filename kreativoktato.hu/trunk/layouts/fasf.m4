@@ -7,20 +7,20 @@ m4_define(`fasftitle',`<h1>$1 fasflogo</h1>')
 m4_define(`imi',m4_dnl
 `<a href="$4"><div class="iconmenuitem">
   <div class="iconmenuitem_icon"><img src="$1" alt="$2"></div>
-  <div class="iconmenuitem_text">$3</div>
+  <div class="iconmenuitem_text imi$5">$3</div>
 </div></a>')m4_dnl
 m4_define(`imiall',m4_dnl
 `<div class="iconmenu">
   imi(`STATIC/pict/projects/fasf_icon_news.png',`News',`News',
-  `fasf_news.html')
+  `fasf_news.html',a)
   imi(`STATIC/pict/projects/fasf_icon_description.png',`Description',
-  `Description',`fasf_description.html')
+  `Description',`fasf_description.html',b)
   imi(`STATIC/pict/projects/fasf_icon_digitalguide.png',`Digital guide',
-  `Digital guide',`fasf_digguide.html')
+  `Digital guide',`fasf_digguide.html',a)
   imi(`STATIC/pict/projects/fasf_icon_competition.png',`Competition',
-  `Competition',`fasf_competition.html')
+  `Competition',`fasf_competition.html',b)
   imi(`STATIC/pict/projects/fasf_icon_contact.png',`Contact',`Contact',
-  `fasf_contact.html')
+  `fasf_contact.html',a)
 </div>')
 _LAYOUT_POST(
 <img src="STATIC/pict/projects/fasf_eu_logo.jpg" alt="FASF EU logo" class="projectwidelogo">

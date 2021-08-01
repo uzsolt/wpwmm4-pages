@@ -1,5 +1,5 @@
-$iconmenuitemWidth: 12em;
-$iconmenuitemHeight: 6em;
+$iconmenuitemWidth: 8em;
+$iconmenuitemHeight: 5em;
 $iconmenuitem_iconWidth: 4em;
 
 .icomenu {
@@ -14,7 +14,7 @@ $iconmenuitem_iconWidth: 4em;
   border: 1px solid black;
   box-shadow: 3px 5px #555;
   padding: 1em;
-  background-color: $menuSelectedBG;
+  background-color: #AE962C;
 }
 
 .iconmenuitem:active {
@@ -34,5 +34,11 @@ $iconmenuitem_iconWidth: 4em;
 
 .iconmenuitem_text {
   text-align: center;
-  color: #A95534;
+}
+
+.imia {
+  color: #edda8c;
+}
+.imib {
+  color: #e3b709;
 }
