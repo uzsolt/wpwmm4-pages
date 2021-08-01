@@ -1,0 +1,32 @@
+$iconmenuitemWidth: 12em;
+$iconmenuitemHeight: 6em;
+$iconmenuitem_iconWidth: 4em;
+
+.icomenu {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.iconmenuitem {
+  width: $iconmenuitemWidth;
+  height: $iconmenuitemHeight;
+  display: inline-block;
+  border: 1px solid black;
+  box-shadow: 3px 5px #555;
+  padding: 1em;
+  background-color: $menuSelectedBG;
+}
+
+.iconmenuitem_icon {
+  text-align: center;
+  width: 100%;
+}
+
+.iconmenuitem_icon > img {
+  width: $iconmenuitem_iconWidth;
+}
+
+.iconmenuitem_text {
+  text-align: center;
+  color: #A95534;
+}
