@@ -4,8 +4,21 @@ fasftitle(`Fast Art – Slow Fashion')
 imiall
 m4_define(`_afterdiv',`<div style="clear:left"></div>')
 <h2>Contact information</h2>
-<p>We are working on the Fast Art Slow Fashion project:</p>
-<h3>Coordinator</h3>
+<h3>Social media channels</h3>
+<p>You can contact us via the following social media channels:</p>
+<p>
+  _HREF(`https://www.facebook.com/fastartslowfashion',
+    `<img src="STATIC/pict/facebook.png" alt="facebook" class="soclogo">')
+  _HREF(`https://www.linkedin.com/company/fasf-fast-art-slow-fashion',
+    `<img src="STATIC/pict/linkedin.svg" alt="LinkedIn" class="soclogo">')
+  _HREF(`https://www.instagram.com/fastartslowfashion/',
+    `<img src="STATIC/pict/instagram.png" alt="Instagram," class="soclogo">')
+  _HREF(`https://www.youtube.com/channel/UCy_1JiVslee1ZgZB7gV3JYw',
+    `<img src="STATIC/pict/youtube.png" alt="YouTube," class="soclogo">')
+</p>
+<h3>Participating organisations</h3>
+<details>
+  <summary>Coordinator: Association for Creative Education</summary>
   <div class="gyujto">
     <div class="projektdiv">
     <img src="STATIC/pict/logo-menu.png" alt="EKO" class="projectlogo">
@@ -29,8 +42,10 @@ m4_define(`_afterdiv',`<div style="clear:left"></div>')
     </div>
   </div>
 _afterdiv
+</details>
 
-<h3>Partners</h3>
+<details>
+  <summary>Aiforia as a partner</summary>
   <div class="gyujto">
     <div class="projektdiv">
       <img src="STATIC/pict/projects/fasf_aiforia.png" alt="aiforia" class="projectlogo">
@@ -54,6 +69,9 @@ _afterdiv
     </div>
   </div>
 _afterdiv
+</details>
+<details>
+  <summary>IDEC as a partner</summary>
   <div class="gyujto">
     <div class="projektdiv">
       <img src="STATIC/pict/projects/fasf_idec.png" class="projectlogo" alt="IDEC">
@@ -67,6 +85,9 @@ _afterdiv
     </div>
   </div>
 _afterdiv
+</details>
+<details>
+  <summary>MASZK as a partner</summary>
   <div class="gyujto">
     <div class="projektdiv">
       <img src="STATIC/pict/projects/fasf_maszk.png" class="projectlogo" alt="MASZK">
@@ -85,15 +106,4 @@ _afterdiv
     </div>
   </div>
 _afterdiv
-<h3>Social media</h3>
-<p>You can contact me via the following social media channels:</p>
-<p>
-  _HREF(`https://www.facebook.com/fastartslowfashion',
-    `<img src="STATIC/pict/facebook.png" alt="facebook" class="soclogo">')
-  _HREF(`https://www.linkedin.com/company/fasf-fast-art-slow-fashion',
-    `<img src="STATIC/pict/linkedin.svg" alt="LinkedIn" class="soclogo">')
-  _HREF(`https://www.instagram.com/fastartslowfashion/',
-    `<img src="STATIC/pict/instagram.png" alt="Instagram," class="soclogo">')
-  _HREF(`https://www.youtube.com/channel/UCy_1JiVslee1ZgZB7gV3JYw',
-    `<img src="STATIC/pict/youtube.png" alt="YouTube," class="soclogo">')
-</p>
+</details>
