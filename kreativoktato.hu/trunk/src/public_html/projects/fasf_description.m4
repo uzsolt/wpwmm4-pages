@@ -1,6 +1,6 @@
 _LAYOUT(`fasf.m4')
 _2_HEAD(_TITLE(`EKO - Fast Art Slow Fashion - description'))
-_H1(`Fast Art – Slow Fashion')
+fasftitle(`Fast Art – Slow Fashion')
 imiall
 <h2>Project description</h2>
 <dl>
@@ -70,4 +70,3 @@ is responsible for the creativity and artistic approach in the project, EKO
 our resources.</p>
 
 <p>The project is co-funded by the Erasmus+ Programme of the European Union.</p>
-<img src="STATIC/pict/projects/fasf_eu_logo.jpg">

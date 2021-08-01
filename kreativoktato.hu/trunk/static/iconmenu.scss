@@ -17,6 +17,12 @@ $iconmenuitem_iconWidth: 4em;
   background-color: $menuSelectedBG;
 }
 
+.iconmenuitem:active {
+  box-shadow: 0px 0px;
+  border: 1px green;
+  padding-left: 1em;
+}
+
 .iconmenuitem_icon {
   text-align: center;
   width: 100%;

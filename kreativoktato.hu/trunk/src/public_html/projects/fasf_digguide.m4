@@ -1,6 +1,6 @@
 _LAYOUT(`fasf.m4')
 _2_HEAD(_TITLE(`EKO - Fast Art Slow Fashion - Digital Guide'))
-_H1(`Fast Art – Slow Fashion')
+fasftitle(`Fast Art – Slow Fashion')
 imiall
 <h2>Digital Guide</h2>
 <p>Would you like to know how fashion can be fast and what fast fashion means?

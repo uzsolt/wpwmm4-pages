@@ -1,6 +1,6 @@
 _LAYOUT(`fasf.m4')
 _2_HEAD(_TITLE(`EKO - Fast Art Slow Fashion - News'))
-_H1(`Fast Art – Slow Fashion')
+fasftitle(`Fast Art – Slow Fashion')
 imiall
 <h2 id="news">Project news</h2>
 <details>

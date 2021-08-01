@@ -1,6 +1,6 @@
 _LAYOUT(`fasf.m4')
 _2_HEAD(_TITLE(`EKO - Fast Art Slow Fashion - Contact'))
-_H1(`Fast Art – Slow Fashion')
+fasftitle(`Fast Art – Slow Fashion')
 imiall
 m4_define(`_afterdiv',`<div style="clear:left"></div>')
 <h2>Contact information</h2>
@@ -87,6 +87,7 @@ _afterdiv
 _afterdiv
 <h3>Social media</h3>
 <p>You can contact me via the following social media channels:</p>
+<p>
   _HREF(`https://www.facebook.com/fastartslowfashion',
     `<img src="STATIC/pict/facebook.png" alt="facebook" class="soclogo">')
   _HREF(`https://www.linkedin.com/company/fasf-fast-art-slow-fashion',
@@ -95,3 +96,4 @@ _afterdiv
     `<img src="STATIC/pict/instagram.png" alt="Instagram," class="soclogo">')
   _HREF(`https://www.youtube.com/channel/UCy_1JiVslee1ZgZB7gV3JYw',
     `<img src="STATIC/pict/youtube.png" alt="YouTube," class="soclogo">')
+</p>
