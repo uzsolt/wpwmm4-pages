@@ -346,7 +346,7 @@ details > summary {
   font-weight: bold;
 }
 summary:hover {
-  cursor: copy;
+  cursor: pointer;
 }
 
 @import "table.scss";
