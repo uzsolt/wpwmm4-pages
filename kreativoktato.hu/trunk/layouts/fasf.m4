@@ -1,7 +1,7 @@
 m4_divert(-1)m4_dnl
 _INCL(`base.m4')m4_dnl
 _INCL(`base_hu.m4')m4_dnl
-_LAYOUT_PRE(`<div id="main">')
+_LAYOUT_PRE(`<div id="fasf">')
 m4_define(`fasflogo',`<img src="STATIC/pict/projects/fasf_logo.png" alt="FASF logo" class="titlelogo">')
 m4_define(`fasftitle',`<h1>$1 fasflogo</h1>')
 m4_define(`imi',m4_dnl
@@ -23,6 +23,6 @@ m4_define(`imiall',m4_dnl
   `fasf_contact.html',a)
 </div>')
 _LAYOUT_POST(
-<img src="STATIC/pict/projects/fasf_eu_logo.jpg" alt="FASF EU logo" class="projectwidelogo">
+<p><img src="STATIC/pict/projects/fasf_eu_logo.jpg" alt="FASF EU logo" class="projectwidelogo"></p>
 `</div>'
 eko_footer)
