@@ -5,9 +5,9 @@ _LAYOUT_PRE(`<div id="main">')
 m4_define(`fasflogo',`<img src="STATIC/pict/projects/fasf_logo.png" alt="FASF logo" class="titlelogo">')
 m4_define(`fasftitle',`<h1>$1 fasflogo</h1>')
 m4_define(`imi',m4_dnl
-`<a href="$4"><div class="iconmenuitem">
+`<a href="$4"><div class="iconmenuitem imi$5">
   <div class="iconmenuitem_icon"><img src="$1" alt="$2"></div>
-  <div class="iconmenuitem_text imi$5">$3</div>
+  <div class="iconmenuitem_text">$3</div>
 </div></a>')m4_dnl
 m4_define(`imiall',m4_dnl
 `<div class="iconmenu">
