@@ -345,6 +345,11 @@ details > summary {
   color: $menuNormalC;
   font-weight: bold;
 }
+
+summary > img {
+  width: 32px;
+}
+
 summary:hover {
   cursor: pointer;
 }
