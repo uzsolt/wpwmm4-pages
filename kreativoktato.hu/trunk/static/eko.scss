@@ -349,6 +349,10 @@ summary:hover {
   cursor: pointer;
 }
 
+.little_picture {
+  max-width: 320px;
+}
+
 @import "table.scss";
 @import "pdf.scss";
 @import "iconmenu.scss";
