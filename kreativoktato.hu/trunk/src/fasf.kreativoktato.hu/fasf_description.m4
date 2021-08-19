@@ -1,8 +1,9 @@
 _LAYOUT(`fasf.m4')
 _2_HEAD(_TITLE(`EKO - Fast Art Slow Fashion - description'))
-fasftitle(`Fast Art – Slow Fashion')
-imiall
+_menubar(2)
 <h2>Project description</h2>
+We are an international consortium of four partner institutions,
+and we are realizing an Erasmus+ European project together.
 <dl>
   <dt>Project title</dt>
   <dd>Using creativity to cultivate awareness of young people about the

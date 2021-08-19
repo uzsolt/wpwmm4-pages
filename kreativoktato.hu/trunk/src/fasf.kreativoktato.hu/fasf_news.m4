@@ -1,7 +1,6 @@
 _LAYOUT(`fasf.m4')
 _2_HEAD(_TITLE(`EKO - Fast Art Slow Fashion - News'))
-fasftitle(`Fast Art – Slow Fashion')
-imiall
+_menubar(1)
 <h2 id="news">Project news</h2>
 <details>
   <summary>Learn about the project from the 1st newsletter</summary>

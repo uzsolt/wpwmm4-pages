@@ -1,8 +1,8 @@
-$iconmenuitemWidth: 8em;
-$iconmenuitemHeight: 5em;
+$iconmenuitemWidth: 128px;
+$iconmenuitemHeight: 128px;
 $iconmenuitem_iconWidth: 4em;
 
-.icomenu {
+.iconmenu {
   width: 100%;
   table-layout: fixed;
 }
@@ -34,11 +34,4 @@ $iconmenuitem_iconWidth: 4em;
 
 .iconmenuitem_text {
   text-align: center;
-}
-
-.imia {
-  background-color: #edda8c;
-}
-.imib {
-  background-color: #e3b709;
 }

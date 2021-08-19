@@ -1,0 +1,131 @@
+$colorBG: white;
+$colorFont: black;
+
+$topmenuBG: #E6892C;
+$topmenuHeight: 4ex;
+
+$logoHeight: 14ex;
+
+$menubarUnderlineColor: $topmenuBG;
+
+$imiwidth:256px;
+$imiheight:$imiwidth;
+$imi_iconwidth: 0.99*$imiwidth;
+$imi_iconheight: 0.9*$imiheight;
+
+body {
+  background-color: $colorBG;
+  background-image: url('');
+  color: $colorFont;
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+}
+
+#topmenu {
+  height: $topmenuHeight;
+  background-color: $topmenuBG;
+  text-align: right;
+}
+
+#topmenu > a > img {
+  height: $topmenuHeight;
+}
+
+#logo {
+  height: $logoHeight;
+  text-align: center;
+}
+
+.fasf_logo {
+  height: $logoHeight;
+  padding-bottom: 10px;
+}
+
+#menubar {
+  display: flex;
+  text-align: center;
+}
+
+.menuitem {
+  display: inline;
+  margin: 0 auto;
+}
+
+#menubar a {
+  color: $colorFont;
+  text-decoration: none;
+}
+
+#menubar .active {
+  text-decoration: underline;
+  text-decoration-color: $menubarUnderlineColor;
+  text-decoration-thickness: 4px;
+}
+
+#consortium {
+  width: 95%;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+}
+.conspart {
+  border: 2px solid black;
+  box-shadow: 3px 5px #555;
+  padding: 10px;
+}
+.conspart > img {
+  max-width: 200px;
+  max-height: 100px;
+}
+
+// csempés menü
+#iconmenu {
+  width: 100%;
+  table-layout: fixed;
+}
+.iconmenuitem {
+  width: $imiwidth;
+  height: $imiheight;
+}
+.iconmenuitem_icon > img {
+  width: $imi_iconwidth;
+  max-width: $imi_iconwidth;
+  height: $imi_iconheight;
+}
+
+// tagnévjegy
+// mozgó hírblokk
+.hwrap {
+  overflow: hidden;
+}
+.hmove {
+  display: flex;
+}
+.hitem {
+  position: absolute;
+  flex-shrink: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+  opacity:0;
+  animation: fade 30s linear infinite;
+}
+.hmove:hover {
+  animation-play-state: paused
+}
+@keyframes fade {
+  0% { opacity:0;}
+  26.6% {opacity:1;}
+  33.3% {opacity:0;}
+}
+.hitem1 {
+  animation-delay: 0s;
+}
+.hitem2 {
+  animation-delay: 10s;
+}
+.hitem3 {
+  animation-delay: 20s;
+}

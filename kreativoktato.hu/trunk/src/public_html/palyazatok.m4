@@ -11,4 +11,4 @@ The project aims to
 cultivate awareness of youngsters about the contribution of fashion to climate
 change and social justice by using creativity and building on learning by doing,
 learning by design, learning by feeling and action-based learning.</p>
-<p>_HREF(`/projects/fasf.html',`Details...')</p>
+<p>_HREF(`https://fasf.kreativoktato.hu',`Details...')</p>

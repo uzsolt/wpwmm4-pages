@@ -19,4 +19,4 @@ of the current project, we create creative digital contents including video
 series (showing different decision-making situations), animated videos,
 podcasts, infographics in relation with fast fashion with the engagement of the
 youth and with the participants of the project partners.</p>
-<p>_HREF(`/projects/fasf.html',`Details...')</p>
+<p>_HREF(`https://fasf.creativedu.hu',`Details...')</p>

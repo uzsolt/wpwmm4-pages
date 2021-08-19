@@ -359,14 +359,6 @@ summary:hover {
   max-width: 320px;
 }
 
-#fasf {
-  @extend %base;
-}
-
-#fasf > p {
-  max-width: $mainMaxWidth;
-}
-
 @import "table.scss";
 @import "pdf.scss";
 @import "iconmenu.scss";
