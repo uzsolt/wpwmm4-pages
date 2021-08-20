@@ -3,7 +3,7 @@ _INCL(`base.m4')m4_dnl
 _2_HEAD(
   _CSS(STATIC`/css/fasf.css')
 )
-m4_define(`fasflogo',`<img src="STATIC/pict/projects/fasf_logo.png" alt="FASF logo" class="fasf_logo">')
+m4_define(`fasflogo',`<a href="/"><img src="STATIC/pict/projects/fasf_logo.png" alt="FASF logo" class="fasf_logo"></a>')
 m4_define(`fasftitle',`<h1>$1</h1>')
 m4_define(`_menuitem',
 `<div class="menuitem $1">
