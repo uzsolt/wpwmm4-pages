@@ -14,6 +14,6 @@ _menubar(0)
     <div class="hitem hitem3">
       <h2>Have you known these facts about fashion?</h2>
       <p>We collected interesting facts about fashion, fast fashion and slow fashion.</p>
-    </hitem>
+    </div>
   </div>
 </div>

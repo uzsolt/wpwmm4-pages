@@ -8,6 +8,8 @@ $logoHeight: 14ex;
 
 $menubarUnderlineColor: $topmenuBG;
 
+$hirblokkHeight: 14ex;
+
 $imiwidth:256px;
 $imiheight:$imiwidth;
 $imi_iconwidth: 0.99*$imiwidth;
@@ -38,6 +40,10 @@ body {
 .fasf_logo {
   height: $logoHeight;
   padding-bottom: 10px;
+}
+
+#fasfeulogo {
+  height: $logoHeight;
 }
 
 #menubar {
@@ -107,6 +113,7 @@ body {
 // mozgó hírblokk
 .hwrap {
   overflow: hidden;
+  height: $hirblokkHeight;
 }
 .hmove {
   display: flex;
