@@ -1,11 +1,11 @@
 _LAYOUT(`fasf.m4')
 _2_HEAD(_TITLE(`EKO - Fast Art Slow Fashion - Consortium'))
 _menubar(5)
-m4_define(`_cons',`<div class="conspart">
+m4_define(`_cons',`<a href="$4"><div class="conspart">
 <img src="STATIC/pict/projects/$1">
 <h3>$2</h3>
 <p>$3</p>
-</div>')
+</div></a>')
 <div id="consortium">
 _cons(`fasf_eko.png',`EKO',m4_dnl
 `The Association for Creative Education has been established with the aim to
@@ -19,7 +19,8 @@ not run away but face them.
 Thus, in their work, members focus on the topics of global (citizenship)
 education, finding new and creative education methods, increasing
 the sensitiveness to global challenges, and finding ways for political integration.
-EKO is the project coordinator.')
+EKO is the project coordinator.',
+`https://creativedu.hu')
 m4_dnl
 _cons(`fasf_aiforia.png',`aiforia',m4_dnl
 `We, in aiforia, are convinced that human beings can improve the overall
@@ -33,7 +34,8 @@ resourceful projects and processes for sustainability.
 We bring together different actors at local,
 national and international levels and provide comprehensive support in topics
 such as reduction of resource consumption, responsible planning,
-effective projects, and thoughtful and fair policies.')
+effective projects, and thoughtful and fair policies.',
+`https://aiforia.eu')
 m4_dnl
 _cons(`fasf_maszk.png',`MASZK',m4_dnl
 `MASZK - Magyarországi Alternatív Színházi Központ
@@ -50,7 +52,8 @@ It has also won the EFFE certification of the European Festival Association on
 three occasions.
 As a result of our activities, more than 200 theatre workshops from more than
 30 countries have been introduced in Szeged so far,
-many of which introduced themselves in Hungary for the first time.')
+many of which introduced themselves in Hungary for the first time.',
+`https://maszk.hu')
 _cons(`fasf_idec.png',`IDEC',m4_dnl
 `IDEC is a training consulting company located in Piraeus, Greece.
 Its activities consist of training, management consulting, quality assurance,
@@ -64,5 +67,6 @@ or as partner from different European programs and initiatives.
 IDEC has been active in the fields of Inclusive Education, Intercultural
 competence, Innovative teaching methods,
 New competences for teachers, Stress prevention, Quality management, Evaluation and
-quality assurance and ICT in education and training.')
+quality assurance and ICT in education and training.',
+`https://idec.gr')
 </div>
