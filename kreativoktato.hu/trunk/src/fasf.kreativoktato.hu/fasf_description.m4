@@ -1,7 +1,7 @@
 _LAYOUT(`fasf.m4')
-_2_HEAD(_TITLE(`EKO - Fast Art Slow Fashion - description'))
+_2_HEAD(_TITLE(`EKO - Fast Art Slow Fashion - About us'))
 _menubar(2)
-<h2>Project description</h2>
+<h2>About us</h2>
 We are an international consortium of four partner institutions,
 and we are realizing an Erasmus+ European project together.
 <dl>
@@ -56,6 +56,7 @@ ytiframe(`3GHwhYtRV6g')
   <summary>Hungarian version of video</summary>
   ytiframe(`M0xs4vpFsU0')
 </details>
+<h2>Project description</h2>
 <p>Interested in the topics of fast fashion and sustainable development? The Fast
 Art – Slow Fashion project puts fast fashion into the context of the triad of
 sustainable development (environment, society, economy).
