@@ -1,11 +1,11 @@
 _LAYOUT(`fasf.m4')
 _2_HEAD(_TITLE(`EKO - Fast Art Slow Fashion - Consortium'))
 _menubar(5)
-m4_define(`_cons',`<a href="$4"><div class="conspart">
+m4_define(`_cons',`<div class="conspart"><a href="$4"><div class="conspartinner">
 <img src="STATIC/pict/projects/$1">
 <h3>$2</h3>
 <p>$3</p>
-</div></a>')
+</div></a></div>')
 <div id="consortium">
 _cons(`fasf_eko.png',`EKO',m4_dnl
 `The Association for Creative Education has been established with the aim to
