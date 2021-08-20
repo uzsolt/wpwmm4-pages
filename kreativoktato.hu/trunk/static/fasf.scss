@@ -88,6 +88,11 @@ body {
   width: $imiwidth;
   height: $imiheight;
 }
+.iconmenuitem:hover {
+  background-color: #ddd;
+  width: 1.05*$imiwidth;
+  height: 1.05*$imiheight;
+}
 .iconmenuitem_icon > img {
   width: $imi_iconwidth;
   max-width: $imi_iconwidth;
