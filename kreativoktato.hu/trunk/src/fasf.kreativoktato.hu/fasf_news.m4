@@ -2,8 +2,30 @@ _LAYOUT(`fasf.m4')
 _2_HEAD(_TITLE(`EKO - Fast Art Slow Fashion - News'))
 _menubar(1)
 <h2 id="news">Project news</h2>
+<h3>What is Fast Art Slow Fashion about?</h3>
+<p>We have started a project about fast fashion.</p>
+<p>The _HREF(`/fasf_consortium.html',`consortium') consits of 4 partners from 3 European countries.</p>
+<p>Please have a look at the short animated video to have an insight to the project.
+The video is available in 4 languages: English, German, Greek and Hungarian. Choose the best for you.</p>
+m4_define(`ytiframe',`
+<iframe width="560" height="315" src="https://www.youtube.com/embed/$1"
+title="YouTube video player"
+frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
+ytiframe(`3GHwhYtRV6g')
 <details>
-  <summary>Learn about the project from the 1st newsletter</summary>
+  <summary>German version of video</summary>
+  ytiframe(`vouFUo0z3xk')
+</details>
+<details>
+  <summary>Greek version of video</summary>
+  ytiframe(`47qRAweMw7s')
+</details>
+<details>
+  <summary>Hungarian version of video</summary>
+  ytiframe(`M0xs4vpFsU0')
+</details>
+
+<h3>Learn about the project from the 1st newsletter</h3>
   <p>Are you interested in fast fashion and its impacts?
   Are you interested in how the project was elaborated and what this is about?
   Would you like to read more about the project partners?</p>
@@ -11,18 +33,10 @@ _menubar(1)
   <a href="STATIC/pdf/fasf_newsletter01_eng.pdf">
     <img src='STATIC/pict/projects/fasf_newsletter01_eng.png' alt='English' class="little_picture">
   </a>
-</details>
-<details>
-  <summary>Kick-off meeting, 12-13 April 2021</summary>
-  <p>We organized our online kick-off meeting at the beginning of April. This
-  was the first time when all project partners met. We tried to transform some
-  offline elements to the online area, thus both days started with
-  energizer/ice-breakers so that we could get to know each other, and we also
-  listened to music 😊</p>
-  <p>During the two days, we discussed project management
-  issues, details of IO1 and dissemination and communication rules of our joint
-  project. We also voted for the project logo. You can see the winner on our
-  website. Right after the kick-off meeting, we started working on fast fashion,
-  slow fashion.</p></dd>
-  <img src='STATIC/pict/projects/fasf_01.png' alt='meeting picture'>
-</details>
+
+<h3>Have you known these facts about fashion?</h3>
+<p>The partnership worked hard and we collected interesting facts about fashion,
+fast fashion and slow fashion.
+The aim is to introduce the economic, environmental and
+social impacts of fashion industry and fast fashion.
+You can find more details in _HREF(`/fasf_digguide.html',`our collection').</p>

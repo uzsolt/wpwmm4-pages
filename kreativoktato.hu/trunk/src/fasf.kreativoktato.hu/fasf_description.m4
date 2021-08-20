@@ -39,23 +39,6 @@ and we are realizing an Erasmus+ European project together.
   <dd>108 656 EUR</dd>
 </dl>
 <p>
-m4_define(`ytiframe',`
-<iframe width="560" height="315" src="https://www.youtube.com/embed/$1"
-title="YouTube video player"
-frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
-ytiframe(`3GHwhYtRV6g')
-<details>
-  <summary>German version of video</summary>
-  ytiframe(`vouFUo0z3xk')
-</details>
-<details>
-  <summary>Greek version of video</summary>
-  ytiframe(`47qRAweMw7s')
-</details>
-<details>
-  <summary>Hungarian version of video</summary>
-  ytiframe(`M0xs4vpFsU0')
-</details>
 <h2>Project description</h2>
 <p>Interested in the topics of fast fashion and sustainable development? The Fast
 Art – Slow Fashion project puts fast fashion into the context of the triad of
