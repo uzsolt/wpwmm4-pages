@@ -11,6 +11,8 @@ $menubarBG: #F5DD91;
 
 $hirblokkHeight: 400px;
 
+$abouttxtBG: #F5F9C5;
+
 $imiwidth:256px;
 $imiheight:$imiwidth;
 $imi_iconwidth: 0.99*$imiwidth;
@@ -56,6 +58,7 @@ h1, h2, h3 {
   display: flex;
   text-align: center;
   margin-top: 3ex;
+  margin-bottom: 5ex;
   background-color: $menubarBG;
   padding: 5px;
 }
@@ -118,6 +121,17 @@ h1, h2, h3 {
   height: $imi_iconheight;
 }
 
+.abouttxt {
+  background-color: $abouttxtBG;
+  margin-left: 5em;
+  margin-right: 5em;
+  padding: 0.5em;
+}
+
+dd {
+  margin-bottom: 1em;
+}
+
 // tagnévjegy
 .gyujto {
   box-shadow: 0px 0px;
@@ -136,6 +150,21 @@ h1, h2, h3 {
 .right {
   float: left;
   width: 40%;
+}
+.right > img {
+  max-width: 100%;
+}
+.aboutleft {
+  float: left;
+  width: 30%;
+  margin-right: 2em;
+}
+.aboutleft > img {
+  max-width: 100%;
+}
+.aboutright {
+  float: left;
+  width: 60%;
 }
 // mozgó hírblokk
 .hwrap {

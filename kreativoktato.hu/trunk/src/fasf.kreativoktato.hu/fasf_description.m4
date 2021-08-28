@@ -1,45 +1,54 @@
 _LAYOUT(`fasf.m4')
 _2_HEAD(_TITLE(`EKO - Fast Art Slow Fashion - About us'))
 _menubar(2)
-<h2>About us</h2>
-We are an international consortium of four partner institutions,
-and we are realizing an Erasmus+ European project together.
-<dl>
-  <dt>Project title</dt>
-  <dd>Using creativity to cultivate awareness of young people about the
-  contribution of fashion to climate change and social justice</dd>
+<div class="abouttxt">
+<div class="sidebyside">
+  <div class="aboutleft">
+    <img src="STATIC/pict/projects/fasf_aboutus.jpg" alt="About us">
+  </div>
+  <div class="aboutright">
+    We are an international consortium of four partner institutions,
+    and we are realizing an Erasmus+ European project together.
+    <dl>
+      <dt>Project title</dt>
+      <dd>Using creativity to cultivate awareness of young people about the
+      contribution of fashion to climate change and social justice</dd>
 
-  <dt>Project duration</dt>
-  <dd>1 April 2021 – 30 September 2022 (18 months)</dd>
+      <dt>Project duration</dt>
+      <dd>1 April 2021 – 30 September 2022 (18 months)</dd>
 
-  <dt>Program</dt>
-  <dd>Erasmus+ KA2 – Cooperation for innovation and the exchange of good
-  practices; KA227 – Partnerships for Creativity</dd>
+      <dt>Program</dt>
+      <dd>Erasmus+ KA2 – Cooperation for innovation and the exchange of good
+      practices; KA227 – Partnerships for Creativity</dd>
 
-  <dt>Coordinator</dt>
-  <dd>EKO – Association for Creative Education (HUN)</dd>
+      <dt>Coordinator</dt>
+      <dd>_HREF(`https://creativedu.hu',`EKO') – Association for Creative Education (HUN)</dd>
 
-  <dt>Partner Institutions</dt>
-  <dd>_HREF(`http://www.maszk.hu',`MASZK (HUN)'),
-  _HREF(`https://idec.gr/',`IDEC (GRE)'), and
-  _HREF(`http://www.aiforia.eu',`Aiforia (GER)')</dd>
+      <dt>Partner Institutions</dt>
+      <dd>_HREF(`http://www.maszk.hu',`MASZK (HUN)'),
+      _HREF(`https://idec.gr/',`IDEC (GRE)'), and
+      _HREF(`http://www.aiforia.eu',`Aiforia (GER)')</dd>
 
-  <dt>Associated Partners</dt>
-  <dd>
-    <ul>
-      <li>_HREF(`http://www.eco.u-szeged.hu/',
-      `University of Szeged, Faculty of Economics and Business
-      Administration')</li>
-      <li>_HREF(`http://www.korosy.hu/',
-      `Szegedi SZC Kőrösy József Közgazdasági Technikum')</li>
-    </ul>
-  <dd>
+      <dt>Associated Partners</dt>
+      <dd>
+        <ul>
+          <li>_HREF(`http://www.eco.u-szeged.hu/',
+          `University of Szeged, Faculty of Economics and Business
+          Administration')</li>
+          <li>_HREF(`http://www.korosy.hu/',
+          `Szegedi SZC Kőrösy József Közgazdasági Technikum')</li>
+        </ul>
+      <dd>
 
-  <dt>Total budget</dt>
-  <dd>108 656 EUR</dd>
-</dl>
-<p>
+      <dt>Total budget</dt>
+      <dd>108 656 EUR</dd>
+    </dl>
+    <p>
+  </div>
+</div>
+<div class="sidebyside">
 <h2>Project description</h2>
+<div class="left">
 <p>Interested in the topics of fast fashion and sustainable development? The Fast
 Art – Slow Fashion project puts fast fashion into the context of the triad of
 sustainable development (environment, society, economy).
@@ -73,3 +82,9 @@ is responsible for the creativity and artistic approach in the project, EKO
 our resources.</p>
 
 <p>The project is co-funded by the Erasmus+ Programme of the European Union.</p>
+</div>
+<div class="right">
+<img src="STATIC/pict/projects/fasf_fashion.jpg" alt="Fashion">
+</div>
+</div>
+</div>
