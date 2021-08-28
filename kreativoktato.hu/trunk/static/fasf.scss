@@ -7,6 +7,7 @@ $topmenuHeight: 4ex;
 $logoHeight: 16ex;
 
 $menubarUnderlineColor: $topmenuBG;
+$menubarBG: #F5DD91;
 
 $hirblokkHeight: 400px;
 
@@ -55,6 +56,8 @@ h1, h2, h3 {
   display: flex;
   text-align: center;
   margin-top: 3ex;
+  background-color: $menubarBG;
+  padding: 5px;
 }
 
 .menuitem {
