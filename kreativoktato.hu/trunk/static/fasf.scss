@@ -121,6 +121,19 @@ h1, h2, h3 {
   border: 0px;
 }
 
+.sidebyside::after {
+  content: "";
+  clear: both;
+  display:table;
+}
+.left {
+  float: left;
+  width: 50%;
+}
+.right {
+  float: left;
+  width: 40%;
+}
 // mozgó hírblokk
 .hwrap {
   overflow: hidden;
