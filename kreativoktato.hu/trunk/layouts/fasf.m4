@@ -36,10 +36,10 @@ m4_define(`imiall',m4_dnl
 </div>')
 _2_BODY(
 <div id='topmenu'>
-_HREF(`https://www.facebook.com/fastartslowfashion',`<img src=STATIC/pict/facebook.png>')
-_HREF(`https://www.youtube.com/channel/UCy_1JiVslee1ZgZB7gV3JYw',`<img src=STATIC/pict/youtube.png>')
-_HREF(`https://www.linkedin.com/company/fasf-fast-art-slow-fashion',`<img src=STATIC/pict/linkedin.svg>')
-_HREF(`https://www.instagram.com/fastartslowfashion/',`<img src="STATIC/pict/instagram.png" alt="Instagram," class="soclogo">')
+_HREF(`https://www.facebook.com/fastartslowfashion',`<img src=STATIC/pict/projects/fasf_icon_facebook.png>')
+_HREF(`https://www.youtube.com/channel/UCy_1JiVslee1ZgZB7gV3JYw',`<img src=STATIC/pict/projects/fasf_icon_youtube.png>')
+_HREF(`https://www.linkedin.com/company/fasf-fast-art-slow-fashion',`<img src=STATIC/pict/projects/fasf_icon_linkedin.png>')
+_HREF(`https://www.instagram.com/fastartslowfashion/',`<img src="STATIC/pict/projects/fasf_icon_instagram.png" alt="Instagram," class="soclogo">')
 </div>
 <div id='logo'>fasflogo</div>
 )
