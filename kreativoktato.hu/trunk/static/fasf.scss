@@ -70,8 +70,12 @@ h1, h2, h3 {
 }
 
 #menubar a {
+  &:hover {
+    text-shadow: 0.08em 0.08em gray;
+  }
   color: $colorFont;
   text-decoration: none;
+  font-weight: bold;
 }
 
 #menubar .active {
