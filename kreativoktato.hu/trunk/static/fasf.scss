@@ -93,6 +93,11 @@ h1, h2, h3 {
   box-shadow: 3px 5px #555;
   padding: 10px;
 }
+.conspart:hover {
+  box-shadow: 1px 2px #555;
+  margin-left: 1px;
+  margin-top: 1px;
+}
 .conspart > a {
   color: black;
   text-decoration: none;
