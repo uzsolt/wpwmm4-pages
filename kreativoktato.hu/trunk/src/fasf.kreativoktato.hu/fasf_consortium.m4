@@ -7,9 +7,9 @@ m4_define(`_cons',`<div class="conspart"><a href="$4"><div class="conspartinner"
 <p>$3</p>
 </div></a></div>')
 <div id="consortium_flag">
-  <img src="FASFPICT/flag_hungary.jpg" alt="HUN">
-  <img src="FASFPICT/flag_greece.jpg" alt="GRE">
-  <img src="FASFPICT/flag_germany.png" alt="GER">
+  <div class=""><img src="FASFPICT/flag_greece.jpg" alt="GRE"></div>
+  <div class=""><img src="FASFPICT/flag_hungary.jpg" alt="HUN"></div>
+  <div class=""><img src="FASFPICT/flag_germany.png" alt="GER"></div>
 </div>
 <div id="consortium">
 _cons(`fasf_eko.png',`EKO',m4_dnl

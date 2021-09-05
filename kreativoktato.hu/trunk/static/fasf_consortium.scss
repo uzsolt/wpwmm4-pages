@@ -1,14 +1,16 @@
+$padding_side: 8%;
+
 #consortium {
   width: 100%;
 
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: $padding_side;
+  padding-right: $padding_side;
   padding-top: 5%;
 
   display: grid;
   grid-template-columns: 40% 40%;
   grid-row-gap: 5%;
-  grid-column-gap: 10px;
+  grid-column-gap: 2%;
 
   @include small-screen {
     padding-left: 5%;
@@ -23,7 +25,6 @@
   box-shadow: 3px 5px #555;
   padding: 10px;
   margin-bottom: 12px;
-  margin-right: 12px;
   text-align: justify;
   &:hover {
     box-shadow: 1px 2px #555;
@@ -46,9 +47,11 @@
 
 #consortium_flag {
   width: 100%;
-  img {
-    max-width: 25%;
-    margin-left: 3%;
-    margin-right: 3%;
-  }
+
+  padding-left: $padding_side;
+  padding-right: $padding_side;
+
+  display: grid;
+  grid-template-columns: 28% 28% 28%;
+  grid-column-gap: 1%;
 }
