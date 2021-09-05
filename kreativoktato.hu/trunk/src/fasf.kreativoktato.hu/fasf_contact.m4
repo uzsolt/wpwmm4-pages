@@ -9,10 +9,11 @@ m4_define(`_tag',`<div class="tagnevjegy">
 <span class="tagnevjegy_szervezet">$4</span><br>
 <span class="tagnevjegy_email">$5</span>
 </div>')
+<div id="content">
 <h2>Contact information</h2>
 <p>Interested in participating in the project or want to learn more about Fast Art Slow Fashion project? Get in touch with us!
 We are always happy to hear from you. You can write an e-mail to <a href="mailto:info@kreativoktato.hu">info@kreativoktato.hu</a> or any of us.</p>
-  <div class="gyujto">
+  <div class="fasf_gyujto">
     _tag(`fasf_eko_udvaribeata.png',`Beáta Udvari ',`Chair, project manager',`EKO',`udvari.bea@kreativoktato.hu')
     _tag(`fasf_eko_kerianita.jpg',`Anita Kéri',`Vice-chair',`EKO',`keri.anita@kreativoktato.hu')
     _tag(`fasf_eko_vizinoemi.jpg',`Noémi Vizi',`Communication manager',`EKO',`vizi.noemi@kreativoktato.hu')
@@ -23,3 +24,4 @@ We are always happy to hear from you. You can write an e-mail to <a href="mailto
     _tag(`fasf_maszk_bujdoso.png',`Zoltán Bujdosó',`community organizer',`MASZK',`bujdoso.zoltan@maszk.hu')
     _tag(`fasf_idec_maria.jpg',`Maria Kandila',`EU Project Management',`IDEC',`m.kandila@idec.gr')
   </div>
+</div>
