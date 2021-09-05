@@ -1,0 +1,28 @@
+#menubar {
+  display: flex;
+  text-align: center;
+  margin-top: 3ex;
+  margin-bottom: 5ex;
+  background-color: $menubarBG;
+  padding: 5px;
+}
+
+.menuitem {
+  display: inline;
+  margin: 0 auto;
+}
+
+#menubar a {
+  &:hover {
+    text-shadow: 0.08em 0.08em gray;
+  }
+  color: $colorFont;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#menubar .active {
+  text-decoration: underline;
+  text-decoration-color: $menubarUnderlineColor;
+  text-decoration-thickness: 4px;
+}

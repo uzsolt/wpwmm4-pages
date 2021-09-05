@@ -1,0 +1,10 @@
+#topmenu {
+  height: $topmenuHeight;
+  background-color: $topmenuBG;
+  text-align: right;
+  margin-bottom: 3ex;
+}
+
+#topmenu > a > img {
+  height: $topmenuHeight;
+}
