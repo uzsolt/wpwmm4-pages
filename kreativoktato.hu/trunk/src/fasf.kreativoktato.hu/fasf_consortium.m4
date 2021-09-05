@@ -6,6 +6,11 @@ m4_define(`_cons',`<div class="conspart"><a href="$4"><div class="conspartinner"
 <h3>$2</h3>
 <p>$3</p>
 </div></a></div>')
+<div id="consortium_flag">
+  <img src="FASFPICT/flag_hungary.jpg" alt="HUN">
+  <img src="FASFPICT/flag_greece.jpg" alt="GRE">
+  <img src="FASFPICT/flag_germany.png" alt="GER">
+</div>
 <div id="consortium">
 _cons(`fasf_eko.png',`EKO',m4_dnl
 `The Association for Creative Education has been established with the aim to

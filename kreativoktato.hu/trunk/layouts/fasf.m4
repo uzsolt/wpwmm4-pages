@@ -34,6 +34,7 @@ m4_define(`imiall',m4_dnl
   imi(`STATIC/pict/fasf_quiz.jpg',`Let&apos;s see what you learned! Take our quiz!',
   `Quiz',`digguide_quiz.html')
 </div>')
+m4_define(`FASFPICT',`STATIC/pict/projects/fasf')
 _2_BODY(
 <div id='topmenu'>
 _HREF(`https://www.facebook.com/fastartslowfashion',`<img src=STATIC/pict/projects/fasf_icon_facebook.png>')

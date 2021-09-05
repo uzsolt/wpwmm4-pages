@@ -117,6 +117,15 @@ h1, h2, h3 {
   float: right;
 }
 
+#consortium_flag {
+  width: 100%;
+  img {
+    max-width: 25%;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+}
+
 // csempés menü
 #iconmenu {
   width: 100%;
