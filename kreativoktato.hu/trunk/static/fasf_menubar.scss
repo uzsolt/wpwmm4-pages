@@ -3,9 +3,10 @@
   margin-top: 3ex;
   margin-bottom: 5ex;
   background-color: $menubarBG;
-  padding: 5px;
 
   display: grid;
+  padding-top: 1%;
+  padding-bottom: 1%;
 // 6 menüpont
   grid-template-columns: 
     10%
@@ -21,6 +22,8 @@
     grid-template-columns: 45% 45%;
     grid-row-gap: 15%;
     height: 6em;
+    padding-top: 3%;
+    padding-bottom: 3%;
   }
 
   .active {
