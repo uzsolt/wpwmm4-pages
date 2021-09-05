@@ -18,22 +18,6 @@ m4_define(`_menubar',m4_dnl
   _menuitem(m4_ifelse($1,5,active,inactive),`CONSORTIUM',`fasf_consortium.html')
   _menuitem(m4_ifelse($1,6,active,inactive),`CONTACT US',`fasf_contact.html')
 </div>')
-m4_define(`imi',m4_dnl
-`<a href="$4"><div class="iconmenuitem">
-  <div class="iconmenuitem_icon"><img src="$1" alt="$3"></div>
-  <div class="iconmenuitem_text">$2</div>
-</div></a>')m4_dnl
-m4_define(`imiall',m4_dnl
-`<div id="iconmenu">
-  imi(`STATIC/pict/fasf_reading.jpg',`Let&apos;s read about fast fashion',`Reading',
-  `digguide_reading.html')
-  imi(`STATIC/pict/fasf_watching.jpg',`Interested? Watch our videos!',
-  `Interested? Watch our videos!',`digguide_watching.html')
-  imi(`STATIC/pict/fasf_checking.jpg',`Double-check yourself!',
-  `Checking',`digguide_check.html')
-  imi(`STATIC/pict/fasf_quiz.jpg',`Let&apos;s see what you learned! Take our quiz!',
-  `Quiz',`digguide_quiz.html')
-</div>')
 m4_define(`FASFPICT',`STATIC/pict/projects/fasf')
 _2_BODY(
 <div id='topmenu'>
