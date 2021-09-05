@@ -12,7 +12,7 @@ $menubarBG: #F5DD91;
 
 $hirblokkHeight: 400px;
 
-$abouttxtBG: #F5F9C5;
+$contentBG: #F5F9C5;
 
 $imiwidth:256px;
 $imiheight:$imiwidth;
@@ -48,13 +48,6 @@ h1, h2, h3 {
 
 #fasfeulogo {
   height: $EUlogoHeight;
-}
-
-.abouttxt {
-  background-color: $abouttxtBG;
-  margin-left: 5em;
-  margin-right: 5em;
-  padding: 0.5em;
 }
 
 dd {
@@ -97,6 +90,7 @@ dd {
 }
 
 @import "fasf_consortium.scss";
+@import "fasf_content.scss";
 @import "fasf_iconmenu.scss";
 @import "fasf_menubar.scss";
 @import "fasf_newsbanner.scss";

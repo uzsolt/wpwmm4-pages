@@ -1,0 +1,10 @@
+#content {
+  background-color: $contentBG;
+  margin-left: 12%;
+  margin-right: 12%;
+  padding: 1%;
+  @include small-screen {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}

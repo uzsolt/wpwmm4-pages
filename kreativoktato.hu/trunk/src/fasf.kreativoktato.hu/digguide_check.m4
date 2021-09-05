@@ -1,6 +1,7 @@
 _LAYOUT(`fasf.m4')
 _2_HEAD(_TITLE(`EKO - Fast Art Slow Fashion - Digital Guide'))
 _menubar(3)
+<div id="content">
 <h2>How much clothing do we buy nowadays? Do we need them all?</h2>
 <p>An average person buys five times more clothing now than in the 1980s.
 European citizens even buy 27kg of textiles annually, spending 5% of the salaries on clothing and footwear.</p>
@@ -54,5 +55,6 @@ See the contact information _HREF(`fasf_contact.html',`here').</p>
 </div>
 <div class="right">
   <img src="STATIC/pict/projects/fasf_digital_tool.jpg" alt="digital tool">
+</div>
 </div>
 </div>

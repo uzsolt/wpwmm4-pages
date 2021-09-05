@@ -1,7 +1,7 @@
 _LAYOUT(`fasf.m4')
 _2_HEAD(_TITLE(`EKO - Fast Art Slow Fashion - About us'))
 _menubar(2)
-<div class="abouttxt">
+<div id="content">
 <div class="sidebyside">
   <div class="aboutleft">
     <img src="STATIC/pict/projects/fasf_aboutus.jpg" alt="About us">
