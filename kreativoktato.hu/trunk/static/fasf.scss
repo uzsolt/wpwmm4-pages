@@ -19,6 +19,12 @@ $imiheight:$imiwidth;
 $imi_iconwidth: 0.99*$imiwidth;
 $imi_iconheight: 0.9*$imiheight;
 
+@mixin small-screen {
+  @media only screen and (max-width: 700px) {
+    @content;
+  }
+}
+
 body {
   background-color: $colorBG;
   background-image: url('');
