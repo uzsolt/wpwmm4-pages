@@ -12,6 +12,7 @@
     grid-row-gap: 6%;
   }
 }
+
 .iconmenuitem {
   width: $imiwidth;
   height: $imiheight;
@@ -21,6 +22,11 @@
     height: 1.05*$imiheight;
   }
 }
+
+.iconmenu_big > a > .iconmenuitem {
+  height: 1.4*$imiheight;
+}
+
 .iconmenuitem_icon > img {
   width: $imi_iconwidth;
   max-width: $imi_iconwidth;

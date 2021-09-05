@@ -19,6 +19,11 @@ m4_define(`_menubar',m4_dnl
   _menuitem(m4_ifelse($1,6,active,inactive),`CONTACT US',`fasf_contact.html')
 </div>')
 m4_define(`FASFPICT',`STATIC/pict/projects/fasf')
+m4_define(`imi',m4_dnl
+`<a href="$4"><div class="iconmenuitem">
+  <div class="iconmenuitem_icon"><img src="$1" alt="$3"></div>
+  <div class="iconmenuitem_text">$2</div>
+</div></a>')m4_dnl
 _2_BODY(
 <div id='topmenu'>
 _HREF(`https://www.facebook.com/fastartslowfashion',`<img src=STATIC/pict/projects/fasf_icon_facebook.png>')

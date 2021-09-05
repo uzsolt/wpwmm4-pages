@@ -16,3 +16,6 @@ TARGETS+=	\
 	fasf.kreativoktato.hu/digguide_watching.html \
 	fasf.kreativoktato.hu/digguide_check.html \
 	fasf.kreativoktato.hu/digguide_quiz.html \
+	fasf.kreativoktato.hu/news_fashion.html \
+	fasf.kreativoktato.hu/news_newsletter.html \
+	fasf.kreativoktato.hu/news_video.html
