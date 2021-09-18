@@ -1,6 +1,9 @@
 _LAYOUT(`fasf.m4')
 _2_HEAD(_TITLE(`EKO - Fast Art Slow Fashion - Digital Guide'))
 _menubar(3)
+<div class="center">
+  <img src="FASFPICT/reading.png" alt="Competition">
+</div>
 <div id="content">
   <p>Would you like to know how fashion can be fast and what fast fashion means?
   Are you interested in its social, economic and environmental consequences?
