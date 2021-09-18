@@ -34,4 +34,4 @@ _HREF(`https://www.instagram.com/fastartslowfashion/',`<img src="STATIC/pict/pro
 <div id='logo'>fasflogo</div>
 )
 _LAYOUT_POST(
-<div><img src="STATIC/pict/projects/fasf_eu_logo.jpg" alt="FASF EU logo" id="fasfeulogo"></div>)
+<div id='fasf_footer'><img src="STATIC/pict/projects/fasf_eu_logo.jpg" alt="FASF EU logo" id="fasfeulogo"></div>)
