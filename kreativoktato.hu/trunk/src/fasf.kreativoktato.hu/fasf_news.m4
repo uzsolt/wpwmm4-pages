@@ -14,7 +14,7 @@ imi(`STATIC/pict/projects/fasf_newsletter01_eng.png',
   `/news_newsletter.html')
 imi(`FASFPICT/news_fashion.jpg',
   `<h3>Have you known these facts about fashion?</h3>
-  The partnership worked hard and we collected interesting facts about fashion,
+  We collected interesting facts about fashion,
   fast fashion and slow fashion.',
   `Fashion',
   `/news_fashion.html')
