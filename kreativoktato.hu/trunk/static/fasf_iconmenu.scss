@@ -32,3 +32,16 @@
   max-width: $imi_iconwidth;
   height: $imi_iconheight;
 }
+
+#newsmenu {
+  width: 99%;
+  display: grid;
+  // 3 menüpont
+  grid-template-columns: 25% 25% 25%;
+  grid-column-gap: 5%;
+  padding-left: 7%;
+  @include small-screen {
+    grid-template-columns: 90%;
+    padding-left: 4%;
+  }
+}

@@ -2,7 +2,7 @@ _LAYOUT(`fasf.m4')
 _2_HEAD(_TITLE(`EKO - Fast Art Slow Fashion - News'))
 _menubar(1)
 <h2 id="news">Project news</h2>
-<div id="iconmenu" class="iconmenu_big">
+<div id="newsmenu" class="iconmenu_big">
 imi(`STATIC/pict/fasf_youtube_promo.jpg',
   `<h3>What is Fast Art Slow Fashion about?</h3> We have started a project about fast fashion.',
   `VIDEO',
