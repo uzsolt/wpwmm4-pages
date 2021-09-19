@@ -33,4 +33,12 @@ _menubar(3)
       <div class="descr">Hungarian version</div>
     </div>
   </a>
+  <p>Have a look at the full literature review on fast fashion, its origin and consequences.
+  The document is only available in English.</p>
+  <a href="FASFPDF/IO1_Literature_Review_FULL.pdf">
+    <div class="pdf">
+      <div class="pdficon"><img src="STATIC/pict/pdf-icon.png"></div>
+      <div class="descr">Full document</div>
+    </div>
+  </a>
 </div>
