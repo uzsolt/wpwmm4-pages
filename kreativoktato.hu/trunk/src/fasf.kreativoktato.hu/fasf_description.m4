@@ -48,6 +48,7 @@ _menubar(2)
 </div>
 <div class="sidebyside">
 <h2>Project description</h2>
+<h3>Enhancing knowledge</h3>
 <div class="left">
 <p>Interested in the topics of fast fashion and sustainable development? The Fast
 Art – Slow Fashion project puts fast fashion into the context of the triad of
@@ -64,7 +65,18 @@ of the current project, we create <b>creative digital contents</b> including vid
 series (showing different decision-making situations), animated videos,
 podcasts, infographics in relation with fast fashion with the engagement of the
 youth and with the participants of the project partners.</p>
+</div>
+<div class="right">
+<img src="STATIC/pict/projects/fasf_fashion.jpg" alt="Fashion">
+</div>
+</div>
 
+<div class="sidebyside">
+<div class="left">
+<img src="FASFPICT/csapat2.png" alt="Team">
+</div>
+<div class="right">
+<h3>The competiton</h3>
 <p>Moreover, the project partners organize a four-round long, <b>online creative
 competition</b> for the youth about fast fashion. National rounds are organized in
 each participating country and the best participating youth groups qualify for
@@ -82,9 +94,4 @@ is responsible for the creativity and artistic approach in the project, EKO
 our resources.</p>
 
 <p>The project is co-funded by the Erasmus+ Programme of the European Union.</p>
-</div>
-<div class="right">
-<img src="STATIC/pict/projects/fasf_fashion.jpg" alt="Fashion">
-</div>
-</div>
 </div>
