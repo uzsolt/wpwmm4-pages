@@ -41,4 +41,16 @@ _menubar(3)
       <div class="descr">Full document</div>
     </div>
   </a>
+  <p>Would you like to get more data on fast fashion?
+  Would you like to better understand the economic, environmental and
+  social consequences? Have a look at the attached document containing a
+  lot of useful links to data. You can use these for the
+  <a href="/fasf_competition.html">competition</a>.</p>
+  <a href="FASFPDF/IO1_figures_compiled_final.pdf">
+    <div class="pdf">
+      <div class="pdficon"><img src="STATIC/pict/pdf-icon.png"></div>
+      <div class="descr">Useful links</div>
+    </div>
+  </a>
+
 </div>
