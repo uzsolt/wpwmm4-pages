@@ -7,7 +7,7 @@ _menubar(3)
 <div id="content">
   <p>Would you like to know how fashion can be fast and what fast fashion means?
   Are you interested in its social, economic and environmental consequences?
-  Please have a look at the summaries on fast fashion.
+  Please have a look at the <b>summaries</b> on fast fashion.
   The summaries are available in English, German, Greek, and Hungarian.</p>
   <a href="STATIC/pdf/IO1_Literature_Review_ENG_edited.pdf">
     <div class="pdf">
@@ -33,7 +33,7 @@ _menubar(3)
       <div class="descr">Hungarian version</div>
     </div>
   </a>
-  <p>Have a look at the full literature review on fast fashion, its origin and consequences.
+  <p>Have a look at the <b>full literature review</b> on fast fashion, its origin and consequences.
   The document is only available in English.</p>
   <a href="FASFPDF/IO1_Literature_Review_FULL.pdf">
     <div class="pdf">
@@ -41,7 +41,7 @@ _menubar(3)
       <div class="descr">Full document</div>
     </div>
   </a>
-  <p>Would you like to get more data on fast fashion?
+  <p>Would you like to get <b>more data on fast fashion</b>?
   Would you like to better understand the economic, environmental and
   social consequences? Have a look at the attached document containing a
   lot of useful links to data. You can use these for the
