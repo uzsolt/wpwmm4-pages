@@ -74,6 +74,14 @@ youth and with the participants of the project partners.</p>
 <div class="sidebyside">
 <div class="left">
 <img src="FASFPICT/csapat2.png" alt="Team">
+<p>Learn more about the project from the project flyer and brochure!</p>
+<ul>
+<li>Brochure in English</li>
+<li>Flyer in English</li>
+<li>Flyer in German</li>
+<li>Flyer in Greek</li>
+<li>Flyer in Hungarian</li>
+</ul>
 </div>
 <div class="right">
 <h3>The competiton</h3>
