@@ -67,5 +67,4 @@ _menubar(3)
 </div>
 <p>Did well on the quiz? Interested in more? Would you like to contribute?
 Join our competition – _HREF(`/fasf_competition.html',HERE)!</p>
-<iframe src="https://redmenta.com/?solve&ks_id=1497729924"></iframe>
 </div>
