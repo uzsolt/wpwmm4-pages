@@ -2,7 +2,7 @@ _LAYOUT(`fasf.m4')
 _2_HEAD(_TITLE(`EKO - Fast Art Slow Fashion - Digital Guide'))
 _menubar(3)
 <div id="content">
-<div class="sidebyside">
+<div class="sidebyside skip-after">
   <h2>Are you as fast fashion-aware as you want to believe?</h2>
   <div class="left">
     <p>Almost everyone has heard at least once the term "fast fashion".
@@ -14,7 +14,7 @@ _menubar(3)
     _HREF(`https://forms.gle/4n1DQyzgku157bfF6',`<img src="FASFPICT/quiz_01.png" alt="Quiz Link">')
   </div>
 </div>
-<div class="sidebyside">
+<div class="sidebyside skip-after">
   <h2>So, you think you know how to be eco-fashionable?</h2>
   <div class="left">
     _HREF(`https://forms.gle/1beeuxxhDPUcb7rC9',`<img src="FASFPICT/quiz_02.jpg" alt="Quiz Link">')
@@ -24,10 +24,10 @@ _menubar(3)
     One where trends and seasons don’t matter, but where your ethics and aesthetics seamlessly unite,
     and you can escape the stress of constant consumption, focusing on the style that truly appeals to you.</p>
     <p>Test your knowledge on slow fashion and prepare to be surprised by the answers that you will receive!</p>
-    Let's click on the picture to start the game.</p>
+    <p>Let's click on the picture to start the game.</p>
   </div>
 </div>
-<div class="sidebyside">
+<div class="sidebyside skip-after">
   <h2>Fashion, fast fashion and the possibilities</h2>
   <div class="left">
     <p>Test your knowledge about the history of fashion and the enviromental, economical and socail consquences of fast fasion. 
@@ -40,7 +40,7 @@ _menubar(3)
     _HREF(`https://docs.google.com/forms/d/1x0aM2vORVAAa718E4JBMxkXdbcLmp6w8oJk8dmgilvU',`<img src="FASFPICT/quiz_03.png" alt="Quiz Link">')
   </div>
 </div>
-<div class="sidebyside">
+<div class="sidebyside skip-after">
   <h2>How sustainable is your wardrobe?</h2>
   <div class="left">
     _HREF(`https://docs.google.com/forms/d/1A92V0F2-MhvXI4QtGulI4f7nm4mSjmKPdpErXPLlbhw/edit',`<img src="FASFPICT/quiz_04.jpg" alt="Quiz Link">')
@@ -55,7 +55,7 @@ _menubar(3)
     <p>Let's click on the picture to start the game.</p>
   </div>
 </div>
-<div class="sidebyside">
+<div class="sidebyside skip-after">
   <h2>What do you know about the impacts of fast fashion?</h2>
   <div class="left">
     <p>Test your knowledge on the impacts of fast fashion. In case you are more interested, let's read this document.</p>
