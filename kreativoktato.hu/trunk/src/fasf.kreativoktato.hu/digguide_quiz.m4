@@ -62,7 +62,7 @@ _menubar(3)
     <p>Let's click on the picture to start the quiz.</p>
   </div>
   <div class="right">
-    _HREF(`https://docs.google.com/forms/d/e/1FAIpQLSdsI_wQoLXVVW_pKOAdou120GVy1WlkRxa9lcROOX6OJJW3Ew/viewform',`<img src="FASFPICT/csapat2.png" alt="Quiz Link">')
+    _HREF(`https://docs.google.com/forms/d/e/1FAIpQLSdsI_wQoLXVVW_pKOAdou120GVy1WlkRxa9lcROOX6OJJW3Ew/viewform',`<img src="FASFPICT/quiz_05.png" alt="Quiz Link">')
   </div>
 </div>
 <p>Did well on the quiz? Interested in more? Would you like to contribute?
