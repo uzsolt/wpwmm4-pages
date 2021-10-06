@@ -65,6 +65,16 @@ _menubar(3)
     _HREF(`https://docs.google.com/forms/d/e/1FAIpQLSdsI_wQoLXVVW_pKOAdou120GVy1WlkRxa9lcROOX6OJJW3Ew/viewform',`<img src="FASFPICT/quiz_05.png" alt="Quiz Link">')
   </div>
 </div>
+<div class="sidebyside skip-after">
+  <h2>What do you know about (fast) fashion?</h2>
+  <div class="left">
+    _HREF(`https://forms.gle/ep2zfaaMaN53y3fi7',`<img src="FASFPICT/quiz_06.jpg" alt="Quiz Link">')
+  </div>
+  <div class="right">
+    <p>Can you tell the difference between luxurious brand clothes and fast fashion ones? Take the quiz and find out more about the fashion industry.</p>
+    <p>Let's click on the picture to start testing your knowledge.</p>
+  </div>
+</div>
 <p>Did well on the quiz? Interested in more? Would you like to contribute?
 Join our competition – _HREF(`/fasf_competition.html',HERE)!</p>
 </div>
