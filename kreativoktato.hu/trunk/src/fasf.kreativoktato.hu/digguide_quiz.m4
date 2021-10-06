@@ -58,7 +58,8 @@ _menubar(3)
 <div class="sidebyside skip-after">
   <h2>What do you know about the impacts of fast fashion?</h2>
   <div class="left">
-    <p>Test your knowledge on the impacts of fast fashion. In case you are more interested, let's read this document.</p>
+    <p>Test your knowledge on the impacts of fast fashion. In case you are more interested,
+      _HREF(`https://www.fasf.creativedu.hu/digguide_reading.html',`let&apos;s read this document.')</p>
     <p>Let's click on the picture to start the quiz.</p>
   </div>
   <div class="right">
